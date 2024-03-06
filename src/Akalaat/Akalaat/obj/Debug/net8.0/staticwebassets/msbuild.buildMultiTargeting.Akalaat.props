@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Akalaat.props" />
+</Project>

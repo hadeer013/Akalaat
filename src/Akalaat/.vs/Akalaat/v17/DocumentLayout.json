@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\data\\akalaatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\data\\akalaatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\ApplicationUser.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Akalaat.DAL\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T18:19:35.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AkalaatDbContext.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\AkalaatDbContext.cs",
+              "RelativeDocumentMoniker": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\AkalaatDbContext.cs",
+              "RelativeToolTip": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T18:17:13.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Program.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeToolTip": "Akalaat\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T18:16:05.34Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
