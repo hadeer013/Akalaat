@@ -17,7 +17,7 @@ namespace Akalaat.DAL.Models
         public DateTime? End_Time { get; set; }
 
         [ForeignKey("Customer")]
-        public int Customer_ID { get; set; }
+        public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
         public List<Branch_Reservation> branch_Reservations { get; set; } = new List<Branch_Reservation>();
 

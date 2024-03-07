@@ -23,7 +23,7 @@ namespace Akalaat.DAL.Models
 
         public decimal Total_Discount { get; set; }
         [ForeignKey("Customer")]
-        public int Customer_ID { get; set; }
+        public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
         [ForeignKey("Item")]
         public int? Item_ID { get; set; }

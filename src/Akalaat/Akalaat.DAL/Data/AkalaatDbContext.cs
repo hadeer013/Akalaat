@@ -1,4 +1,5 @@
 ﻿using Akalaat.DAL.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,6 +17,19 @@ namespace Akalaat.DAL.Data
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+
+            builder.Entity<IdentityUserLogin<string>>(b =>
+            {
+                b.HasKey(l => new { l.LoginProvider, l.ProviderKey });
+                b.ToTable("AspNetUserLogins"); 
+            });
+            builder.Entity<IdentityRole>(b =>
+            {
+                b.ToTable("AspNetRoles");
+                b.HasKey(r => r.Id);
+
+            });
             builder.Entity<Items_in_Offer>().HasKey(IO => new { IO.Offer_ID, IO.Item_ID });
             builder.Entity<Menu_Item_Size>().HasKey(MS => new { MS.Item_ID,MS.Item_Size_ID });
             builder.Entity<Resturant_Dish>().HasKey(RD => new { RD.Resturant_ID,RD.Dish_ID });

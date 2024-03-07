@@ -24,11 +24,11 @@ namespace Akalaat.DAL.Models
         public int No_of_Likes { get; set; }
 
         [ForeignKey("Customer")]
-        public int Customer_ID { get; set; }
+        public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
 
         [ForeignKey("Resturant")]
-        public int Resturant_ID { get; set; }
+        public int? Resturant_ID { get; set; }
         public virtual Resturant Resturant { get; set; }
     }
 }

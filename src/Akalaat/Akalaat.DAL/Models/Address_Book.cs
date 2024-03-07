@@ -15,7 +15,7 @@ namespace Akalaat.DAL.Models
         [Key]
         public int ID { get; set; }
         [ForeignKey("Customer")]
-        public int? Customer_ID { get; set; }
+        public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
         [ForeignKey("Region")]
         public int Region_ID { get; set; }

@@ -29,7 +29,7 @@ namespace Akalaat.DAL.Models
         public int Rating { get; set; }
 
         [ForeignKey("Vendor")]
-        public int? Vendor_ID { get; set; }
+        public string Vendor_ID { get; set; }
         public virtual Vendor Vendor { get; set; }
 
         [ForeignKey("Menu")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Akalaat.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ace0c6b0578106db6c28e072a37bcbb7d0e6c6d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b67e8bc197ec9b2db90d20fca415fe1906570a2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akalaat.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akalaat.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
