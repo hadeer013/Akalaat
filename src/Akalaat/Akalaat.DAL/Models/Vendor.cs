@@ -10,5 +10,9 @@ namespace Akalaat.DAL.Models
     [Table("Vendor")]
     public class Vendor:ApplicationUser
     {
+        [ForeignKey("Resturant")]
+
+        public int? Resturant_ID { get; set; }
+        public virtual Resturant Resturant { get; set; }
     }
 }
