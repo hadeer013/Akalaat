@@ -1,9 +1,11 @@
 ﻿using Akalaat.DAL.Models;
 using Akalaat.Models;
 using Akalaat.ViewModels;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Akalaat.Controllers
 {
@@ -128,5 +130,74 @@ namespace Akalaat.Controllers
             ModelState.AddModelError("", "Wrong UserName Or Password!!");
             return View(UserVM);
         }
+
+        [Authorize]
+        public IActionResult ChangeEmail()
+        {
+            return View();
+        }
+
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangeEmail(ChangeEmailViewModel emailViewModel)
+        {
+            var user = await UserManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+
+            var userWithTheSameEmail = await UserManager.FindByEmailAsync(emailViewModel.Email);
+            if(userWithTheSameEmail != null) 
+            { return View("Error", new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" }); }
+
+            user.Email=emailViewModel.Email;
+            var result = await UserManager.UpdateAsync(user);
+            if(!result.Succeeded)
+                return View("Error", new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" });
+
+            await SignInManager.SignInAsync(user,false);
+            return RedirectToAction("Index", "Home");
+        }
+
+        [Authorize]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel changePasswordVM)
+        {
+            var currentUser = await UserManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+
+            var valid=await UserManager.CheckPasswordAsync(currentUser, changePasswordVM.CurrentPassword);
+            if (!valid)
+            {
+                ModelState.AddModelError("", "Wrong password !");
+            }
+            var result= await UserManager.ChangePasswordAsync(currentUser, changePasswordVM.CurrentPassword, changePasswordVM.NewPassword);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Wrong password !");
+                return View(changePasswordVM);
+            }
+                
+            return RedirectToAction("Index", "Home");
+        }
+
+        #region future consideration
+        //private async Task UpdateEmailClaimInCookie(string newEmail) 
+        //{
+        //    var claimsPrincipal = User..Claims. as ClaimsIdentity;
+        //    if (claimsPrincipal != null)
+        //    {
+        //        var claims = claimsPrincipal.Claims.Where(c => c.Type == ClaimTypes.Email).ToList();
+        //        if (claims.Count > 0)
+        //        {
+        //            claims[0] = new Claim(ClaimTypes.Email, newEmail, claims[0].ValueType, claims[0].Issuer);
+        //            await HttpContext.SignInAsync(claimsPrincipal); // Update the cookie
+        //        }
+        //    }
+        //}
+        #endregion
     }
 }

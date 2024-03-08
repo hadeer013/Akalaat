@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Computer Science/iti_intake_44/20-MVC/MVC final project/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangeEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Computer Science/iti_intake_44/20-MVC/MVC final project/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Computer Science/iti_intake_44/20-MVC/MVC final project/Akalaat/src/Akalaat/Akalaat/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
