@@ -8,14 +8,18 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Address_Book")]
 
-    public class Address_Book
+
+    public class Address_Book: BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
+        public string AddressDetails {  get; set; }
+        
         [ForeignKey("Customer")]
+<<<<<<< Updated upstream
         public string Customer_ID { get; set; }
+=======
+        public string? Customer_ID { get; set; }
+>>>>>>> Stashed changes
         public virtual Customer Customer { get; set; }
         [ForeignKey("Region")]
         public int Region_ID { get; set; }

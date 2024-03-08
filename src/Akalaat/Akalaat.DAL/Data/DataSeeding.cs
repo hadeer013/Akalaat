@@ -33,7 +33,7 @@ namespace Akalaat.DAL.Data
                 if (!context.Admins.Any())
                 {
                     var adminPass = "P@ssw0rd";
-                    var Admin = new Admin() {UserName = "admin", Email = "admin@gmail.com" };
+                    var Admin = new ApplicationUser() {UserName = "admin", Email = "admin@gmail.com" };
                     var result = await userManager.CreateAsync(Admin, adminPass);
 
                     var role = await roleManager.FindByNameAsync("Admin");

@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Region")]
-    public class Region
+    public class Region: BaseEntity
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         [ForeignKey("District")]
         public int? District_ID { get; set; }
         public virtual District District { get; set; }
-        public List<Branch> branches { get; set; } = new List<Branch>();
-        public List<Available_Delivery_Area> delivery_Areas { get; set; } = new List<Available_Delivery_Area>();
+        public ICollection<Branch> Branches { get; set; } = new HashSet<Branch>(); //branches that exist in this region(Address)
+        public ICollection<Branch> BranchesDelivery { get; set; } = new HashSet<Branch>(); //These Branches can deliver to this region
 
-        public List<Address_Book> address_Books { get; set; } = new List<Address_Book>();
+        public ICollection<Address_Book> AddressBooks { get; set; } = new HashSet<Address_Book>();
 
     }
 }

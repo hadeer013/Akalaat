@@ -8,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Order")]
-
-    public class Order
+    public class Order: BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
 
         public DateTime DateTime { get; set; }
 

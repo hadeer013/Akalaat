@@ -8,12 +8,9 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Item")]
 
-    public class Item
+    public class Item: BaseEntity
     {
-        [Key]
-        public int Item_ID { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -28,9 +25,8 @@ namespace Akalaat.DAL.Models
         public decimal Discount { get; set; }
 
         public bool IsOffer { get; set; }
-        public List<Items_in_Offer> items_In_Offers { get; set; } = new List<Items_in_Offer>();
-        public List<Menu_Item_Size> menu_Item_Sizes { get; set; } = new List<Menu_Item_Size>();
-        public List<Extra> extras { get; set; } = new List<Extra>();
+        public ICollection<Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Item_Size>();
+        public ICollection<Extra> extras { get; set; } = new HashSet<Extra>();
 
 
     }

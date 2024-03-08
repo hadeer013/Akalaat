@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Category")]
-    public class Category
+
+    public class Category: BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
 
         [Required]
         [MinLength(5, ErrorMessage = "Name must be at least 3 characters long.")]

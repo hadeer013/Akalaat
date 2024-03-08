@@ -8,13 +8,10 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Branch")]
 
-    public class Branch
+
+    public class Branch: BaseEntity
     {
-        [Key]
-        public int Branch_ID { get; set; }
-
         public bool IsDineIn { get; set; }
 
         public bool IsDelivery { get; set; }
@@ -31,9 +28,7 @@ namespace Akalaat.DAL.Models
         [ForeignKey("Region")]
         public int Region_ID { get; set; }
         public virtual Region Region { get; set; }
-        public List<Branch_Reservation> branch_Reservations { get; set; } = new List<Branch_Reservation>();
-        public List<Available_Delivery_Area> delivery_Areas { get; set; } = new List<Available_Delivery_Area>();
-
+        public virtual ICollection<Region> DeliveryAreas { get; set; }=new HashSet<Region>();
 
     }
 }

@@ -24,11 +24,6 @@ namespace Akalaat
 
 
 
-
-
-
-
-
             var app = builder.Build();
 
 

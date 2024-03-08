@@ -8,13 +8,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Review")]
-
-    public class Review
+    public class Review: BaseEntity
     {
-
-        [Key]
-        public int ID { get; set; }
 
         [Range(1, 5)]
         public int Rating { get; set; }

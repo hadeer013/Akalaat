@@ -8,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Offer")]
-
-    public class Offer
+    public class Offer: BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
         [Required]
         [MinLength(3, ErrorMessage = "Name must be at least 3 characters long.")]
         public string Name { get; set; }
@@ -26,7 +22,8 @@ namespace Akalaat.DAL.Models
         [ForeignKey("Menu")]
         public int Menu_ID { get; set; }
         public virtual Menu Menu { get; set; }
-        public List<Items_in_Offer> items_In_Offers { get; set; } = new List<Items_in_Offer>();
+        public virtual ICollection<Item> Items { get; set; }=new HashSet<Item>();
+        //public List<Items_in_Offer> items_In_Offers { get; set; } = new List<Items_in_Offer>();
 
 
     }

@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Reservation")]
-    public class Reservation
+    public class Reservation: BaseEntity
     {
-        public int ID { get; set; }
 
         public DateTime Start_Time { get; set; }
 
@@ -19,7 +17,7 @@ namespace Akalaat.DAL.Models
         [ForeignKey("Customer")]
         public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
-        public List<Branch_Reservation> branch_Reservations { get; set; } = new List<Branch_Reservation>();
+        public ICollection<Branch> BranchReservations { get; set; } = new HashSet<Branch>();
 
     }
 }

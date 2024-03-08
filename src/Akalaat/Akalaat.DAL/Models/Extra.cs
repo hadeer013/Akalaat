@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Extra")]
-    public class Extra
+    public class Extra: BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
         public string Name { get; set; }
         [ForeignKey("Item")]
         public int? Item_ID { get; set; }

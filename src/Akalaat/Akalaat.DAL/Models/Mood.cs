@@ -8,15 +8,12 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Mood")]
-
-    public class Mood
+    public class Mood: BaseEntity
     {
-        public int ID { get; set; }
 
         [Required]
         public string Name { get; set; }
-        public List<Resturant_Mood> resturant_Moods { get; set; } = new List<Resturant_Mood>();
+        public ICollection<Resturant> resturant_Moods { get; set; } = new HashSet<Resturant>();
 
     }
 }

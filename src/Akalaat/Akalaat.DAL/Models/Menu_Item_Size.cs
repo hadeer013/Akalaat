@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("Menu_Item_Size")]
-
     public class Menu_Item_Size
     {
         [ForeignKey("Item")]

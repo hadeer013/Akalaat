@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-    [Table("City")]
-
-    public class City
+    public class City: BaseEntity
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         public List<District> districts { get; set; } = new List<District>();
 
