@@ -30,7 +30,6 @@ namespace Akalaat.DAL.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Fname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -76,6 +75,19 @@ namespace Akalaat.DAL.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Dishes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ItemSizes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Size = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ItemSizes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -358,25 +370,6 @@ namespace Akalaat.DAL.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ItemSizes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Size = table.Column<int>(type: "int", nullable: false),
-                    ItemId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ItemSizes", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ItemSizes_Items_ItemId",
-                        column: x => x.ItemId,
-                        principalTable: "Items",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "MenuItemSizes",
                 columns: table => new
                 {
@@ -410,7 +403,7 @@ namespace Akalaat.DAL.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AddressDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Customer_ID = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Customer_ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Region_ID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -592,7 +585,7 @@ namespace Akalaat.DAL.Data.Migrations
                     Logo_URL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Cover_URL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Rating = table.Column<int>(type: "int", nullable: false),
-                    Vendor_ID = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Vendor_ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Menu_ID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -615,7 +608,7 @@ namespace Akalaat.DAL.Data.Migrations
                     Comment = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     No_of_Likes = table.Column<int>(type: "int", nullable: false),
                     Customer_ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Resturant_ID = table.Column<int>(type: "int", nullable: false)
+                    Resturant_ID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -630,8 +623,7 @@ namespace Akalaat.DAL.Data.Migrations
                         name: "FK_Reviews_Resturants_Resturant_ID",
                         column: x => x.Resturant_ID,
                         principalTable: "Resturants",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -762,11 +754,6 @@ namespace Akalaat.DAL.Data.Migrations
                 column: "OfferId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ItemSizes_ItemId",
-                table: "ItemSizes",
-                column: "ItemId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_MenuItemSizes_Item_Size_ID",
                 table: "MenuItemSizes",
                 column: "Item_Size_ID");
@@ -833,7 +820,8 @@ namespace Akalaat.DAL.Data.Migrations
                 table: "AddressBooks",
                 column: "Customer_ID",
                 principalTable: "Customer",
-                principalColumn: "Id");
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Available_Delivery_Area_Branches_BranchId",
@@ -872,7 +860,8 @@ namespace Akalaat.DAL.Data.Migrations
                 table: "Resturants",
                 column: "Vendor_ID",
                 principalTable: "Vendor",
-                principalColumn: "Id");
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
@@ -948,10 +937,10 @@ namespace Akalaat.DAL.Data.Migrations
                 name: "Moods");
 
             migrationBuilder.DropTable(
-                name: "Reservations");
+                name: "Items");
 
             migrationBuilder.DropTable(
-                name: "Items");
+                name: "Reservations");
 
             migrationBuilder.DropTable(
                 name: "Offers");

@@ -10,6 +10,7 @@ namespace Akalaat.DAL.Models
     public class Region: BaseEntity
     {
         public string Name { get; set; }
+
         [ForeignKey("District")]
         public int? District_ID { get; set; }
         public virtual District District { get; set; }

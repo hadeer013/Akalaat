@@ -11,6 +11,5 @@ namespace Akalaat.DAL.Models
     [Table("Admin")]
     public class Admin : ApplicationUser
     {
-        public string Fname { get; set; }
     }
 }

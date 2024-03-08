@@ -10,12 +10,13 @@ namespace Akalaat.DAL.Models
 {
     public class Menu: BaseEntity
     {
-        public ICollection<Item> items { get; set; } = new HashSet<Item>();
+        
         [ForeignKey("Resturant_ID")]
         public int? Resturant_ID { get; set; }
         public virtual Resturant Resturant {get; set; }
-        public List<Offer> offers { get; set; } = new List<Offer>();
-        public List<Category> categories { get; set; } = new List<Category>();
+        public ICollection<Offer> offers { get; set; } = new HashSet<Offer>();
+        public ICollection<Category> categories { get; set; } = new HashSet<Category>();
+        public ICollection<Item> items { get; set; } = new HashSet<Item>();
 
     }
 }

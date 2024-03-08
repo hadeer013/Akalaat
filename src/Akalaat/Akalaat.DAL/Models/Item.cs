@@ -25,7 +25,7 @@ namespace Akalaat.DAL.Models
         public decimal Discount { get; set; }
 
         public bool IsOffer { get; set; }
-        public ICollection<Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Item_Size>();
+        public ICollection<Menu_Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Menu_Item_Size>();
         public ICollection<Extra> extras { get; set; } = new HashSet<Extra>();
 
 

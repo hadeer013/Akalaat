@@ -23,7 +23,6 @@ namespace Akalaat.DAL.Models
         public int Menu_ID { get; set; }
         public virtual Menu Menu { get; set; }
         public virtual ICollection<Item> Items { get; set; }=new HashSet<Item>();
-        //public List<Items_in_Offer> items_In_Offers { get; set; } = new List<Items_in_Offer>();
 
 
     }

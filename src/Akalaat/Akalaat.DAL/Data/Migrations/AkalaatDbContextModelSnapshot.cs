@@ -24,16 +24,6 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Address_Book", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Customer_ID")
-                        .IsRequired()
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
@@ -45,27 +35,19 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Customer_ID")
->>>>>>> Stashed changes
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Region_ID")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-=======
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.HasIndex("Customer_ID");
 
                     b.HasIndex("Region_ID");
 
-<<<<<<< Updated upstream
-                    b.ToTable("Address_Book");
-=======
                     b.ToTable("AddressBooks");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.ApplicationUser", b =>
@@ -137,19 +119,6 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Available_Delivery_Area", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("Branch_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Region_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Branch_ID", "Region_ID");
-
-                    b.HasIndex("Region_ID");
-
-                    b.ToTable("AvailableDeliveryAreas");
-=======
                     b.Property<int>("BranchId")
                         .HasColumnType("int");
 
@@ -161,24 +130,15 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("RegionId");
 
                     b.ToTable("Available_Delivery_Area");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("Branch_ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Branch_ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<DateTime>("Close_Hour")
                         .HasColumnType("datetime2");
@@ -198,33 +158,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int>("Region_ID")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
-                    b.Property<int>("Resturant_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Branch_ID");
-
-                    b.HasIndex("Region_ID");
-
-                    b.HasIndex("Resturant_ID");
-
-                    b.ToTable("Branch");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Branch_Reservation", b =>
-                {
-                    b.Property<int>("Branch_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Reservation_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Branch_ID", "Reservation_ID");
-
-                    b.HasIndex("Reservation_ID");
-
-                    b.ToTable("Branch_Reservation");
-=======
                     b.Property<int?>("ReservationId")
                         .HasColumnType("int");
 
@@ -240,24 +173,15 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("Resturant_ID");
 
                     b.ToTable("Branches");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Category", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Category_image")
                         .IsRequired()
@@ -274,67 +198,37 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.HasIndex("Menu_ID");
-
-                    b.ToTable("Category");
-=======
                     b.HasKey("Id");
 
                     b.HasIndex("Menu_ID");
 
                     b.ToTable("Categories");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.City", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.ToTable("City");
-=======
                     b.HasKey("Id");
 
                     b.ToTable("Cities");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Dish", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Dish_image")
                         .IsRequired()
@@ -344,32 +238,18 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.ToTable("Dish");
-=======
                     b.HasKey("Id");
 
                     b.ToTable("Dishes");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.District", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<int?>("City_ID")
                         .HasColumnType("int");
@@ -378,36 +258,20 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.HasIndex("City_ID");
-
-                    b.ToTable("District");
-=======
                     b.HasKey("Id");
 
                     b.HasIndex("City_ID");
 
                     b.ToTable("Districts");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Extra", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<int?>("Item_ID")
                         .HasColumnType("int");
@@ -416,11 +280,7 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-=======
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.HasIndex("Item_ID");
 
@@ -429,19 +289,11 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("Item_ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Item_ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -460,24 +312,13 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int>("Likes")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
-                    b.Property<int?>("MenuID")
-=======
                     b.Property<int?>("MenuId")
->>>>>>> Stashed changes
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("Item_ID");
-
-                    b.HasIndex("MenuID");
-
-                    b.ToTable("Item");
-=======
                     b.Property<int?>("OfferId")
                         .HasColumnType("int");
 
@@ -488,83 +329,36 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("OfferId");
 
                     b.ToTable("Items");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item_Size", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("ItemId")
-                        .HasColumnType("int");
->>>>>>> Stashed changes
 
                     b.Property<int>("Size")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.ToTable("Item_Size");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Items_in_Offer", b =>
-                {
-                    b.Property<int>("Offer_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Item_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Offer_ID", "Item_ID");
-
-                    b.HasIndex("Item_ID");
-
-                    b.ToTable("Items_in_Offer");
-=======
                     b.HasKey("Id");
 
-                    b.HasIndex("ItemId");
-
                     b.ToTable("ItemSizes");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Menu", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<int?>("Resturant_ID")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-=======
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.ToTable("Menu");
                 });
@@ -592,59 +386,33 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("Item_Size_ID");
 
-<<<<<<< Updated upstream
-                    b.ToTable("Menu_Item_Size");
-=======
                     b.ToTable("MenuItemSizes");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Mood", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.ToTable("Mood");
-=======
                     b.HasKey("Id");
 
                     b.ToTable("Moods");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Offer", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -661,36 +429,20 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.HasIndex("Menu_ID");
-
-                    b.ToTable("Offer");
-=======
                     b.HasKey("Id");
 
                     b.HasIndex("Menu_ID");
 
                     b.ToTable("Offers");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Order", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<DateTime>("Arrival_Time")
                         .HasColumnType("datetime2");
@@ -711,38 +463,22 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<decimal>("Total_Price")
                         .HasColumnType("decimal(18,2)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-=======
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.HasIndex("Customer_ID");
 
                     b.HasIndex("Item_ID");
 
-<<<<<<< Updated upstream
-                    b.ToTable("Order");
-=======
                     b.ToTable("Orders");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<int?>("District_ID")
                         .HasColumnType("int");
@@ -751,36 +487,20 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.HasIndex("District_ID");
-
-                    b.ToTable("Region");
-=======
                     b.HasKey("Id");
 
                     b.HasIndex("District_ID");
 
                     b.ToTable("Regions");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Reservation", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Customer_ID")
                         .IsRequired()
@@ -792,36 +512,20 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<DateTime>("Start_Time")
                         .HasColumnType("datetime2");
 
-<<<<<<< Updated upstream
-                    b.HasKey("ID");
-
-                    b.HasIndex("Customer_ID");
-
-                    b.ToTable("Reservation");
-=======
                     b.HasKey("Id");
 
                     b.HasIndex("Customer_ID");
 
                     b.ToTable("Reservations");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Resturant", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Cover_URL")
                         .IsRequired()
@@ -842,16 +546,10 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Vendor_ID")
-<<<<<<< Updated upstream
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("ID");
-=======
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.HasIndex("Menu_ID")
                         .IsUnique()
@@ -859,58 +557,16 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("Vendor_ID");
 
-<<<<<<< Updated upstream
-                    b.ToTable("Resturant");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Resturant_Dish", b =>
-                {
-                    b.Property<int>("Resturant_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Dish_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Resturant_ID", "Dish_ID");
-
-                    b.HasIndex("Dish_ID");
-
-                    b.ToTable("Resturant_Dish");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Resturant_Mood", b =>
-                {
-                    b.Property<int>("Resturant_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Mood_ID")
-                        .HasColumnType("int");
-
-                    b.HasKey("Resturant_ID", "Mood_ID");
-
-                    b.HasIndex("Mood_ID");
-
-                    b.ToTable("Resturant_Mood");
-=======
                     b.ToTable("Resturants");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Review", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-=======
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
->>>>>>> Stashed changes
 
                     b.Property<string>("Comment")
                         .IsRequired()
@@ -926,25 +582,15 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-<<<<<<< Updated upstream
                     b.Property<int?>("Resturant_ID")
                         .HasColumnType("int");
 
-                    b.HasKey("ID");
-=======
-                    b.Property<int>("Resturant_ID")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
->>>>>>> Stashed changes
 
                     b.HasIndex("Customer_ID");
 
                     b.HasIndex("Resturant_ID");
 
-<<<<<<< Updated upstream
-                    b.ToTable("Review");
-=======
                     b.ToTable("Reviews");
                 });
 
@@ -961,7 +607,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("resturantDishesId");
 
                     b.ToTable("DishResturant");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -1116,10 +761,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasBaseType("Akalaat.DAL.Models.ApplicationUser");
 
-                    b.Property<string>("Fname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.ToTable("Admin");
                 });
 
@@ -1151,19 +792,12 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasOne("Akalaat.DAL.Models.Customer", "Customer")
                         .WithMany()
-<<<<<<< Updated upstream
                         .HasForeignKey("Customer_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Akalaat.DAL.Models.Region", "Region")
-                        .WithMany("address_Books")
-=======
-                        .HasForeignKey("Customer_ID");
-
-                    b.HasOne("Akalaat.DAL.Models.Region", "Region")
                         .WithMany("AddressBooks")
->>>>>>> Stashed changes
                         .HasForeignKey("Region_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1176,24 +810,14 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Available_Delivery_Area", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Branch", "Branch")
-<<<<<<< Updated upstream
-                        .WithMany("delivery_Areas")
-                        .HasForeignKey("Branch_ID")
-=======
                         .WithMany()
                         .HasForeignKey("BranchId")
->>>>>>> Stashed changes
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Akalaat.DAL.Models.Region", "Region")
-<<<<<<< Updated upstream
-                        .WithMany("delivery_Areas")
-                        .HasForeignKey("Region_ID")
-=======
                         .WithMany()
                         .HasForeignKey("RegionId")
->>>>>>> Stashed changes
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1205,26 +829,17 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Region", "Region")
-<<<<<<< Updated upstream
-                        .WithMany("branches")
-=======
                         .WithMany("Branches")
->>>>>>> Stashed changes
                         .HasForeignKey("Region_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-<<<<<<< Updated upstream
-                    b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
-                        .WithMany("branches")
-=======
                     b.HasOne("Akalaat.DAL.Models.Reservation", null)
                         .WithMany("BranchReservations")
                         .HasForeignKey("ReservationId");
 
                     b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
                         .WithMany("Branches")
->>>>>>> Stashed changes
                         .HasForeignKey("Resturant_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1234,28 +849,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Resturant");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("Akalaat.DAL.Models.Branch_Reservation", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Branch", "Branch")
-                        .WithMany("branch_Reservations")
-                        .HasForeignKey("Branch_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.Reservation", "Reservation")
-                        .WithMany("branch_Reservations")
-                        .HasForeignKey("Reservation_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Branch");
-
-                    b.Navigation("Reservation");
-                });
-
-=======
->>>>>>> Stashed changes
             modelBuilder.Entity("Akalaat.DAL.Models.Category", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Menu", "Menu")
@@ -1268,7 +861,7 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.District", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.City", "City")
-                        .WithMany("districts")
+                        .WithMany("Districts")
                         .HasForeignKey("City_ID");
 
                     b.Navigation("City");
@@ -1287,28 +880,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasOne("Akalaat.DAL.Models.Menu", null)
                         .WithMany("items")
-<<<<<<< Updated upstream
-                        .HasForeignKey("MenuID");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Items_in_Offer", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany("items_In_Offers")
-                        .HasForeignKey("Item_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.Offer", "Offer")
-                        .WithMany("items_In_Offers")
-                        .HasForeignKey("Offer_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
-
-                    b.Navigation("Offer");
-=======
                         .HasForeignKey("MenuId");
 
                     b.HasOne("Akalaat.DAL.Models.Offer", null)
@@ -1316,22 +887,10 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasForeignKey("OfferId");
                 });
 
-            modelBuilder.Entity("Akalaat.DAL.Models.Item_Size", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Item", null)
-                        .WithMany("menu_Item_Sizes")
-                        .HasForeignKey("ItemId");
->>>>>>> Stashed changes
-                });
-
             modelBuilder.Entity("Akalaat.DAL.Models.Menu_Item_Size", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Item", "Item")
-<<<<<<< Updated upstream
                         .WithMany("menu_Item_Sizes")
-=======
-                        .WithMany()
->>>>>>> Stashed changes
                         .HasForeignKey("Item_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1403,60 +962,15 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasOne("Akalaat.DAL.Models.Vendor", "Vendor")
                         .WithMany()
-<<<<<<< Updated upstream
                         .HasForeignKey("Vendor_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-=======
-                        .HasForeignKey("Vendor_ID");
->>>>>>> Stashed changes
 
                     b.Navigation("Menu");
 
                     b.Navigation("Vendor");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("Akalaat.DAL.Models.Resturant_Dish", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Dish", "Dish")
-                        .WithMany("resturant_Dishes")
-                        .HasForeignKey("Dish_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
-                        .WithMany("resturant_Dishes")
-                        .HasForeignKey("Resturant_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Dish");
-
-                    b.Navigation("Resturant");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Resturant_Mood", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Mood", "Mood")
-                        .WithMany("resturant_Moods")
-                        .HasForeignKey("Mood_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
-                        .WithMany("resturant_Moods")
-                        .HasForeignKey("Resturant_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Mood");
-
-                    b.Navigation("Resturant");
-                });
-
-=======
->>>>>>> Stashed changes
             modelBuilder.Entity("Akalaat.DAL.Models.Review", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Customer", "Customer")
@@ -1467,21 +981,13 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
                         .WithMany("reviews")
-<<<<<<< Updated upstream
                         .HasForeignKey("Resturant_ID");
-=======
-                        .HasForeignKey("Resturant_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
->>>>>>> Stashed changes
 
                     b.Navigation("Customer");
 
                     b.Navigation("Resturant");
                 });
 
-<<<<<<< Updated upstream
-=======
             modelBuilder.Entity("DishResturant", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Dish", null)
@@ -1497,7 +1003,6 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired();
                 });
 
->>>>>>> Stashed changes
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -1603,29 +1108,11 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Resturant");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
-                {
-                    b.Navigation("branch_Reservations");
-
-                    b.Navigation("delivery_Areas");
-                });
-
-=======
->>>>>>> Stashed changes
             modelBuilder.Entity("Akalaat.DAL.Models.City", b =>
                 {
-                    b.Navigation("districts");
+                    b.Navigation("Districts");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("Akalaat.DAL.Models.Dish", b =>
-                {
-                    b.Navigation("resturant_Dishes");
-                });
-
-=======
->>>>>>> Stashed changes
             modelBuilder.Entity("Akalaat.DAL.Models.District", b =>
                 {
                     b.Navigation("regions");
@@ -1635,11 +1122,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.Navigation("extras");
 
-<<<<<<< Updated upstream
-                    b.Navigation("items_In_Offers");
-
-=======
->>>>>>> Stashed changes
                     b.Navigation("menu_Item_Sizes");
                 });
 
@@ -1660,57 +1142,26 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("offers");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("Akalaat.DAL.Models.Mood", b =>
-                {
-                    b.Navigation("resturant_Moods");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Offer", b =>
-                {
-                    b.Navigation("items_In_Offers");
-=======
             modelBuilder.Entity("Akalaat.DAL.Models.Offer", b =>
                 {
                     b.Navigation("Items");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Navigation("address_Books");
-
-                    b.Navigation("branches");
-
-                    b.Navigation("delivery_Areas");
-=======
                     b.Navigation("AddressBooks");
 
                     b.Navigation("Branches");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Reservation", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Navigation("branch_Reservations");
-=======
                     b.Navigation("BranchReservations");
->>>>>>> Stashed changes
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Resturant", b =>
                 {
-<<<<<<< Updated upstream
-                    b.Navigation("branches");
-
-                    b.Navigation("resturant_Dishes");
-
-                    b.Navigation("resturant_Moods");
-=======
                     b.Navigation("Branches");
->>>>>>> Stashed changes
 
                     b.Navigation("reviews");
                 });

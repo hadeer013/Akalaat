@@ -10,7 +10,7 @@ namespace Akalaat.DAL.Models
     public class City: BaseEntity
     {
         public string Name { get; set; }
-        public List<District> districts { get; set; } = new List<District>();
+        public ICollection<District> Districts { get; set; } = new HashSet<District>();
 
     }
 }

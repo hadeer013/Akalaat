@@ -25,17 +25,13 @@ namespace Akalaat.DAL.Models
         public int Rating { get; set; }
 
         [ForeignKey("Vendor")]
-<<<<<<< Updated upstream
         public string Vendor_ID { get; set; }
-=======
-        public string? Vendor_ID { get; set; }
->>>>>>> Stashed changes
         public virtual Vendor Vendor { get; set; }
 
         [ForeignKey("Menu")]
         public int? Menu_ID { get; set; }
         public virtual Menu Menu { get; set; }
-        public ICollection<Review> reviews { get; set; } = new List<Review>();
+        public ICollection<Review> reviews { get; set; } = new HashSet<Review>();
         public ICollection<Dish> Dishes { get; set; }=new HashSet<Dish>();
         public ICollection<Mood> Moods { get; set; }=new HashSet<Mood>();
         public ICollection<Branch> Branches { get; set; } = new HashSet<Branch>();

@@ -15,11 +15,9 @@ namespace Akalaat.DAL.Models
         public string AddressDetails {  get; set; }
         
         [ForeignKey("Customer")]
-<<<<<<< Updated upstream
+
         public string Customer_ID { get; set; }
-=======
-        public string? Customer_ID { get; set; }
->>>>>>> Stashed changes
+
         public virtual Customer Customer { get; set; }
         [ForeignKey("Region")]
         public int Region_ID { get; set; }

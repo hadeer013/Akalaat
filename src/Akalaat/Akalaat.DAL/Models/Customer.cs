@@ -10,9 +10,9 @@ namespace Akalaat.DAL.Models
     [Table("Customer")]
     public class Customer : ApplicationUser
     {
-        public List<Review> reviews { get; set; } = new List<Review>();
-        public List<Order> orders { get; set; } = new List<Order>();
-        public List<Reservation> reservations { get; set; } = new List<Reservation>();
+        public ICollection<Review> reviews { get; set; } = new HashSet<Review>();
+        public ICollection<Order> orders { get; set; } = new HashSet<Order>();
+        public ICollection<Reservation> reservations { get; set; } = new HashSet<Reservation>();
 
         [ForeignKey("Address_Book")]
         public int? Address_Book_ID { get; set; }

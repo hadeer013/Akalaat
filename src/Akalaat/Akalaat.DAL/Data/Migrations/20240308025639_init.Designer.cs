@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Akalaat.DAL.Data.Migrations
 {
     [DbContext(typeof(AkalaatDbContext))]
-    [Migration("20240308023036_deleteFnameFromAppUser")]
-    partial class deleteFnameFromAppUser
+    [Migration("20240308025639_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,7 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Customer_ID")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Region_ID")
@@ -341,15 +342,10 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ItemId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Size")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ItemId");
 
                     b.ToTable("ItemSizes");
                 });
@@ -553,6 +549,7 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Vendor_ID")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -588,7 +585,7 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.Property<int>("Resturant_ID")
+                    b.Property<int?>("Resturant_ID")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -767,10 +764,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasBaseType("Akalaat.DAL.Models.ApplicationUser");
 
-                    b.Property<string>("Fname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.ToTable("Admin");
                 });
 
@@ -802,7 +795,9 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasOne("Akalaat.DAL.Models.Customer", "Customer")
                         .WithMany()
-                        .HasForeignKey("Customer_ID");
+                        .HasForeignKey("Customer_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Akalaat.DAL.Models.Region", "Region")
                         .WithMany("AddressBooks")
@@ -869,7 +864,7 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.District", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.City", "City")
-                        .WithMany("districts")
+                        .WithMany("Districts")
                         .HasForeignKey("City_ID");
 
                     b.Navigation("City");
@@ -895,17 +890,10 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasForeignKey("OfferId");
                 });
 
-            modelBuilder.Entity("Akalaat.DAL.Models.Item_Size", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Item", null)
-                        .WithMany("menu_Item_Sizes")
-                        .HasForeignKey("ItemId");
-                });
-
             modelBuilder.Entity("Akalaat.DAL.Models.Menu_Item_Size", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany()
+                        .WithMany("menu_Item_Sizes")
                         .HasForeignKey("Item_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -977,7 +965,9 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasOne("Akalaat.DAL.Models.Vendor", "Vendor")
                         .WithMany()
-                        .HasForeignKey("Vendor_ID");
+                        .HasForeignKey("Vendor_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Menu");
 
@@ -994,9 +984,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasOne("Akalaat.DAL.Models.Resturant", "Resturant")
                         .WithMany("reviews")
-                        .HasForeignKey("Resturant_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Resturant_ID");
 
                     b.Navigation("Customer");
 
@@ -1125,7 +1113,7 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.City", b =>
                 {
-                    b.Navigation("districts");
+                    b.Navigation("Districts");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.District", b =>
