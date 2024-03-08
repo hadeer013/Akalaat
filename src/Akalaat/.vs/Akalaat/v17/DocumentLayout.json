@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat.dal\\data\\akalaatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\data\\akalaatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\data\\akalaatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\models\\available_delivery_area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat.dal\\models\\available_delivery_area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\available_delivery_area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -126,8 +126,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Mood.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAASwA8AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:09:44.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:09:44.425Z"
             },
             {
               "$type": "Document",
@@ -139,8 +138,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Menu.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADgvw0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:09:25.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:09:25.527Z"
             },
             {
               "$type": "Document",
@@ -152,8 +150,7 @@
               "RelativeToolTip": "Akalaat\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T18:16:05.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T18:16:05.34Z"
             },
             {
               "$type": "Document",
@@ -165,8 +162,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Vendor.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAcwAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:10:58.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:10:58.033Z"
             },
             {
               "$type": "Document",
@@ -178,8 +174,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Resturant.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAwwCMAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T20:59:52.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T20:59:52.459Z"
             },
             {
               "$type": "Document",
@@ -191,8 +186,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\ApplicationUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T18:19:35.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T18:19:35.075Z"
             },
             {
               "$type": "Document",
@@ -204,8 +198,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Offer.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:09:52.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:09:52.064Z"
             },
             {
               "$type": "Document",
@@ -217,8 +210,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Branch.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAIwAwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:05:06.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:05:06.468Z"
             },
             {
               "$type": "Document",
@@ -228,7 +220,7 @@
               "RelativeDocumentMoniker": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
               "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\AkalaatDbContext.cs",
               "RelativeToolTip": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAADwvxgAAAAxAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAMwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T18:17:13.604Z",
               "EditorCaption": ""
@@ -243,8 +235,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:14:56.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:14:56.179Z"
             },
             {
               "$type": "Document",
@@ -256,8 +247,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Order.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAADwvwkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T20:58:53.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T20:58:53.1Z"
             },
             {
               "$type": "Document",
@@ -269,8 +259,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Data\\DataSeeding.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAWwCMAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:18:32.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:18:32.412Z"
             },
             {
               "$type": "Document",
@@ -282,8 +271,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Region.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAYwA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:10:08.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:10:08.344Z"
             },
             {
               "$type": "Document",
@@ -295,8 +283,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Available_Delivery_Area.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T01:57:41.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T01:57:41.777Z"
             },
             {
               "$type": "Document",
@@ -308,8 +295,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Item_Size.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:09:11.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:09:11.63Z"
             },
             {
               "$type": "Document",
@@ -321,8 +307,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Item.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAADwvwsAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:09:04.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:09:04.147Z"
             },
             {
               "$type": "Document",
@@ -334,8 +319,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Extra.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:08:54.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:08:54.25Z"
             },
             {
               "$type": "Document",
@@ -347,8 +331,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\District.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:08:44.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:08:44.99Z"
             },
             {
               "$type": "Document",
@@ -360,8 +343,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Dish.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:08:36.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:08:36.07Z"
             },
             {
               "$type": "Document",
@@ -373,8 +355,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\City.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:08:18.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:08:18.826Z"
             },
             {
               "$type": "Document",
@@ -386,8 +367,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Category.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAawAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:05:27.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:05:27.422Z"
             },
             {
               "$type": "Document",
@@ -399,8 +379,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Data\\Migrations\\20240308011606_updateTablesModel.cs",
               "ViewState": "AQIAAMYAAAAAAAAAAAAMwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T01:16:07.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T01:16:07.151Z"
             },
             {
               "$type": "Document",
@@ -412,8 +391,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Admin.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAADwvwsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:14:45.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T21:14:45.381Z"
             },
             {
               "$type": "Document",
@@ -425,8 +403,7 @@
               "RelativeToolTip": "Akalaat.DAL\\Models\\Address_Book.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAowA4AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T20:56:51.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T20:56:51.154Z"
             },
             {
               "$type": "Document",
