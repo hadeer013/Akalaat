@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -23,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,11 +35,11 @@
       "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\views\\account\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat\\views\\account\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\account\\changeemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Customer.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Customer.cs",
@@ -79,7 +83,19 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T21:14:56.179Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ISpecification.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\ISpecification.cs",
+              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\ISpecification.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\ISpecification.cs",
+              "RelativeToolTip": "Akalaat.BLL\\Specifications\\ISpecification.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAADgvw0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T18:28:38.92Z",
               "EditorCaption": ""
             },
             {
@@ -88,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Akalaat\\Views\\Account\\Login.cshtml",
@@ -101,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Account\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "Akalaat\\Views\\Account\\ChangePassword.cshtml",
@@ -109,12 +125,11 @@
               "RelativeToolTip": "Akalaat\\Views\\Account\\ChangePassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T04:08:43.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T04:08:43.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Akalaat\\Controllers\\AccountController.cs",
@@ -122,12 +137,11 @@
               "RelativeToolTip": "Akalaat\\Controllers\\AccountController.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAAAGgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T03:28:31.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T03:28:31.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
@@ -135,12 +149,11 @@
               "RelativeToolTip": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T03:02:15.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T03:02:15.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
@@ -152,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Order.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Order.cs",
@@ -164,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Region.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Region.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Region.cs",
@@ -176,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Resturant.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Resturant.cs",
@@ -188,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
               "RelativeDocumentMoniker": "Akalaat\\Program.cs",
@@ -196,12 +209,11 @@
               "RelativeToolTip": "Akalaat\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T03:02:46.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T03:02:46.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AkalaatDbContext.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\AkalaatDbContext.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
@@ -209,12 +221,11 @@
               "RelativeToolTip": "Akalaat.DAL\\Data\\AkalaatDbContext.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAUwBAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T18:17:13.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T18:17:13.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ChangeEmail.cshtml",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Account\\ChangeEmail.cshtml",
               "RelativeDocumentMoniker": "Akalaat\\Views\\Account\\ChangeEmail.cshtml",
@@ -222,12 +233,11 @@
               "RelativeToolTip": "Akalaat\\Views\\Account\\ChangeEmail.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T03:50:08.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T03:50:08.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ChangePasswordViewModel.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\ChangePasswordViewModel.cs",
               "RelativeDocumentMoniker": "Akalaat\\ViewModels\\ChangePasswordViewModel.cs",
@@ -235,12 +245,11 @@
               "RelativeToolTip": "Akalaat\\ViewModels\\ChangePasswordViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T03:57:55.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T03:57:55.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Vendor.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Vendor.cs",
               "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Vendor.cs",
