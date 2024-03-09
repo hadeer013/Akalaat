@@ -12,7 +12,7 @@ namespace Akalaat.DAL.Models
     {
         public string Name { get; set; }
         [ForeignKey("City")]
-        public int? City_ID { get; set; }
+        public int City_ID { get; set; }
         public virtual City City { get; set; }
         public ICollection<Region> regions { get; set; } = new HashSet<Region>();
 

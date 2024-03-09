@@ -5,7 +5,7 @@
 }
 
 <h1>@Model.Name Details</h1>
-<a class="btn btn-primary" asp-action="Create" asp-controller="District">Add District</a>
+<a class="btn btn-primary" asp-action="Create" asp-route-id="@Model.Id" asp-controller="District">Add District</a>
 
 <table class="table">
 	<thead>
@@ -26,8 +26,8 @@
 					<td>
 						@Html.DisplayFor(modelItem => item.Name)
 					</td>
-					<td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
-					<td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+					<td><a asp-action="Edit" asp-controller="District"  asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
+					<td><a asp-action="Delete" asp-controller="District" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
 				</tr>
 			}
 		}
