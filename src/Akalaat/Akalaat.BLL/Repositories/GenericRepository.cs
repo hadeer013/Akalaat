@@ -1,4 +1,5 @@
 ﻿using Akalaat.BLL.Interfaces;
+using Akalaat.BLL.Specifications;
 using Akalaat.DAL.Data;
 using Akalaat.DAL.Models;
 using Microsoft.EntityFrameworkCore;
@@ -19,11 +20,13 @@ namespace Akalaat.BLL.Repositories
             this.context = context;
         }
 
-        public async Task<int> Add(T type)
+        public async Task<T> Add(T type)
         {
-            await context.Set<T>().AddAsync(type);
-            return await context.SaveChangesAsync();
-        }
+            var entity = await context.Set<T>().AddAsync(type);
+            await context.SaveChangesAsync();
+            return entity.Entity;
+
+		}
 
         public async Task<int> Delete(int Id)
         {
@@ -45,6 +48,27 @@ namespace Akalaat.BLL.Repositories
         {
             context.Set<T>().Update(type);
             return await context.SaveChangesAsync();
+        }
+
+
+
+
+        /// Spec Pattern \\\
+
+        private IQueryable<T> ApplySpecification(ISpecification<T> spec)
+        {
+            return SpecificationEvaluator<T>.BuildQuery(context.Set<T>(), spec);
+        }
+
+        public async Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec)
+        {
+            return await ApplySpecification(spec).ToListAsync();
+        }
+
+
+        public async Task<T> GetByIdWithSpec(ISpecification<T> spec)
+        {
+            return await ApplySpecification(spec).FirstOrDefaultAsync();
         }
     }
 }

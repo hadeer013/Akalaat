@@ -1,0 +1,40 @@
+﻿@model Akalaat.DAL.Models.City
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Name Details</h1>
+<a class="btn btn-primary" asp-action="Create" asp-controller="District">Add District</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Districts in @Model.Name
+			</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if(Model.Districts.Count>0)
+		{
+			@foreach (var item in Model.Districts)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
+					<td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+				</tr>
+			}
+		}
+		else
+		{
+			<h3>No Districts in @Model.Name yet</h3>
+		}
+	</tbody>
+</table>
+
