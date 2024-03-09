@@ -1,5 +1,6 @@
 ﻿using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
+using Akalaat.BLL.Specifications.EntitySpecs.DistrictSpec;
 using Akalaat.DAL.Models;
 using Akalaat.Models;
 using Akalaat.ViewModels;
@@ -19,7 +20,18 @@ namespace Akalaat.Controllers
 			this.districtRepo = districtRepo;
 		}
 
-		public async Task<ActionResult> Create(int id) //cityId i want to add this district to
+		public async Task<IActionResult> Details(int id)
+		{
+			var districtSpes = new DistrictWithRegionSpecification(id);
+			var district = await districtRepo.GetByIdWithSpec(districtSpes);
+
+            if (district == null) return BadRequest();
+
+			return View(district);
+        }
+
+
+        public async Task<IActionResult> Create(int id) //cityId i want to add this district to
 		{
 			var city=await cityRepo.GetByIdAsync(id);
 			if (city == null) return BadRequest();
@@ -31,7 +43,7 @@ namespace Akalaat.Controllers
 
 
 		[HttpPost]
-		public async Task<ActionResult> Create(DistrictVM districtVM)
+		public async Task<IActionResult> Create(DistrictVM districtVM)
 		{
 			if (ModelState.IsValid)
 			{

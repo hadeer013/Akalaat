@@ -15,6 +15,7 @@
 			</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
+			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -26,6 +27,7 @@
 					<td>
 						@Html.DisplayFor(modelItem => item.Name)
 					</td>
+					<td><a asp-action="Details" asp-controller="District" asp-route-id="@item.Id" class="btn btn-primary">Details</a></td>
 					<td><a asp-action="Edit" asp-controller="District"  asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
 					<td><a asp-action="Delete" asp-controller="District" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
 				</tr>

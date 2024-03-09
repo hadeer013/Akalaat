@@ -12,7 +12,7 @@ namespace Akalaat.DAL.Models
         public string Name { get; set; }
 
         [ForeignKey("District")]
-        public int? District_ID { get; set; }
+        public int District_ID { get; set; }
         public virtual District District { get; set; }
         public ICollection<Branch> Branches { get; set; } = new HashSet<Branch>(); //branches that exist in this region(Address)
         public ICollection<Branch> BranchesDelivery { get; set; } = new HashSet<Branch>(); //These Branches can deliver to this region

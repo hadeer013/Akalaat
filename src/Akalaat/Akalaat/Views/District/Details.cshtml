@@ -1,0 +1,39 @@
+﻿@model Akalaat.DAL.Models.District
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Name Details</h1>
+<a class="btn btn-primary" asp-action="Create" asp-route-id="@Model.Id" asp-controller="Region">Add Region</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Regions in @Model.Name
+			</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (Model.regions.Count > 0)
+		{
+			@foreach (var item in Model.regions)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td><a asp-action="Edit" asp-controller="Region" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
+					<td><a asp-action="Delete" asp-controller="Region" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+				</tr>
+			}
+		}
+		else
+		{
+			<h3>No Regions in @Model.Name yet</h3>
+		}
+	</tbody>
+</table>
