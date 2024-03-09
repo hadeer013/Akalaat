@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Akalaat.DAL.Data.Migrations
 {
     [DbContext(typeof(AkalaatDbContext))]
-    [Migration("20240308025639_init")]
-    partial class init
+    [Migration("20240309095016_intial")]
+    partial class intial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

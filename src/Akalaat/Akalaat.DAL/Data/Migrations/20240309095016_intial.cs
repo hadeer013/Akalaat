@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Akalaat.DAL.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class intial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -298,7 +298,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Menu_ID,
                         principalTable: "Menu",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -393,7 +393,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Item_ID,
                         principalTable: "Items",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -414,7 +414,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Region_ID,
                         principalTable: "Regions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -437,7 +437,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Id,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -461,7 +461,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Customer_ID,
                         principalTable: "Customer",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_Orders_Items_Item_ID",
                         column: x => x.Item_ID,
@@ -487,7 +487,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Customer_ID,
                         principalTable: "Customer",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -505,7 +505,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.RegionId,
                         principalTable: "Regions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -531,7 +531,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.Region_ID,
                         principalTable: "Regions",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Branches_Reservations_ReservationId",
                         column: x => x.ReservationId,
@@ -554,7 +554,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.DishesId,
                         principalTable: "Dishes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -572,7 +572,7 @@ namespace Akalaat.DAL.Data.Migrations
                         column: x => x.MoodsId,
                         principalTable: "Moods",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
