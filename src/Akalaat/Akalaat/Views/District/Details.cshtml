@@ -1,12 +1,24 @@
-﻿@model Akalaat.DAL.Models.District
+﻿@using Akalaat.DAL.Models
+@model District
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
+	var AllRegions = (List<Region>)ViewBag.Regions;
 }
 
 <h1>@Model.Name Details</h1>
-<a class="btn btn-primary" asp-action="Create" asp-route-id="@Model.Id" asp-controller="Region">Add Region</a>
+<a class="btn btn-primary" asp-action="Create" asp-route-id="@Model.Name" asp-controller="Region">Add Region</a>
 
+<form class="my-3" asp-action="Details" asp-controller="District" asp-route-id="@Model.Id">
+	<div class="row">
+		<div class="col-sm-8">
+			<input placeholder="Search By Region Name" name="RegionName" class="form-control" />
+		</div>
+		<div class="col-sm-4">
+			<input type="submit" value="Search" class="btn btn-success btn-block" />
+		</div>
+	</div>
+</form>
 <table class="table">
 	<thead>
 		<tr>
@@ -18,9 +30,9 @@
 		</tr>
 	</thead>
 	<tbody>
-		@if (Model.regions.Count > 0)
+		@if (AllRegions.Count() > 0)
 		{
-			@foreach (var item in Model.regions)
+			@foreach (var item in AllRegions)
 			{
 				<tr>
 					<td>

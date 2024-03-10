@@ -1,5 +1,6 @@
 ﻿using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Specifications.EntitySpecs.CitySpec;
+using Akalaat.BLL.Specifications.EntitySpecs.DistrictSpec;
 using Akalaat.DAL.Models;
 using Akalaat.Models;
 using Akalaat.ViewModels;
@@ -11,28 +12,32 @@ namespace Akalaat.Controllers
 	public class CityController : Controller
 	{
 		private readonly IGenericRepository<City> genericRepository;
+		private readonly IGenericRepository<District> districtRepo;
 
-		public CityController(IGenericRepository<City> genericRepository)
+		public CityController(IGenericRepository<City> genericRepository, IGenericRepository<District> districtRepo)
 		{
 			this.genericRepository = genericRepository;
+			this.districtRepo = districtRepo;
 		}
 
-		public async Task<ActionResult> Index()
+		public async Task<ActionResult> Index(string CityName = "")
 		{
-			return View(await genericRepository.GetAllAsync());
+			var CitySpec = new CityWithDistrictSpecification(CityName);
+			var cities = await genericRepository.GetAllWithSpec(CitySpec);
+			return View(cities);
 		}
 
 
-		public async Task<ActionResult> Details(int id)
+		public async Task<ActionResult> Details(int id, string DistrictName = "")
 		{
-			var CitySpec = new CityWithDistrictSpecification(id);
-			var city = await genericRepository.GetByIdWithSpec(CitySpec);
+			var D = await genericRepository.GetByIdAsync(id);
+			if (D == null) return BadRequest();
 
-			if (city != null)
-				return View(city);
+			var CAllDistrictSpec = new DistrictWithCitySpecification(id, DistrictName);
+			var Districts = await districtRepo.GetAllWithSpec(CAllDistrictSpec);
 
-			return View("Error", new ErrorViewModel() { Message = "No such city found.", RequestId = "1001" });
-
+			ViewBag.Districts = Districts;
+			return View(D);
 		}
 
 
@@ -68,7 +73,7 @@ namespace Akalaat.Controllers
 			var city = await genericRepository.GetByIdAsync(id);
 
 			if (city != null)
-				return View(new AddCityVM { Name=city.Name,id=city.Id});
+				return View(new AddCityVM { Name = city.Name, id = city.Id });
 
 			return View("Error", new ErrorViewModel() { Message = "No such city found.", RequestId = "1001" });
 
@@ -77,18 +82,18 @@ namespace Akalaat.Controllers
 
 
 		[HttpPost]
-		public async Task<ActionResult> Edit(int id,AddCityVM CityVM)
+		public async Task<ActionResult> Edit(int id, AddCityVM CityVM)
 		{
 			if (id != CityVM.id) return BadRequest();
 			if (ModelState.IsValid)
 			{
 				try
 				{
-					var city=await genericRepository.GetByIdAsync(CityVM.id);
+					var city = await genericRepository.GetByIdAsync(CityVM.id);
 					city.Name = CityVM.Name;
 					await genericRepository.Update(city);
 
-					return RedirectToAction(nameof(Details), new {id=city.Id});
+					return RedirectToAction(nameof(Details), new { id = city.Id });
 				}
 				catch
 				{
@@ -107,7 +112,7 @@ namespace Akalaat.Controllers
 				await genericRepository.Delete(id);
 				return RedirectToAction(nameof(Index));
 			}
-				
+
 			return BadRequest();
 		}
 

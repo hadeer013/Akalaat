@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Akalaat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b13471cc90ddcdd78a2716fc3b0e19ae3549a973")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d05a39f9a274160fe5b5752648f9464a4453c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akalaat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akalaat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

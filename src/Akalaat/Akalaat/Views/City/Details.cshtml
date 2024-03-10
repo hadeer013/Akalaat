@@ -1,11 +1,25 @@
-﻿@model Akalaat.DAL.Models.City
+﻿@using Akalaat.DAL.Models
+@model Akalaat.DAL.Models.City
 
 @{
     ViewData["Title"] = "Details";
+    var AllDistricts = (List<District>)ViewBag.Districts;
 }
 
 <h1>@Model.Name Details</h1>
 <a class="btn btn-primary" asp-action="Create" asp-route-id="@Model.Id" asp-controller="District">Add District</a>
+<br /><br />
+
+<form class="my-3" asp-action="Details" asp-controller="City" asp-route-id="@Model.Id">
+	<div class="row">
+		<div class="col-sm-8">
+			<input placeholder="Search By District Name" name="DistrictName" class="form-control" />
+		</div>
+		<div class="col-sm-4">
+			<input type="submit" value="Search" class="btn btn-success btn-block" />
+		</div>
+	</div>
+</form>
 
 <table class="table">
 	<thead>
@@ -19,9 +33,9 @@
 		</tr>
 	</thead>
 	<tbody>
-		@if(Model.Districts.Count>0)
+		@if (AllDistricts.Count > 0)
 		{
-			@foreach (var item in Model.Districts)
+			@foreach (var item in AllDistricts)
 			{
 				<tr>
 					<td>

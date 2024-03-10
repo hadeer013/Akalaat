@@ -1,6 +1,6 @@
 ﻿using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
-using Akalaat.BLL.Specifications.EntitySpecs.DistrictSpec;
+using Akalaat.BLL.Specifications.EntitySpecs.RegionSpec;
 using Akalaat.DAL.Models;
 using Akalaat.Models;
 using Akalaat.ViewModels;
@@ -13,20 +13,29 @@ namespace Akalaat.Controllers
 	{
 		private readonly IGenericRepository<City> cityRepo;
 		private readonly IGenericRepository<District> districtRepo;
+        private readonly IGenericRepository<Region> regionRepo;
 
-		public DistrictController(IGenericRepository<City> cityRepo,IGenericRepository<District> districtRepo)
+        public DistrictController(IGenericRepository<City> cityRepo,IGenericRepository<District> districtRepo,
+			IGenericRepository<Region> regionRepo)
 		{
 			this.cityRepo = cityRepo;
 			this.districtRepo = districtRepo;
-		}
+            this.regionRepo = regionRepo;
+        }
+		
 
-		public async Task<IActionResult> Details(int id)
+		public async Task<IActionResult> Details(int id,string RegionName="")
 		{
-			var districtSpes = new DistrictWithRegionSpecification(id);
-			var district = await districtRepo.GetByIdWithSpec(districtSpes);
+			var district = await districtRepo.GetByIdAsync(id);
+			if (district == null) return BadRequest();
 
-            if (district == null) return BadRequest();
+			var districtSpes = new DistrictWithRegionSpecification(id, RegionName);
+			var AllRegions = await regionRepo.GetAllWithSpec(districtSpes);
 
+            if (AllRegions == null) return BadRequest();
+
+			
+			ViewBag.Regions = AllRegions;
 			return View(district);
         }
 
