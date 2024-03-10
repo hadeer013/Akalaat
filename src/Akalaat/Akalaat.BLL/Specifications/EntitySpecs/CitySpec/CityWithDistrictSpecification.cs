@@ -10,7 +10,7 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.CitySpec
 {
     public class CityWithDistrictSpecification : BaseSpecification<City>
     {
-		//getAll cities which specified name
+		//getAll cities with specified name
 		public CityWithDistrictSpecification(string CityName):base(c=> string.IsNullOrEmpty(CityName) ||
             c.Name.Contains(CityName))
 		{
