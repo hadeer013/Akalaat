@@ -30,3 +30,19 @@ H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat..BC753FFB.Up2Date
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll

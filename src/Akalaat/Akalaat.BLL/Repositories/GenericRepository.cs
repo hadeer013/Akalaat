@@ -6,12 +6,13 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Akalaat.BLL.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly AkalaatDbContext context;
 
@@ -28,7 +29,7 @@ namespace Akalaat.BLL.Repositories
 
 		}
 
-        public async Task<int> Delete(int Id)
+        public async Task<int> Delete<Y>(Y Id)
         {
             context.Set<T>().Remove(context.Set<T>().Find(Id));
             return await context.SaveChangesAsync();
@@ -39,7 +40,7 @@ namespace Akalaat.BLL.Repositories
             return await context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(int Id)
+        public async Task<T> GetByIdAsync<Y>(Y Id)
         {
             return await context.Set<T>().FindAsync(Id);
         }
@@ -69,6 +70,50 @@ namespace Akalaat.BLL.Repositories
         public async Task<T> GetByIdWithSpec(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).FirstOrDefaultAsync();
+        }
+        
+        //helper functions
+        public  async Task  ClearTrackingAsync()
+        {
+            context.ChangeTracker.Clear();
+        }
+        public   async Task  BeginTransactionAsync()
+        {
+            if (context.Database.CurrentTransaction == null)
+            {
+                await context.Database.BeginTransactionAsync();
+            }
+        }
+
+        
+
+        public async Task CommitTransactionAsync()
+        {
+            await context.Database.CurrentTransaction?.CommitAsync();
+        }
+
+        public async Task RollbackTransactionAsync()
+        {
+            await context.Database.CurrentTransaction?.RollbackAsync();
+        }
+        public virtual async  Task<IEnumerable<T>> GetAllIncludingAsync(params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = context.Set<T>();
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return await query.ToListAsync();
+        }
+
+        public virtual async Task<T?> GetByIdIncludingAsync(int id, params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = context.Set<T>();
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return await query.FirstOrDefaultAsync();
         }
     }
 }

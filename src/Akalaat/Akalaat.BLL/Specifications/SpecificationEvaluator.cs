@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Akalaat.BLL.Specifications
 {
-    public class SpecificationEvaluator<T> where T : BaseEntity
+    public class SpecificationEvaluator<T> where T : class
     {
         public static IQueryable<T> BuildQuery(IQueryable<T> InputQuery, ISpecification<T> Spec)
         {

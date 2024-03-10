@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Akalaat.BLL.Specifications
 {
-    public interface ISpecification<T> where T : BaseEntity
+    public interface ISpecification<T> where T : class
     {
         public Expression<Func<T, bool>> Criteria { get; set; }//where
         public List<Expression<Func<T, object>>> Includes { get; set; }//include
