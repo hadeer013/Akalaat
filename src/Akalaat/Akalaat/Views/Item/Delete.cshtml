@@ -1,0 +1,31 @@
+﻿@model Akalaat.ViewModels.ItemViewModel
+
+<h2>Delete Item</h2>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Model.Name</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="card-text">Likes: @Model.Likes</p>
+                <p class="card-text">Description: @Model.Description</p>
+            </div>
+            <div class="col-md-6">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="~/Images/@Model.ImageUrl" alt="Item Image" class="img-fluid" />
+                }
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+

@@ -251,7 +251,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("City_ID")
+                    b.Property<int>("City_ID")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -299,17 +299,17 @@ namespace Akalaat.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Discount")
+                    b.Property<decimal?>("Discount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Image_URL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsOffer")
-                        .HasColumnType("bit");
+                    b.Property<int>("IsOffer")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Likes")
+                    b.Property<int?>("Likes")
                         .HasColumnType("int");
 
                     b.Property<int?>("MenuId")
@@ -480,7 +480,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("District_ID")
+                    b.Property<int>("District_ID")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -862,7 +862,9 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasOne("Akalaat.DAL.Models.City", "City")
                         .WithMany("Districts")
-                        .HasForeignKey("City_ID");
+                        .HasForeignKey("City_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("City");
                 });
@@ -938,7 +940,9 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasOne("Akalaat.DAL.Models.District", "District")
                         .WithMany("regions")
-                        .HasForeignKey("District_ID");
+                        .HasForeignKey("District_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("District");
                 });

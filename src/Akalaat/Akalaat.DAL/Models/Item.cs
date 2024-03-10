@@ -15,19 +15,25 @@ namespace Akalaat.DAL.Models
         [Required]
         public string Name { get; set; }
 
-        public int Likes { get; set; }
+        public int? Likes { get; set; }
 
         public string Description { get; set; }
 
         [Required]
         public string Image_URL { get; set; }
 
-        public decimal Discount { get; set; }
+        public decimal? Discount { get; set; }
 
-        public bool IsOffer { get; set; }
+        public OfferStatus IsOffer { get; set; }
+
         public ICollection<Menu_Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Menu_Item_Size>();
         public ICollection<Extra> extras { get; set; } = new HashSet<Extra>();
 
 
+    }
+    public enum OfferStatus
+    {
+        Regular,
+        Offer
     }
 }
