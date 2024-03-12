@@ -18,7 +18,8 @@ namespace Akalaat.BLL.Specifications
                 query = query.Where(Spec.Criteria);
 
 
-            query = Spec.Includes.Aggregate(query,(current,include)=> current.Include(include));
+            //query = Spec.Includes.Aggregate(query,(current,include)=> current.Include(include));
+            query = Spec.IncludeThenIncludes.Aggregate(query,(current,include)=> include(current));
             //hadeer
             //ramzy
             //alama
