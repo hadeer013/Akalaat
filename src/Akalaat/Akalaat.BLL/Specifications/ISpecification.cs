@@ -12,10 +12,7 @@ namespace Akalaat.BLL.Specifications
     public interface ISpecification<T> where T : class
     {
         public Expression<Func<T, bool>> Criteria { get; set; }//where
-        //public List<Expression<Func<T, object>>> Includes { get; set; }//include
-
-
-
+        public List<Expression<Func<T, object>>> Includes { get; set; }//include
 
         List<Func<IQueryable<T>, IIncludableQueryable<T, object>>> IncludeThenIncludes { get; set; }
 
