@@ -1,5 +1,4 @@
 ﻿using Akalaat.DAL.Models;
-using Akalaat.Models;
 using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -53,37 +52,52 @@ namespace Akalaat.Controllers
             if (string.IsNullOrEmpty(Role)) return View("Error", new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" });
             if (ModelState.IsValid)
             {
-                ApplicationUser userModel = new ApplicationUser();
-                userModel.UserName = newUserVM.UserName;
-                userModel.Email = newUserVM.Email;
+                IdentityResult temp;
+                ApplicationUser user;
+                if(Role=="Customer")
+                {
+                    user = new Customer()
+                    {
+                        UserName = newUserVM.UserName,
+                        Email = newUserVM.Email
+                    };
+                    
+                }
+                else
+                {
+                    user = new Vendor()
+                    {
+                        UserName = newUserVM.UserName,
+                        Email = newUserVM.Email
+                    };
+                }
 
-                
-                var result = await UserManager.CreateAsync(userModel, newUserVM.Password);
+                temp = await UserManager.CreateAsync(user, newUserVM.Password);
 
-                if (result.Succeeded)
+                if (temp.Succeeded)
                 {
                     
                     var role = await roleManager.FindByNameAsync(Role);
                     if (role != null)
                     {
-                        var RoleAddRes = await UserManager.AddToRoleAsync(userModel, role.Name);
+                        var RoleAddRes = await UserManager.AddToRoleAsync(user, role.Name);
                         if (RoleAddRes.Succeeded)
                         {
-                            await SignInManager.SignInAsync(userModel, isPersistent: false);
+                            await SignInManager.SignInAsync(user, isPersistent: false);
                             return RedirectToAction("Login", "Account");
                         }
-                        await UserManager.DeleteAsync(userModel);
+                        await UserManager.DeleteAsync(user);
                         return View("Error", new ErrorViewModel() { Message = "Error in Registration process please register again", RequestId = "1001" });
                     }
                     else
                     {
-                        await UserManager.DeleteAsync(userModel);
+                        await UserManager.DeleteAsync(user);
                         return View("Error", new ErrorViewModel() { Message = "Error in Registration process please register again", RequestId = "1001" });
                     }
                 }
                 else
                 {
-                    foreach (var errorItem in result.Errors)
+                    foreach (var errorItem in temp.Errors)
                     {
                         ModelState.AddModelError("", errorItem.Description);
                     }

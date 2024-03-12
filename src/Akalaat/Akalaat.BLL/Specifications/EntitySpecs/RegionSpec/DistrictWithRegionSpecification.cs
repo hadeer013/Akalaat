@@ -24,5 +24,6 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.RegionSpec
         }
 
 
+
     }
 }

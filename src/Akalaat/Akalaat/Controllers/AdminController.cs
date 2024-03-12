@@ -1,7 +1,6 @@
 using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
 using Akalaat.DAL.Models;
-using Akalaat.Models;
 using Akalaat.ViewModels;
 using Azure.Core;
 using Microsoft.AspNetCore.Identity;

@@ -16,6 +16,8 @@ namespace Akalaat
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            builder.Services.AddScoped(typeof(IDistrictRepository),typeof(DistrictRepository));
+            builder.Services.AddScoped(typeof(IRegionRepository),typeof(RegionRepository));
             builder.Services.AddDbContext<AkalaatDbContext>(op =>
                 op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

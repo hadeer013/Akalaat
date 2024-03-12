@@ -1,4 +1,4 @@
-namespace Akalaat.Models
+namespace Akalaat.ViewModels
 {
     public class ErrorViewModel
     {

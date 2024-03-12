@@ -11,7 +11,7 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.AddressBookSpec
 {
     public class AddresswithRegionSpec : BaseSpecification<Address_Book>
     {
-        public AddresswithRegionSpec(int Id) : base(b => b.Id == Id)
+        public AddresswithRegionSpec(string Id) : base(b => b.Customer_ID == Id)
         {
             AddThenInclude(ad => ad.Include(b => b.Region).ThenInclude(r => r.District).ThenInclude(d => d.City));
         }

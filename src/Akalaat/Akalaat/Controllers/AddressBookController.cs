@@ -1,5 +1,7 @@
 using Akalaat.BLL.Interfaces;
+using Akalaat.BLL.Repositories;
 using Akalaat.BLL.Specifications.EntitySpecs.AddressBookSpec;
+using Akalaat.BLL.Specifications.EntitySpecs.CitySpec;
 using Akalaat.BLL.Specifications.EntitySpecs.RegionSpec;
 using Akalaat.DAL.Models;
 using Akalaat.ViewModels;
@@ -14,11 +16,14 @@ namespace Akalaat.Controllers
     {
         private readonly IGenericRepository<Address_Book> addressRepo;
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly IGenericRepository<City> cityRepo;
 
-        public AddressBookController(IGenericRepository<Address_Book> addressRepo,UserManager<ApplicationUser> userManager)
+        public AddressBookController(IGenericRepository<Address_Book> addressRepo,UserManager<ApplicationUser> userManager,
+            IGenericRepository<City> cityRepo)
         {
             this.addressRepo = addressRepo;
             this.userManager = userManager;
+            this.cityRepo = cityRepo;
         }
 
         [Authorize(Roles = "Customer")]
@@ -26,7 +31,7 @@ namespace Akalaat.Controllers
         {
             var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
             var customer = user as Customer;
-            var RegSpec = new AddresswithRegionSpec(customer.Address_Book_ID);
+            var RegSpec = new AddresswithRegionSpec(customer.Id);
             var AddressBook=await addressRepo.GetByIdWithSpec(RegSpec);
             DisplayAddressBookVM MappedaddressBook = null;
             if (AddressBook!=null)
@@ -48,13 +53,15 @@ namespace Akalaat.Controllers
         [Authorize(Roles ="Customer")]
         public async Task<IActionResult> AddAddressBook()
         {
+            ViewBag.Cities=await cityRepo.GetAllAsync();
+
             return View();
         }
 
 
         [Authorize(Roles = "Customer")]
         [HttpPost]
-        public async Task<IActionResult> AddAddressBook(AddressBookVM addressBookVM)
+        public async Task<IActionResult> AddAddressBook(AddAddressBookVM addressBookVM)
         {
             if (ModelState.IsValid)
             {
@@ -76,7 +83,26 @@ namespace Akalaat.Controllers
         [Authorize(Roles ="Customer")]
         public async Task<IActionResult> Edit(int Id)
         {
-            return View();
+            var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+            var customer = user as Customer;
+            var RegSpec = new AddresswithRegionSpec(customer.Id);
+            var AddressBook = await addressRepo.GetByIdWithSpec(RegSpec);
+
+            ViewBag.Cities = await cityRepo.GetAllAsync();
+            //var citySpec= new CityWithDistrictSpecification()
+            //ViewBag.Districts=await        //districts in cityId
+            //ViewBag.Regions=await
+
+            var editAddVM = new EditAddressBookVM()
+            {
+                Id = Id,
+                AddressDetails = AddressBook.AddressDetails,
+                CityId = AddressBook.Region.District.City_ID,
+                DistrictId = AddressBook.Region.District_ID,
+                RegionId = AddressBook.Region_ID
+            };
+
+            return View(editAddVM);
         }
 
 
@@ -86,7 +112,7 @@ namespace Akalaat.Controllers
         {
             var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
             var customer = user as Customer;
-            var RegSpec = new AddresswithRegionSpec(customer.Address_Book_ID);
+            var RegSpec = new AddresswithRegionSpec(customer.Id);
             var AddressBook = await addressRepo.GetByIdWithSpec(RegSpec);
 
             AddressBook.Region_ID = editAddressBook.RegionId;
@@ -98,16 +124,14 @@ namespace Akalaat.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete(int Id)
-        {
-            var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
-            var customer = user as Customer;
-
-            var address = await addressRepo.GetByIdAsync(customer.Address_Book_ID);
-            await addressRepo.Delete(address);
-
-            return RedirectToAction(nameof(Index));
-        }
+        //public async Task<IActionResult> Delete(int Id) //????
+        //{
+        //    var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+        //    var customer = user as Customer;
+        //    var address = await addressRepo.GetByIdAsync(customer.Id);
+        //    await addressRepo.Delete(address);
+        //    return RedirectToAction(nameof(Index));
+        //}
 
     }
 }

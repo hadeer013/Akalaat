@@ -2,7 +2,6 @@
 using Akalaat.BLL.Specifications.EntitySpecs.CitySpec;
 using Akalaat.BLL.Specifications.EntitySpecs.DistrictSpec;
 using Akalaat.DAL.Models;
-using Akalaat.Models;
 using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

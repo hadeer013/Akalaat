@@ -1,4 +1,5 @@
-using Akalaat.Models;
+
+using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

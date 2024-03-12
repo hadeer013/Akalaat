@@ -20,7 +20,7 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.CitySpec
 		public CityWithDistrictSpecification(int id) : base(city => city.Id == id) //get with id
         {
             //AddInclude(city => city.Districts);
-            AddThenInclude(city => city.Include(c => c.Districts));
+            AddThenInclude(city => city.Include(c => c.Districts).ThenInclude(c=>c.regions));
         }
     }
 }

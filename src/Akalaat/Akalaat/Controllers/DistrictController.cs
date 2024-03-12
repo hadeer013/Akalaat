@@ -2,31 +2,33 @@
 using Akalaat.BLL.Repositories;
 using Akalaat.BLL.Specifications.EntitySpecs.RegionSpec;
 using Akalaat.DAL.Models;
-using Akalaat.Models;
 using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Akalaat.Controllers
 {
 	public class DistrictController : Controller
 	{
 		private readonly IGenericRepository<City> cityRepo;
-		private readonly IGenericRepository<District> districtRepo;
+		private readonly IGenericRepository<District> genericRepo;
         private readonly IGenericRepository<Region> regionRepo;
+        private readonly IDistrictRepository districtRepo;
 
-        public DistrictController(IGenericRepository<City> cityRepo,IGenericRepository<District> districtRepo,
-			IGenericRepository<Region> regionRepo)
+        public DistrictController(IGenericRepository<City> cityRepo,IGenericRepository<District> genericRepo,
+			IGenericRepository<Region> regionRepo, IDistrictRepository districtRepo)
 		{
 			this.cityRepo = cityRepo;
-			this.districtRepo = districtRepo;
+			this.genericRepo = genericRepo;
             this.regionRepo = regionRepo;
+            this.districtRepo = districtRepo;
         }
 		
 
 		public async Task<IActionResult> Details(int id,string RegionName="")
 		{
-			var district = await districtRepo.GetByIdAsync(id);
+			var district = await genericRepo.GetByIdAsync(id);
 			if (district == null) return BadRequest();
 
 			var districtSpes = new DistrictWithRegionSpecification(id, RegionName);
@@ -62,7 +64,7 @@ namespace Akalaat.Controllers
 					if (city == null) return BadRequest();
 
 					var district=new District() { City_ID=city.Id, Name=districtVM.Name};
-					var added = await districtRepo.Add(district);
+					var added = await genericRepo.Add(district);
 
 					return RedirectToAction("Details","City", new { id = city.Id });
 				}
@@ -76,7 +78,7 @@ namespace Akalaat.Controllers
 
 		public async Task<IActionResult> Edit(int id)
 		{
-			var district = await districtRepo.GetByIdAsync(id);
+			var district = await genericRepo.GetByIdAsync(id);
 			if (district == null) return BadRequest();
 
 
@@ -89,11 +91,11 @@ namespace Akalaat.Controllers
 			if(id!=editDistrictVM.ID) return BadRequest();
 			if (ModelState.IsValid)
 			{
-				var district=await districtRepo.GetByIdAsync(id);
+				var district=await genericRepo.GetByIdAsync(id);
 				if(district == null) return BadRequest();
 
 				district.Name = editDistrictVM.Name;
-				await districtRepo.Update(district);
+				await genericRepo.Update(district);
 				return RedirectToAction("Details", "City", new { id = district.City_ID });
 			}
 			return View(editDistrictVM);
@@ -101,11 +103,21 @@ namespace Akalaat.Controllers
 
 		public async Task<IActionResult> Delete(int id)
 		{
-			var district=await districtRepo.GetByIdAsync(id);
+			var district=await genericRepo.GetByIdAsync(id);
 			if(district == null) return BadRequest();
 
-			await districtRepo.Delete(id);
+			await genericRepo.Delete(id);
 			return RedirectToAction("Details", "City", new { id = district.City_ID });
 		}
-	}
+
+
+
+        ///For AddressBook Controller
+        [HttpGet]
+        public async Task<IActionResult> GetDistrictsByCityId(int cityId)
+        {
+            var districts = await districtRepo.GetAllDistrictsByCityId(cityId);
+            return Json(districts);
+        }
+    }
 }
