@@ -1,0 +1,40 @@
+﻿@model Akalaat.ViewModels.OrderVM
+@{
+    SelectList ItemLst = new SelectList(ViewBag.AllItems, "Id", "Name");
+}
+<h2>Create Order</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="DateTime">Order Date:</label>
+        <input asp-for="DateTime" class="form-control" />
+        <span asp-validation-for="DateTime" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ArrivalTime">Arrival Time:</label>
+        <input asp-for="ArrivalTime" class="form-control" />
+        <span asp-validation-for="ArrivalTime" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalPrice">Total Price:</label>
+        <input asp-for="TotalPrice" class="form-control" />
+        <span asp-validation-for="TotalPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalDiscount">Total Discount:</label>
+        <input asp-for="TotalDiscount" class="form-control" />
+        <span asp-validation-for="TotalDiscount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Item_ID"></label>
+        <select asp-for="Item_ID" class="form-control" asp-items="ItemLst">
+            <option value="">Select a Item</option>
+        </select>
+    </div>
+    <input type="hidden" asp-for="Customer_ID" /> <!-- Hidden field for CustomerId -->
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+

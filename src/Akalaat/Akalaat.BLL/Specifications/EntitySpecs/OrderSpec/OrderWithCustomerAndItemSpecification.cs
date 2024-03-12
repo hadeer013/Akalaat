@@ -13,7 +13,7 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.OrderSpec
         {
            AddInclude( O=> O.Item);
            AddInclude(O => O.Customer);
-          
+            OrderBy = O => O.DateTime;
         }
     }
 }

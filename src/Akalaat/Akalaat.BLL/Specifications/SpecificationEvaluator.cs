@@ -23,6 +23,11 @@ namespace Akalaat.BLL.Specifications
             if (Spec.IncludeThenIncludes != null)
                 query = Spec.IncludeThenIncludes.Aggregate(query,(current,include)=> include(current));
     
+
+            if (Spec.OrderBy != null)
+            {
+                query = query.OrderBy(Spec.OrderBy);
+            }
             return query;
 
         }

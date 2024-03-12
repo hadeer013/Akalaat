@@ -15,6 +15,6 @@ namespace Akalaat.BLL.Specifications
         public List<Expression<Func<T, object>>> Includes { get; set; }//include
 
         List<Func<IQueryable<T>, IIncludableQueryable<T, object>>> IncludeThenIncludes { get; set; }
-
+        Expression<Func<T, object>> OrderBy { get; set; }
     }
 }
