@@ -72,7 +72,7 @@ namespace Akalaat.Controllers
         }
         public async Task<IActionResult> Details(int Id)
         {
-            var order = await _orderRepository.GetByIdAsync(Id);
+            var order = await _orderRepository.GetByIdIncludingAsync(Id,o => o.Customer);
 
             if (order == null)
             {
@@ -82,6 +82,78 @@ namespace Akalaat.Controllers
             var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
 
             return View(orderViewModel);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null)
+            {
+                return View();
+            }
+
+            var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
+            ViewBag.AllItems = await _itemRepository.GetAllAsync();
+            return View(orderViewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, OrderVM orderViewModel)
+        {
+            if (id != orderViewModel.Id)
+            {
+                return View();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var order = await _orderRepository.GetByIdAsync(id);
+                if (order == null)
+                {
+                    return View();
+                }
+
+                order.DateTime = orderViewModel.DateTime;
+                order.Arrival_Time = orderViewModel.ArrivalTime;
+                order.Total_Price = orderViewModel.TotalPrice;
+                order.Total_Discount = orderViewModel.TotalDiscount;
+                order.Customer_ID = orderViewModel.Customer_ID;
+                order.OrderItems = orderViewModel.OrderItems;
+
+                await _orderRepository.Update(order);
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            ModelState.AddModelError("", "Invalid Item");
+            ViewBag.AllItems = await _itemRepository.GetAllAsync();
+            return View(orderViewModel);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
+            return View(orderViewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            await _orderRepository.Delete(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
