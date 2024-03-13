@@ -4,6 +4,7 @@ using Akalaat.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Akalaat.DAL.Data.Migrations
 {
     [DbContext(typeof(AkalaatDbContext))]
-    partial class AkalaatDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240313154556_CH")]
+    partial class CH
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -459,6 +462,9 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("Item_ID")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Total_Discount")
                         .HasColumnType("decimal(18,2)");
 
@@ -469,22 +475,9 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("Customer_ID");
 
+                    b.HasIndex("Item_ID");
+
                     b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.OrderItem", b =>
-                {
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId", "ItemId");
-
-                    b.HasIndex("ItemId");
-
-                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
@@ -937,26 +930,13 @@ namespace Akalaat.DAL.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.OrderItem", b =>
-                {
                     b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany()
+                        .HasForeignKey("Item_ID");
 
-                    b.HasOne("Akalaat.DAL.Models.Order", "Order")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Customer");
 
                     b.Navigation("Item");
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
@@ -1141,8 +1121,6 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-                    b.Navigation("OrderItems");
-
                     b.Navigation("extras");
 
                     b.Navigation("menu_Item_Sizes");
@@ -1168,11 +1146,6 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Offer", b =>
                 {
                     b.Navigation("Items");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>

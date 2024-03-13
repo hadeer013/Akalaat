@@ -21,8 +21,9 @@ namespace Akalaat.DAL.Models
         [ForeignKey("Customer")]
         public string Customer_ID { get; set; }
         public virtual Customer Customer { get; set; }
-        [ForeignKey("Item")]
-        public int? Item_ID { get; set; }
-        public virtual Item Item { get; set; }
+        //[ForeignKey("Item")]
+        //public int? Item_ID { get; set; }
+        //public virtual Item Item { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
     }
 }
