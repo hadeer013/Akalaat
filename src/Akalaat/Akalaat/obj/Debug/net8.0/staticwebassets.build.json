@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y/hTYhfENYfGhZcqoGzGiZJiDWzyu4gY6xCh4guILAk=",
+  "Hash": "W11pmIX8gWVjE5EdidutDPPN//LF0hZqU/sFoZFDr8o=",
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.2\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\fsabr\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\QuickGrid.razor.js"
     },
     {
       "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Akalaat.styles.css",
@@ -188,6 +188,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg"
     },
     {
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
+    },
+    {
       "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg",
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
@@ -243,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\b33f5547-4f2e-4f44-91f9-a04657b94ba4.jpg"
+    },
+    {
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b463779d-0af9-43a0-918e-3f4aecec234d.jpg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/b463779d-0af9-43a0-918e-3f4aecec234d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\b463779d-0af9-43a0-918e-3f4aecec234d.jpg"
     },
     {
       "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\js\\site.js",

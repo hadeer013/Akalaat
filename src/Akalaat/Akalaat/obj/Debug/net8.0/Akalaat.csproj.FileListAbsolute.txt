@@ -803,3 +803,5 @@ F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\A
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.JSInterop.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll

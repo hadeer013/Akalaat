@@ -13,7 +13,8 @@
             <th>Total Price</th>
             <th>Total Discount</th>
             <th>Customer</th>
-            <th>Item</th>
+            <th>Items</th>
+            <th></th> <!-- For actions -->
         </tr>
     </thead>
     <tbody>
@@ -25,7 +26,28 @@
                 <td>@order.TotalPrice</td>
                 <td>@order.TotalDiscount</td>
                 <td>@order.Customer.UserName</td>
-                <td>@(order.Item != null ? order.Item.Name : "N/A")</td>
+                <td>
+                    @if (order.OrderItems != null && order.OrderItems.Any())
+                    {
+                        <ul class="list-group">
+                            @foreach (var item in order.OrderItems)
+                            {
+                                <li class="list-group-item">
+                                    Order ID: @item.ItemId, Name: @item.Item.Name
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p>No Items</p>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@order.Id" class="btn btn-primary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@order.Id" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
         }
     </tbody>

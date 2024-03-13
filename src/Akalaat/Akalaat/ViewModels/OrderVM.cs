@@ -6,6 +6,9 @@ namespace Akalaat.ViewModels
 {
     public class OrderVM
     {
+        public int Id { get; set; }
+
+        // Properties for order details
         [Display(Name = "Order Date")]
         [DataType(DataType.Date)]
         public DateTime DateTime { get; set; }
@@ -23,11 +26,11 @@ namespace Akalaat.ViewModels
         [DataType(DataType.Currency)]
         [Range(0, double.MaxValue, ErrorMessage = "Total discount must be a positive number.")]
         public decimal TotalDiscount { get; set; }
-        public string Customer_ID { get; set; }
-        public virtual Customer Customer { get; set; }
-        [ForeignKey("Item")]
-        public int? Item_ID { get; set; }
-        public virtual Item Item { get; set; }
 
+        public string Customer_ID { get; set; }
+        public virtual Customer? Customer { get; set; }
+
+        // Collection of order items
+        public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
     }
 }

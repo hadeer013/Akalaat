@@ -35,9 +35,9 @@ namespace Akalaat.Controllers
 
             var orderViewModel = new OrderVM
             {
-                Customer_ID = customerId
+                Customer_ID = customerId,
             };
-            ViewBag.AllItems =await _itemRepository.GetAllAsync();
+            ViewBag.AllItems = await _itemRepository.GetAllAsync();
 
             return View(orderViewModel);
         }
@@ -45,6 +45,8 @@ namespace Akalaat.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(OrderVM orderViewModel)
         {
+            ViewBag.AllItems = await _itemRepository.GetAllAsync();
+
             if (ModelState.IsValid)
             {
                 var order = new Order
@@ -54,7 +56,8 @@ namespace Akalaat.Controllers
                     Arrival_Time = orderViewModel.ArrivalTime,
                     Total_Price = orderViewModel.TotalPrice,
                     Total_Discount = orderViewModel.TotalDiscount,
-                    Customer_ID = orderViewModel.Customer_ID
+                    Customer_ID = orderViewModel.Customer_ID,
+                    OrderItems = orderViewModel.OrderItems
                 };
 
                 // Save the order
@@ -65,6 +68,19 @@ namespace Akalaat.Controllers
             }
 
             ModelState.AddModelError("", "Invalid Item");
+            return View(orderViewModel);
+        }
+        public async Task<IActionResult> Details(int Id)
+        {
+            var order = await _orderRepository.GetByIdAsync(Id);
+
+            if (order == null)
+            {
+                return View();
+            }
+
+            var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
+
             return View(orderViewModel);
         }
     }
