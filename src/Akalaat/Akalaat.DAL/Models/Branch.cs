@@ -18,7 +18,7 @@ namespace Akalaat.DAL.Models
 
         public int Open_Hour { get; set; } //24 system
 
-        public int Close_Hour { get; set; }
+        public int Close_Hour { get; set; } //24 system
 
         public int Estimated_Delivery_Time { get; set; }
         [ForeignKey("Resturant")]

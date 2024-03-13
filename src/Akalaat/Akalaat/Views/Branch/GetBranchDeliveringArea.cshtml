@@ -1,0 +1,28 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "GetBranchDeliveringArea";
+}
+
+<h1>GetBranchDeliveringArea</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Delivery Areas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.Count>0)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                <td>@item</td>
+            </tr>
+            }
+        }
+        else
+        {
+            <h3>No delivery Area</h3>
+        }
+    </tbody>
+</table>

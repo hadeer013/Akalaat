@@ -16,5 +16,10 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.BranchSpec
         {
             IncludeThenIncludes.Add(b=>b.Include(brn=>brn.DeliveryAreas).Include(brn=>brn.Region).ThenInclude(brn=>brn.District));
         }
+
+        public BranchwithResturantSpecification(int Id) : base(b => b.Id == Id)
+        {
+            IncludeThenIncludes.Add(b => b.Include(brn => brn.DeliveryAreas));
+        }
     }
 }

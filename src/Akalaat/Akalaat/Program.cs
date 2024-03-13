@@ -21,6 +21,14 @@ namespace Akalaat
             builder.Services.AddDbContext<AkalaatDbContext>(op =>
                 op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddDistributedMemoryCache();
+
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(300); // Adjust timeout as needed
+                options.Cookie.HttpOnly = true;
+            });
+
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
