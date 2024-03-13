@@ -16,14 +16,15 @@ namespace Akalaat.DAL.Models
 
         public bool IsDelivery { get; set; }
 
-        public DateTime Open_Hour { get; set; }
+        public int Open_Hour { get; set; } //24 system
 
-        public DateTime Close_Hour { get; set; }
+        public int Close_Hour { get; set; }
 
         public int Estimated_Delivery_Time { get; set; }
         [ForeignKey("Resturant")]
         public int Resturant_ID { get; set; }
         public virtual Resturant Resturant { get; set; }
+        public string AddressDetails {  get; set; }
 
         [ForeignKey("Region")]
         public int Region_ID { get; set; }

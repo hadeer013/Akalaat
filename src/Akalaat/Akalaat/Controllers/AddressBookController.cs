@@ -17,13 +17,17 @@ namespace Akalaat.Controllers
         private readonly IGenericRepository<Address_Book> addressRepo;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IGenericRepository<City> cityRepo;
+        private readonly IDistrictRepository districtRepo;
+        private readonly IRegionRepository regionRepo;
 
         public AddressBookController(IGenericRepository<Address_Book> addressRepo,UserManager<ApplicationUser> userManager,
-            IGenericRepository<City> cityRepo)
+            IGenericRepository<City> cityRepo,IDistrictRepository districtRepo,IRegionRepository regionRepo)
         {
             this.addressRepo = addressRepo;
             this.userManager = userManager;
             this.cityRepo = cityRepo;
+            this.districtRepo = districtRepo;
+            this.regionRepo = regionRepo;
         }
 
         [Authorize(Roles = "Customer")]
@@ -89,9 +93,8 @@ namespace Akalaat.Controllers
             var AddressBook = await addressRepo.GetByIdWithSpec(RegSpec);
 
             ViewBag.Cities = await cityRepo.GetAllAsync();
-            //var citySpec= new CityWithDistrictSpecification()
-            //ViewBag.Districts=await        //districts in cityId
-            //ViewBag.Regions=await
+            ViewBag.Districts = await districtRepo.GetAllDistrictsByCityId(AddressBook.Region.District.City_ID);
+            ViewBag.Regions = await regionRepo.GetAllRegionsByDistrictId(AddressBook.Region.District_ID);
 
             var editAddVM = new EditAddressBookVM()
             {
@@ -116,8 +119,7 @@ namespace Akalaat.Controllers
             var AddressBook = await addressRepo.GetByIdWithSpec(RegSpec);
 
             AddressBook.Region_ID = editAddressBook.RegionId;
-            AddressBook.Region.District_ID = editAddressBook.DistrictId;
-            AddressBook.Region.District.City_ID = editAddressBook.CityId;
+            AddressBook.AddressDetails = editAddressBook.AddressDetails;
 
             await addressRepo.Update(AddressBook);
 

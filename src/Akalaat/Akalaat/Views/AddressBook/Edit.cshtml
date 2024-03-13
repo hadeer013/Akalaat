@@ -1,6 +1,6 @@
 ﻿@using Akalaat.DAL.Models
 @model EditAddressBookVM
-    @{
+@{
     ViewData["Title"] = "Edit";
     var AllCities =(List<City>)ViewBag.Cities;
     var AllDistricts = (List<District>)ViewBag.Districts;
@@ -17,7 +17,7 @@
 
     <div class="form-group">
         <label for="cities">City</label>
-        <select id="cities" class="form-control">
+        <select id="cities" class="form-control" asp-for="CityId">
             <option value="">Select City</option>
             @foreach (var city in AllCities)
             {
@@ -36,14 +36,35 @@
     <div class="form-group">
         <label for="districts">District</label>
         <select id="districts" class="form-control" asp-for="DistrictId">
-           
+            @foreach (var district in AllDistricts)
+            {
+                if (district.Id == Model.DistrictId)
+                {
+                    <option value="@district.Id " selected>@district.Name</option>
+                }
+                else
+                {
+                    <option value="@district.Id">@district.Name</option>
+                }
+            }
         </select>
     </div>
 
     <div class="form-group">
         <label for="regions">Region</label>
         <select id="regions" asp-for="RegionId" class="form-control">
-            
+            @foreach (var region in AllRegions)
+            {
+                if (region.Id == Model.DistrictId)
+                {
+                    <option value="@region.Id " selected>@region.Name</option>
+                }
+                else
+                {
+                    <option value="@region.Id">@region.Name</option>
+                }
+            }
+        </select>
         </select>
     </div>
 
@@ -57,25 +78,33 @@
             $('#cities').change(function () {
                 var cityId = $(this).val();
                 if (cityId) {
+                    $('#districts').prop('disabled', false);
                     $.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
                         console.log("Districts data:", data);
+                        $('#districts').empty().append($('<option>').val('').text('Select District'));
                         $.each(data, function (index, district) {
                             $('#districts').append($('<option>').val(district.id).text(district.name));
                         });
                     });
-                } 
+                } else {
+                    $('#districts').prop('disabled', true).empty();
+                    $('#regions').prop('disabled', true).empty();
+                }
             });
 
             $('#districts').change(function () {
                 var districtId = $(this).val();
                 if (districtId) {
+                    $('#regions').prop('disabled', false);
                     $.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
                         $('#regions').empty().append($('<option>').val('').text('Select Region'));
                         $.each(data, function (index, region) {
                             $('#regions').append($('<option>').val(region.id).text(region.name));
                         });
                     });
-                } 
+                } else {
+                    $('#regions').prop('disabled', true).empty();
+                }
             });
         });
     </script>

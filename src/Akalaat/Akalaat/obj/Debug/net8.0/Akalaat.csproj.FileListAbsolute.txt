@@ -795,3 +795,11 @@ H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.A
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.JSInterop.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.JSInterop.dll
