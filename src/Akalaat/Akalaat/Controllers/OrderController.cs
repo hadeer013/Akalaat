@@ -57,7 +57,7 @@ namespace Akalaat.Controllers
                     Total_Price = orderViewModel.TotalPrice,
                     Total_Discount = orderViewModel.TotalDiscount,
                     Customer_ID = orderViewModel.Customer_ID,
-                    OrderItems = orderViewModel.OrderItems
+                   // OrderItems = orderViewModel.OrderItems
                 };
 
                 // Save the order
@@ -118,7 +118,7 @@ namespace Akalaat.Controllers
                 order.Total_Price = orderViewModel.TotalPrice;
                 order.Total_Discount = orderViewModel.TotalDiscount;
                 order.Customer_ID = orderViewModel.Customer_ID;
-                order.OrderItems = orderViewModel.OrderItems;
+            //    order.OrderItems = orderViewModel.OrderItems;
 
                 await _orderRepository.Update(order);
 

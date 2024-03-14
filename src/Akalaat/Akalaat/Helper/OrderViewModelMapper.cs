@@ -16,7 +16,7 @@ namespace Akalaat.Helper
                 TotalDiscount = order.Total_Discount,
                 Customer_ID = order.Customer_ID,
                 Customer = order.Customer,
-                OrderItems = order.OrderItems,
+                //OrderItems = order.OrderItems,
             };
         }
     }

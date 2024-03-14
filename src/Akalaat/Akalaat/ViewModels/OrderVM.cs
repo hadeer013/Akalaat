@@ -31,6 +31,6 @@ namespace Akalaat.ViewModels
         public virtual Customer? Customer { get; set; }
 
         // Collection of order items
-        public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
+     //   public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
     }
 }

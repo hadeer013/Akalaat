@@ -17,7 +17,7 @@ namespace Akalaat.DAL.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -472,21 +472,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Akalaat.DAL.Models.OrderItem", b =>
-                {
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId", "ItemId");
-
-                    b.HasIndex("ItemId");
-
-                    b.ToTable("OrderItem");
-                });
-
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
                 {
                     b.Property<int>("Id")
@@ -622,6 +607,21 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("resturantDishesId");
 
                     b.ToTable("DishResturant");
+                });
+
+            modelBuilder.Entity("ItemOrder", b =>
+                {
+                    b.Property<int>("ItemsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrdersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ItemsId", "OrdersId");
+
+                    b.HasIndex("OrdersId");
+
+                    b.ToTable("OrderItems", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -940,25 +940,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Customer");
                 });
 
-            modelBuilder.Entity("Akalaat.DAL.Models.OrderItem", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.Order", "Order")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
-
-                    b.Navigation("Order");
-                });
-
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.District", "District")
@@ -1026,6 +1007,21 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasOne("Akalaat.DAL.Models.Resturant", null)
                         .WithMany()
                         .HasForeignKey("resturantDishesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ItemOrder", b =>
+                {
+                    b.HasOne("Akalaat.DAL.Models.Item", null)
+                        .WithMany()
+                        .HasForeignKey("ItemsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Akalaat.DAL.Models.Order", null)
+                        .WithMany()
+                        .HasForeignKey("OrdersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -1141,8 +1137,6 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-                    b.Navigation("OrderItems");
-
                     b.Navigation("extras");
 
                     b.Navigation("menu_Item_Sizes");
@@ -1168,11 +1162,6 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Offer", b =>
                 {
                     b.Navigation("Items");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>

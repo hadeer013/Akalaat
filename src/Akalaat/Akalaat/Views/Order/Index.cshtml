@@ -26,7 +26,7 @@
                 <td>@order.TotalPrice</td>
                 <td>@order.TotalDiscount</td>
                 <td>@order.Customer.UserName</td>
-                <td>
+               @*  <td>
                     @if (order.OrderItems != null && order.OrderItems.Any())
                     {
                         <ul class="list-group">
@@ -42,7 +42,7 @@
                     {
                         <p>No Items</p>
                     }
-                </td>
+                </td> *@
                 <td>
                     <a asp-action="Edit" asp-route-id="@order.Id" class="btn btn-primary">Edit</a>
                     <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-info">Details</a>

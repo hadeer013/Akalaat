@@ -24,6 +24,8 @@ namespace Akalaat.DAL.Models
         //[ForeignKey("Item")]
         //public int? Item_ID { get; set; }
         //public virtual Item Item { get; set; }
-        public ICollection<OrderItem> OrderItems { get; set; }= new HashSet<OrderItem>();
+        //  public ICollection<OrderItem> OrderItems { get; set; }= new HashSet<OrderItem>();
+        public ICollection<Item> Items { get; set; } = new HashSet<Item>();
+
     }
 }

@@ -28,7 +28,8 @@ namespace Akalaat.DAL.Models
 
         public ICollection<Menu_Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Menu_Item_Size>();
         public ICollection<Extra> extras { get; set; } = new HashSet<Extra>();
-        public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
+        //  public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
+        public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
 
     }
     public enum OfferStatus

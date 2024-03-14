@@ -20,18 +20,24 @@ namespace Akalaat.DAL.Data
         {
 
             builder.Entity<Menu_Item_Size>().HasKey(MS => new { MS.Item_ID,MS.Item_Size_ID });
-            builder.Entity<OrderItem>()
-            .HasKey(oi => new { oi.OrderId, oi.ItemId });
+            builder.Entity<Order>()
+             .HasMany(o => o.Items) // An order can have many items
+             .WithMany(i => i.Orders) // An item can be in many orders
+             .UsingEntity(m => m.ToTable("OrderItems"));
 
-            builder.Entity<OrderItem>()
-                .HasOne(oi => oi.Order)
-                .WithMany(o => o.OrderItems)
-                .HasForeignKey(oi => oi.OrderId);
+            //builder.Entity<OrderItem>()
+            //.HasKey(oi => new { oi.OrderId, oi.ItemId });
 
-            builder.Entity<OrderItem>()
-                .HasOne(oi => oi.Item)
-                .WithMany(i => i.OrderItems)
-                .HasForeignKey(oi => oi.ItemId);
+            //builder.Entity<OrderItem>()
+            //    .HasOne(oi => oi.Order)
+            //    .WithMany(o => o.OrderItems)
+            //    .HasForeignKey(oi => oi.OrderId);
+
+            //builder.Entity<OrderItem>()
+            //    .HasOne(oi => oi.Item)
+            //    .WithMany(i => i.OrderItems)
+            //    .HasForeignKey(oi => oi.ItemId);
+
             builder.Entity<Branch>()
             .HasOne(b => b.Region)
             .WithMany(ada => ada.Branches)
@@ -65,7 +71,6 @@ namespace Akalaat.DAL.Data
         public virtual DbSet<Offer> Offers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Region> Regions { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
         public virtual DbSet<Reservation> Reservations { get; set; }
         public virtual DbSet<Resturant> Resturants { get; set; }
         public virtual DbSet<Review> Reviews { get; set; }
