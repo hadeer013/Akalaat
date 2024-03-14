@@ -21,14 +21,14 @@
             <!-- Display other customer details as needed -->
 
             <dt class="col-sm-3">Order Items:</dt>
-            @* <dd class="col-sm-9">
-                @if (Model.OrderItems != null && Model.OrderItems.Any())
+           <dd class="col-sm-9">
+                @if (Model.Items != null && Model.Items.Any())
                 {
                     <ul class="list-group">
-                        @foreach (var item in Model.OrderItems)
+                        @foreach (var item in Model.Items)
                         {
                             <li class="list-group-item">
-                                Order ID: @item.ItemId, Name: @item.Item.Name
+                                Order ID: @item.Id, Name: @item.Name
                             </li>
                         }
                     </ul>
@@ -37,7 +37,7 @@
                 {
                     <p>No Items</p>
                 }
-            </dd> *@
+            </dd> 
         </dl>
     </div>
 </div>

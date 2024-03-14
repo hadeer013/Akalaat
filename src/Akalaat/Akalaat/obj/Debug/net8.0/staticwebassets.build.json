@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W11pmIX8gWVjE5EdidutDPPN//LF0hZqU/sFoZFDr8o=",
+  "Hash": "Pf5uN/2RDt6Y2KRj86+soddCfrNXWgdfVlZQdOXX/pM=",
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
+    },
+    {
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\7dc9cb08-23cd-49a2-9cd1-bacc94e94dcb.jpg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/7dc9cb08-23cd-49a2-9cd1-bacc94e94dcb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\7dc9cb08-23cd-49a2-9cd1-bacc94e94dcb.jpg"
     },
     {
       "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg",

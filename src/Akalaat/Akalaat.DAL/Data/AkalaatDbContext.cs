@@ -21,23 +21,9 @@ namespace Akalaat.DAL.Data
 
             builder.Entity<Menu_Item_Size>().HasKey(MS => new { MS.Item_ID,MS.Item_Size_ID });
             builder.Entity<Order>()
-             .HasMany(o => o.Items) // An order can have many items
-             .WithMany(i => i.Orders) // An item can be in many orders
+             .HasMany(o => o.Items) 
+             .WithMany(i => i.Orders) 
              .UsingEntity(m => m.ToTable("OrderItems"));
-
-            //builder.Entity<OrderItem>()
-            //.HasKey(oi => new { oi.OrderId, oi.ItemId });
-
-            //builder.Entity<OrderItem>()
-            //    .HasOne(oi => oi.Order)
-            //    .WithMany(o => o.OrderItems)
-            //    .HasForeignKey(oi => oi.OrderId);
-
-            //builder.Entity<OrderItem>()
-            //    .HasOne(oi => oi.Item)
-            //    .WithMany(i => i.OrderItems)
-            //    .HasForeignKey(oi => oi.ItemId);
-
             builder.Entity<Branch>()
             .HasOne(b => b.Region)
             .WithMany(ada => ada.Branches)
