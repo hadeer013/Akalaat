@@ -46,3 +46,19 @@ C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat..BC753FFB.Up2Date
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
+D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll

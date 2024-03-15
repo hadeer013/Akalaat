@@ -17,6 +17,7 @@ namespace Akalaat.DAL.Models
         public string Comment { get; set; }
 
         public int No_of_Likes { get; set; }
+        public string? ReviewImage { get; set; }
 
         [ForeignKey("Customer")]
         public string Customer_ID { get; set; }

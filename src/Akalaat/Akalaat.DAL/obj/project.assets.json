@@ -2902,24 +2902,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fsabr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\khale\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
+      "projectUniqueName": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
       "projectName": "Akalaat.DAL",
-      "projectPath": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
-      "packagesPath": "C:\\Users\\fsabr\\.nuget\\packages\\",
-      "outputPath": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat.DAL\\obj\\",
+      "projectPath": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
+      "packagesPath": "C:\\Users\\khale\\.nuget\\packages\\",
+      "outputPath": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\fsabr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\khale\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2939,6 +2934,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2970,7 +2970,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

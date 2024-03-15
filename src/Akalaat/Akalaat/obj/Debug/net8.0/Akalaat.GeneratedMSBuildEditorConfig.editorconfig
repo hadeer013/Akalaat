@@ -17,159 +17,199 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Akalaat
 build_property.RootNamespace = Akalaat
-build_property.ProjectDir = H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\
+build_property.ProjectDir = D:\New Clone\Akalaat\src\Akalaat\Akalaat\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat
+build_property.MSBuildProjectDirectory = D:\New Clone\Akalaat\src\Akalaat\Akalaat
 build_property._RazorSourceGeneratorDebug = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Account/ChangeEmail.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangeEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Account/ChangePassword.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Account/Login.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Account/Register.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/AddressBook/AddAddressBook.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/AddressBook/AddAddressBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc0Jvb2tcQWRkQWRkcmVzc0Jvb2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/AddressBook/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/AddressBook/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc0Jvb2tcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/AddressBook/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/AddressBook/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc0Jvb2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Admin/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Branch/AddBranch.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Branch/AddBranch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEFkZEJyYW5jaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Branch/GetBranchDeliveringArea.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Branch/GetBranchDeliveringArea.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEdldEJyYW5jaERlbGl2ZXJpbmdBcmVhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/City/Create.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/City/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/City/Details.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/City/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/City/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/City/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/City/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/City/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/District/Create.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Dish/AddDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBZGREaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Dish/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Dish/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Dish/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Dish/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/District/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/District/Details.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/District/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/District/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/District/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Home/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Home/Privacy.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Item/Create.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Item/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Item/Delete.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Item/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Item/Details.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Item/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Item/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Item/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Item/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Item/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Order/Create.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Order/Delete.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Order/Details.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Order/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Order/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Region/Create.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Region/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Region/Edit.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Region/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Shared/Error.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Review/AddReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEFkZFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Review/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Review/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Review/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Review/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Vendor/Index.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Vendor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/_ViewImports.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/_ViewStart.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/ITI_Intake44/MVC/Project/App/src/Akalaat/Akalaat/Views/Shared/_Layout.cshtml]
+[D:/New Clone/Akalaat/src/Akalaat/Akalaat/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8d9jccxdaz
