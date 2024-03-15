@@ -18,15 +18,22 @@ namespace Akalaat.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IGenericRepository<Address_Book> addressRepo;
         private readonly IGenericRepository<City> cityRepo;
+		private readonly IRegionRepository regionRepo;
+		private readonly IBranchDeliveryRepository branchDeliveryRepo;
+        private readonly IDistrictRepository districtRepo;
 
-        public BranchController(IGenericRepository<Resturant> resturantRepo,IGenericRepository<Branch> branchRepo,
-            UserManager<ApplicationUser> userManager,IGenericRepository<Address_Book> addressRepo,IGenericRepository<City>cityRepo)
+        public BranchController(IGenericRepository<Resturant> resturantRepo, IGenericRepository<Branch> branchRepo,
+            UserManager<ApplicationUser> userManager, IGenericRepository<Address_Book> addressRepo, IGenericRepository<City> cityRepo,
+            IRegionRepository regionRepo,IBranchDeliveryRepository branchDeliveryRepo,IDistrictRepository districtRepo)
         {
             this.resturantRepo = resturantRepo;
             this.branchRepo = branchRepo;
             this.userManager = userManager;
             this.addressRepo = addressRepo;
             this.cityRepo = cityRepo;
+			this.regionRepo = regionRepo;
+			this.branchDeliveryRepo = branchDeliveryRepo;
+            this.districtRepo = districtRepo;
         }
         //this needs login or not 
         [AllowAnonymous]
@@ -79,9 +86,11 @@ namespace Akalaat.Controllers
             if (Resurant == null) return BadRequest();
 
             ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.ResId = Id;
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> AddBranch(AddBranchVM addBranchVM)
         {
             if (ModelState.IsValid)
@@ -97,24 +106,151 @@ namespace Akalaat.Controllers
                     Region_ID = addBranchVM.RegionId,
                     Resturant_ID = addBranchVM.ResturantId,
                     Estimated_Delivery_Time = 15,
-                    IsDelivery = true,
-                    IsDineIn = true
+                    IsDelivery = addBranchVM.IsDelivery,
+                    IsDineIn = addBranchVM.IsDineIn
                 };
-
                 await branchRepo.Add(branch);
-                return RedirectToAction("Index");   
-
+                return RedirectToAction("Index","Home");
             }
             else
+            {
+                ViewBag.Cities = await cityRepo.GetAllAsync();
+                ViewBag.ResId = addBranchVM.ResturantId;
                 return View(addBranchVM);
+            }
+
+        }
+        public async Task<IActionResult> EditBranch(int Id)
+        {
+            var spec=new BranchwithResturantSpecification(Id);
+            var branch = await branchRepo.GetByIdWithSpec(spec);
+            if (branch == null) return NotFound();
+
+            ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.Districts = await districtRepo.GetAllDistrictsByCityId(branch.Region.District.City_ID);
+            ViewBag.Regions = await regionRepo.GetAllRegionsByDistrictId(branch.Region.District_ID);
+
+            var EditVM = new EditBranchVM()
+            {
+                AddressDetails = branch.AddressDetails,
+                CloseHour = branch.Close_Hour,
+                OpenHour = branch.Open_Hour,
+                IsDelivery = branch.IsDelivery,
+                IsDineIn = branch.IsDineIn,
+                BranchId = Id,
+                RegionId = branch.Region_ID,
+                CityId= branch.Region.District.City_ID,
+                DistrictId= branch.Region.District_ID
+            };
+
+            return View(EditVM);
         }
 
-        public async Task<IActionResult> GetBranchDeliveringArea(int Id)  //BranchId
+
+        [HttpPost]
+        public async Task<IActionResult> EditBranch(EditBranchVM editBranchVM)
+        {
+            if(ModelState.IsValid)
+            {
+                var branch = await branchRepo.GetByIdAsync(editBranchVM.BranchId);
+                if(branch == null) return NotFound();
+
+                branch.Open_Hour = editBranchVM.OpenHour;
+                branch.AddressDetails = editBranchVM.AddressDetails;
+                branch.Close_Hour = editBranchVM.CloseHour;
+                branch.IsDelivery = editBranchVM.IsDelivery;
+                branch.IsDineIn = editBranchVM.IsDineIn;
+                branch.Region_ID = editBranchVM.RegionId;
+
+                await branchRepo.Update(branch);
+                return RedirectToAction("Index");
+
+            }
+            ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.Districts = await districtRepo.GetAllDistrictsByCityId(editBranchVM.CityId);
+            ViewBag.Regions = await regionRepo.GetAllRegionsByDistrictId(editBranchVM.DistrictId);
+
+            return View(editBranchVM);
+        }
+
+
+
+
+        public async Task<IActionResult> DeleteBranch(int Id) // NOT TESTED YET
+        {
+            var branch = await branchRepo.GetByIdAsync(Id);
+            if (branch == null) return NotFound();
+
+            try
+            {
+                await branchRepo.Delete(branch);
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                return View("Error", new ErrorViewModel() { Message = ex.Message });
+            }
+        }
+        //Vendor Role
+        public async Task<IActionResult> AddBranchDeliveryAreas(int Id)//BranchId
+        {
+            var branch = await branchRepo.GetByIdAsync(Id);
+            if (branch == null) return BadRequest();
+
+			ViewBag.Cities = await cityRepo.GetAllAsync();
+			ViewBag.BranchId = Id;
+            return View();
+		}
+
+        [HttpPost]
+		public async Task<IActionResult> AddBranchDeliveryAreas(AddBranchDeliveryArea deliveryAreaVM)//BranchId
+		{
+			if(ModelState.IsValid)
+            {
+				var branch = await branchRepo.GetByIdAsync(deliveryAreaVM.BranchId);
+				if (branch == null) return BadRequest();
+
+
+				var region = await regionRepo.GetByIdAsync(deliveryAreaVM.RegionId);
+				if (region == null) return BadRequest();
+
+				
+				var temp = new Available_Delivery_Area()
+				{
+					BranchId = deliveryAreaVM.BranchId,
+					RegionId = deliveryAreaVM.RegionId
+				};
+
+				await branchDeliveryRepo.AddBranchDeliveryArea(temp);
+                return RedirectToAction("GetBranchDeliveringArea", new { Id = branch.Id });
+			}
+			ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.BranchId = deliveryAreaVM.BranchId;
+            return View(deliveryAreaVM);
+		}
+
+
+		public async Task<IActionResult> GetBranchDeliveringArea(int Id)  //BranchId
         {
             var spec = new BranchwithResturantSpecification(Id);
             var branch = await branchRepo.GetByIdWithSpec(spec);
+            if (branch == null) return BadRequest();
 
-            return View(branch.DeliveryAreas.Select(d=>d.Name).ToList()); 
+            ViewBag.BranchId = Id;
+            return View(branch.DeliveryAreas.ToList());
+        }
+
+
+
+        //Delete Delivery Area from Branch
+        public async Task<IActionResult> DeleteBranchDeliveringArea(Available_Delivery_Area delivery_Area)  //BranchId
+        {
+            var tempArea=(await branchDeliveryRepo.GetBranchDeliveryArea(delivery_Area.BranchId, delivery_Area.RegionId));
+            if (tempArea is null) return NotFound();
+
+
+            await branchDeliveryRepo.DeleteBranchDeliveryArea(tempArea);
+            return RedirectToAction(nameof(GetBranchDeliveringArea), new { Id = delivery_Area.BranchId });
         }
 
     }

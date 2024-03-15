@@ -36,6 +36,10 @@ namespace Akalaat.DAL.Data
                     j => j.HasOne(ada => ada.Branch).WithMany().HasForeignKey(ada => ada.BranchId),
                     j => j.HasOne(ada => ada.Region).WithMany().HasForeignKey(ada => ada.RegionId));
 
+
+            builder.Entity<Branch>().Property(b => b.AddressDetails).IsRequired();
+
+
             base.OnModelCreating(builder);
 
 
@@ -47,7 +51,7 @@ namespace Akalaat.DAL.Data
         public virtual DbSet<Branch> Branches { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<City> Cities { get; set; }
-
+        public virtual DbSet<Available_Delivery_Area> AvailableDeliveryAreas {  get; set; }
         public virtual DbSet<Dish> Dishes { get; set; }
         public virtual DbSet<District> Districts { get; set; }
         public virtual DbSet<Item> Items { get; set; }

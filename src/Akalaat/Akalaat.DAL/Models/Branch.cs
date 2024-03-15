@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace Akalaat.DAL.Models
 {
-
-
     public class Branch: BaseEntity
     {
         public bool IsDineIn { get; set; }

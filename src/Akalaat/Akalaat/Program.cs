@@ -18,6 +18,7 @@ namespace Akalaat
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             builder.Services.AddScoped(typeof(IDistrictRepository),typeof(DistrictRepository));
             builder.Services.AddScoped(typeof(IRegionRepository),typeof(RegionRepository));
+            builder.Services.AddScoped(typeof(IBranchDeliveryRepository),typeof(BranchDeliveryRepository));
             builder.Services.AddDbContext<AkalaatDbContext>(op =>
                 op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -32,7 +33,7 @@ namespace Akalaat
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
-
+           
 
 
 
@@ -70,6 +71,8 @@ namespace Akalaat
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

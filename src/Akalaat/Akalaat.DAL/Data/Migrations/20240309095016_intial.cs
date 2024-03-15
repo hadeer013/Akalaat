@@ -516,8 +516,9 @@ namespace Akalaat.DAL.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsDineIn = table.Column<bool>(type: "bit", nullable: false),
                     IsDelivery = table.Column<bool>(type: "bit", nullable: false),
-                    Open_Hour = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Close_Hour = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Open_Hour = table.Column<int>(type: "int", nullable: false),
+                    Close_Hour = table.Column<int>(type: "int", nullable: false),
+                    AddressDetails=table.Column<string>(type:"nvarchar(200)",nullable: false), //*******
                     Estimated_Delivery_Time = table.Column<int>(type: "int", nullable: false),
                     Resturant_ID = table.Column<int>(type: "int", nullable: false),
                     Region_ID = table.Column<int>(type: "int", nullable: false),

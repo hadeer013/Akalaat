@@ -1,0 +1,81 @@
+﻿@model AddBranchDeliveryArea
+@{
+    ViewData["Title"] = "AddBranchDeliveryAreas";
+    var Allcities = ViewBag.Cities;
+}
+
+
+<h1>Add Branch Delivery Areas</h1>
+
+
+
+<form asp-action="AddBranchDeliveryAreas" asp-controller="Branch" class="mt-4">
+    <input asp-for="BranchId" value="@ViewBag.BranchId" hidden />
+
+
+    <div class="form-group">
+        <label for="cities">City</label>
+        <select id="cities" class="form-control">
+            <option value="">Select City</option>
+            @foreach (var city in Allcities)
+            {
+                <option value="@city.Id">@city.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="districts">District</label>
+        <select id="districts" class="form-control" disabled>
+            <option value="">Select District</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="regions">Region</label>
+        <select id="regions" asp-for="RegionId" class="form-control" disabled>
+            <option value="">Select Region</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+
+@section scripts {
+    <script>
+        $(function () {
+            $('#cities').change(function () {
+                var cityId = $(this).val();
+                if (cityId) {
+                    $('#districts').prop('disabled', false);
+                    $.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
+                        console.log("Districts data:", data);
+                        $('#districts').empty().append($('<option>').val('').text('Select District'));
+                        $.each(data, function (index, district) {
+                            $('#districts').append($('<option>').val(district.id).text(district.name));
+                        });
+                    });
+                } else {
+                    $('#districts').prop('disabled', true).empty();
+                    $('#regions').prop('disabled', true).empty();
+                }
+            });
+
+            $('#districts').change(function () {
+                var districtId = $(this).val();
+                if (districtId) {
+                    $('#regions').prop('disabled', false);
+                    $.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
+                        $('#regions').empty().append($('<option>').val('').text('Select Region'));
+                        $.each(data, function (index, region) {
+                            $('#regions').append($('<option>').val(region.id).text(region.name));
+                        });
+                    });
+                } else {
+                    $('#regions').prop('disabled', true).empty();
+                }
+            });
+        });
+    </script>
+}

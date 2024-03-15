@@ -1,4 +1,5 @@
-﻿using Akalaat.DAL.Models;
+﻿using Akalaat.BLL.Interfaces;
+using Akalaat.DAL.Models;
 using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -8,28 +9,35 @@ namespace Akalaat.Controllers
 {
     public class LocationController : Controller
     {
-        private readonly ISession session;
+        private readonly IGenericRepository<City> cityRepo;
 
-        public LocationController(ISession session)
+        public LocationController(IGenericRepository<City>cityRepo)
         {
-            this.session = session;
+            this.cityRepo = cityRepo;
         }
 
-        public IActionResult SetLocation(LocationVM locationVM)
+        public async Task<IActionResult> SetLocation()
         {
-            session.SetString("CityId", locationVM.CityId.ToString());
-            session.SetString("DistrictId", locationVM.DistrictId.ToString());
-            session.SetString("RegionId", locationVM.RegionId.ToString());
+            ViewBag.Cities = await cityRepo.GetAllAsync();
+            return View();
+        }
 
-            return RedirectToAction("Index");
+        [HttpPost]
+        public async Task<IActionResult> SetLocation(LocationVM locationVM)
+        {
+
+            HttpContext.Session.SetString("CityId", locationVM.CityId.ToString());
+            HttpContext.Session.SetString("DistrictId", locationVM.DistrictId.ToString());
+            HttpContext.Session.SetString("RegionId", locationVM.RegionId.ToString());
+
+            return RedirectToAction("Index","Home");
         }
 
         public IActionResult GetLocation()
         {
-            var cityId = int.Parse(session.GetString("CityId"));
-            var districtId = int.Parse(session.GetString("DistrictId"));
-            var regionId = int.Parse(session.GetString("RegionId"));
-
+            var cityResult = int.TryParse(HttpContext.Session.GetString("CityId"), out int cityId);
+            var districtResult = int.TryParse(HttpContext.Session.GetString("DistrictId"), out int districtId);
+            var regionResult = int.TryParse(HttpContext.Session.GetString("RegionId"), out int regionId);
 
             return Json(new { CityId = cityId, DistrictId = districtId, RegionId = regionId });
         }

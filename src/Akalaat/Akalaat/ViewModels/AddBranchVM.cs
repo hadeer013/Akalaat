@@ -7,6 +7,8 @@
         public int CloseHour {  get; set; }
         public string AddressDetails {  get; set; }
         public int RegionId { get; set; }
+        public bool IsDelivery {  get; set; }
+        public bool IsDineIn {  get; set; }
         //public int CityId { get; set; }
         //public int DistrictId { get; set; }
     }

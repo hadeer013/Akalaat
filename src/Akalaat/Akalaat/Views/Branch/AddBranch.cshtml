@@ -9,7 +9,7 @@
 
 
 <form asp-action="AddBranch" asp-controller="Branch" class="mt-4">
-   <input asp-for="ResturantId" hidden/>
+    <input asp-for="ResturantId" value="@ViewBag.ResId" hidden/>
 
     <div class="form-group">
         <label asp-for="AddressDetails" class="control-label">Address Details</label>
@@ -22,6 +22,15 @@
     <div class="form-group">
         <label asp-for="CloseHour" class="control-label">Close Hour</label>
         <input asp-for="CloseHour" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="checkbox" asp-for="IsDelivery" />
+        <label asp-for="IsDelivery" class="control-label">Is Delivery</label>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" asp-for="IsDineIn" />
+        <label asp-for="IsDineIn" class="control-label">Is DineIn</label>
     </div>
 
     <div class="form-group">

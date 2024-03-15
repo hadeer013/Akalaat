@@ -130,7 +130,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("RegionId");
 
-                    b.ToTable("Available_Delivery_Area");
+                    b.ToTable("AvailableDeliveryAreas");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
