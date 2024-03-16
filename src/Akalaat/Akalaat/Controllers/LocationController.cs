@@ -23,12 +23,12 @@ namespace Akalaat.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SetLocation(LocationVM locationVM)
+        public async Task<IActionResult> SetLocation([FromBody]LocationVM locationVM)
         {
 
-            HttpContext.Session.SetString("CityId", locationVM.CityId.ToString());
-            HttpContext.Session.SetString("DistrictId", locationVM.DistrictId.ToString());
-            HttpContext.Session.SetString("RegionId", locationVM.RegionId.ToString());
+            HttpContext.Session.SetString("CityId", locationVM.cityId.ToString());
+            HttpContext.Session.SetString("DistrictId", locationVM.districtId.ToString());
+            HttpContext.Session.SetString("RegionId", locationVM.regionId.ToString());
 
             return RedirectToAction("Index","Home");
         }

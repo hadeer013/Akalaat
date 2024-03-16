@@ -2,8 +2,8 @@
 {
     public class LocationVM
     {
-        public int CityId {  get; set; }
-        public int DistrictId {  get; set; }
-        public int RegionId {  get; set; }
+        public int cityId {  get; set; }
+        public int districtId {  get; set; }
+        public int regionId {  get; set; }
     }
 }
