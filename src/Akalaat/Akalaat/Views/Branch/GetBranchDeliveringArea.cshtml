@@ -1,6 +1,7 @@
 ﻿@model List<Region>
 @{
     ViewData["Title"] = "GetBranchDeliveringArea";
+    var branchId = ViewBag.BranchId;
 }
 
 <div class="container">
@@ -8,7 +9,8 @@
         <div class="col-md-12">
             <h1 class="text-center">Branch Delivering Area</h1>
             <br />
-            <a asp-action="AddBranchDeliveryAreas" asp-route-id="@ViewBag.BranchId" class="btn btn-outline-primary">Add Delivery Area</a>
+            <a asp-action="AddBranchDeliveryAreas" asp-route-id="@branchId" class="btn btn-primary">Add Delivery Area</a>
+            <a asp-action="Index" asp-route-Id="@ViewBag.ResturantId" class="btn btn-outline-primary">Back To List</a>
             <table class="table table-striped mt-4">
                 <thead class="thead-dark">
                     <tr>

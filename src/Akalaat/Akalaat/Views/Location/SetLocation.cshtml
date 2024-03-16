@@ -76,7 +76,7 @@
 
 
 
-@model LocationVM
+@* @model LocationVM
 @{
     ViewData["Title"] = "SetLocation";
     var AllCities = (List<City>)ViewBag.Cities;
@@ -115,6 +115,46 @@
         </div>
     </div>
 </form>
+ *@
+
+@model LocationVM
+@{
+    ViewData["Title"] = "SetLocation";
+    var AllCities = (List<City>)ViewBag.Cities;
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h1 class="text-center">Branch Delivering Area</h1>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <ul id="cityList" class="list-group">
+                @foreach (var city in AllCities)
+                {
+                    <li class="list-group-item">
+                        <button class="citybtn btn btn-primary" data-cityId="@city.Id">@city.Name</button>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul id="districtList" class="list-group" style="display: none;">
+                <li class="list-group-item">Districts will appear here</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul id="regionList" class="list-group" style="display: none;">
+                <li class="list-group-item">Regions will appear here</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 
 @section scripts {
     <script>

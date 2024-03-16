@@ -18,23 +18,25 @@ namespace Akalaat.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IGenericRepository<Address_Book> addressRepo;
         private readonly IGenericRepository<City> cityRepo;
-		private readonly IRegionRepository regionRepo;
-		private readonly IBranchDeliveryRepository branchDeliveryRepo;
+        private readonly IRegionRepository regionRepo;
+        private readonly IBranchDeliveryRepository branchDeliveryRepo;
         private readonly IDistrictRepository districtRepo;
 
         public BranchController(IGenericRepository<Resturant> resturantRepo, IGenericRepository<Branch> branchRepo,
             UserManager<ApplicationUser> userManager, IGenericRepository<Address_Book> addressRepo, IGenericRepository<City> cityRepo,
-            IRegionRepository regionRepo,IBranchDeliveryRepository branchDeliveryRepo,IDistrictRepository districtRepo)
+            IRegionRepository regionRepo, IBranchDeliveryRepository branchDeliveryRepo, IDistrictRepository districtRepo)
         {
             this.resturantRepo = resturantRepo;
             this.branchRepo = branchRepo;
             this.userManager = userManager;
             this.addressRepo = addressRepo;
             this.cityRepo = cityRepo;
-			this.regionRepo = regionRepo;
-			this.branchDeliveryRepo = branchDeliveryRepo;
+            this.regionRepo = regionRepo;
+            this.branchDeliveryRepo = branchDeliveryRepo;
             this.districtRepo = districtRepo;
         }
+
+
         //this needs login or not 
         [AllowAnonymous]
         public async Task<IActionResult> Index(int Id, string Name = "") //ResturantId
@@ -42,44 +44,52 @@ namespace Akalaat.Controllers
             var branchSpec = new BranchwithResturantSpecification(Id, Name);
             var branches = await branchRepo.GetAllWithSpec(branchSpec);
 
+            int cityId = 0, districtId = 0, regionId = 0;
 
-            bool deliverToYou = false;
+            var cityResult = int.TryParse(HttpContext.Session.GetString("CityId"), out cityId);
+            var districtResult = int.TryParse(HttpContext.Session.GetString("DistrictId"), out districtId);
+            var regionResult = int.TryParse(HttpContext.Session.GetString("RegionId"), out regionId);
+
+            var locationProvided = false;
+
+            if (cityResult && districtResult && regionResult)
+                locationProvided = true;
+
+
             var ListVM = new List<viewBranchVM>();
 
-            if (User.Identity.IsAuthenticated)
+            foreach (var item in branches)
             {
-                var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
-                var spec = new AddresswithRegionSpec(user.Id);
-                var userAddress = await addressRepo.GetByIdWithSpec(spec);
-                if (userAddress != null)
+                var branchVM = new viewBranchVM()
                 {
-                    foreach (var item in branches)
-                    {
-                        var branchVM = new viewBranchVM()
-                        {
-                            AddressDetails = item.AddressDetails,
-                            CloseHour = item.Close_Hour,
-                            OpenHour = item.Open_Hour,
-                            Id = item.Id,
-                            RegionName = item.Region.Name,
-                            DeliveryState = DeliverToYou.NotSpecified,
-                            IsAuthenticated = true,
-                            DeliveringAreas = item?.DeliveryAreas?.Select(d => d.Name).ToList()
-                        };
-                        ListVM.Add(branchVM);
-
-                    }
-                }
-            }
-            else
-            {
+                    ResturantId = Id,
+                    AddressDetails = item.AddressDetails,
+                    CloseHour = item.Close_Hour,
+                    OpenHour = item.Open_Hour,
+                    Id = item.Id,
+                    RegionName = item.Region.Name,
+                    DeliveryState = locationProvided ? await CheckDeliverToLocation(regionId, item.Id) : DeliverToYou.NoDeliver,
+                    LocationProvided = locationProvided,
+                    DeliveringAreas = item?.DeliveryAreas?.Select(d => d.Name).ToList()
+                };
+                ListVM.Add(branchVM);
 
             }
+
+            ViewBag.ResturantId = Id;
 
             return View(ListVM);
         }
 
+        private async Task<DeliverToYou> CheckDeliverToLocation(int UserRegionId, int BranchId)
+        {
+            var spec = new BranchwithResturantSpecification(BranchId);
+            var branch = await branchRepo.GetByIdWithSpec(spec);
 
+            if (branch.DeliveryAreas.Select(d => d.Id).Contains(UserRegionId))
+                return DeliverToYou.Deliver;
+            return DeliverToYou.NoDeliver;
+        }
         public async Task<IActionResult> AddBranch(int Id)
         {
             var Resurant = await resturantRepo.GetByIdAsync(Id);
@@ -110,7 +120,7 @@ namespace Akalaat.Controllers
                     IsDineIn = addBranchVM.IsDineIn
                 };
                 await branchRepo.Add(branch);
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Branch", new { Id = Resurant.Id });
             }
             else
             {
@@ -122,7 +132,7 @@ namespace Akalaat.Controllers
         }
         public async Task<IActionResult> EditBranch(int Id)
         {
-            var spec=new BranchwithResturantSpecification(Id);
+            var spec = new BranchwithResturantSpecification(Id);
             var branch = await branchRepo.GetByIdWithSpec(spec);
             if (branch == null) return NotFound();
 
@@ -139,8 +149,8 @@ namespace Akalaat.Controllers
                 IsDineIn = branch.IsDineIn,
                 BranchId = Id,
                 RegionId = branch.Region_ID,
-                CityId= branch.Region.District.City_ID,
-                DistrictId= branch.Region.District_ID
+                CityId = branch.Region.District.City_ID,
+                DistrictId = branch.Region.District_ID
             };
 
             return View(EditVM);
@@ -150,10 +160,10 @@ namespace Akalaat.Controllers
         [HttpPost]
         public async Task<IActionResult> EditBranch(EditBranchVM editBranchVM)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var branch = await branchRepo.GetByIdAsync(editBranchVM.BranchId);
-                if(branch == null) return NotFound();
+                if (branch == null) return NotFound();
 
                 branch.Open_Hour = editBranchVM.OpenHour;
                 branch.AddressDetails = editBranchVM.AddressDetails;
@@ -183,7 +193,7 @@ namespace Akalaat.Controllers
 
             try
             {
-                await branchRepo.Delete(branch);
+                await branchRepo.Delete<int>(branch.Id);
                 return RedirectToAction("Index", "Home");
             }
             catch (Exception ex)
@@ -197,46 +207,47 @@ namespace Akalaat.Controllers
             var branch = await branchRepo.GetByIdAsync(Id);
             if (branch == null) return BadRequest();
 
-			ViewBag.Cities = await cityRepo.GetAllAsync();
-			ViewBag.BranchId = Id;
+            ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.BranchId = Id;
             return View();
-		}
+        }
 
         [HttpPost]
-		public async Task<IActionResult> AddBranchDeliveryAreas(AddBranchDeliveryArea deliveryAreaVM)//BranchId
-		{
-			if(ModelState.IsValid)
+        public async Task<IActionResult> AddBranchDeliveryAreas(AddBranchDeliveryArea deliveryAreaVM)//BranchId
+        {
+            if (ModelState.IsValid)
             {
-				var branch = await branchRepo.GetByIdAsync(deliveryAreaVM.BranchId);
-				if (branch == null) return BadRequest();
+                var branch = await branchRepo.GetByIdAsync(deliveryAreaVM.BranchId);
+                if (branch == null) return BadRequest();
 
 
-				var region = await regionRepo.GetByIdAsync(deliveryAreaVM.RegionId);
-				if (region == null) return BadRequest();
+                var region = await regionRepo.GetByIdAsync(deliveryAreaVM.RegionId);
+                if (region == null) return BadRequest();
 
-				
-				var temp = new Available_Delivery_Area()
-				{
-					BranchId = deliveryAreaVM.BranchId,
-					RegionId = deliveryAreaVM.RegionId
-				};
 
-				await branchDeliveryRepo.AddBranchDeliveryArea(temp);
+                var temp = new Available_Delivery_Area()
+                {
+                    BranchId = deliveryAreaVM.BranchId,
+                    RegionId = deliveryAreaVM.RegionId
+                };
+
+                await branchDeliveryRepo.AddBranchDeliveryArea(temp);
                 return RedirectToAction("GetBranchDeliveringArea", new { Id = branch.Id });
-			}
-			ViewBag.Cities = await cityRepo.GetAllAsync();
+            }
+            ViewBag.Cities = await cityRepo.GetAllAsync();
             ViewBag.BranchId = deliveryAreaVM.BranchId;
             return View(deliveryAreaVM);
-		}
+        }
 
 
-		public async Task<IActionResult> GetBranchDeliveringArea(int Id)  //BranchId
+        public async Task<IActionResult> GetBranchDeliveringArea(int Id)  //BranchId
         {
             var spec = new BranchwithResturantSpecification(Id);
             var branch = await branchRepo.GetByIdWithSpec(spec);
             if (branch == null) return BadRequest();
 
             ViewBag.BranchId = Id;
+            ViewBag.ResturantId = branch.Resturant_ID;
             return View(branch.DeliveryAreas.ToList());
         }
 
@@ -245,7 +256,7 @@ namespace Akalaat.Controllers
         //Delete Delivery Area from Branch
         public async Task<IActionResult> DeleteBranchDeliveringArea(Available_Delivery_Area delivery_Area)  //BranchId
         {
-            var tempArea=(await branchDeliveryRepo.GetBranchDeliveryArea(delivery_Area.BranchId, delivery_Area.RegionId));
+            var tempArea = (await branchDeliveryRepo.GetBranchDeliveryArea(delivery_Area.BranchId, delivery_Area.RegionId));
             if (tempArea is null) return NotFound();
 
 
