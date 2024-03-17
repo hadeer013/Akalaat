@@ -193,6 +193,7 @@ namespace Akalaat.Controllers
 
             try
             {
+                await branchDeliveryRepo.DeleteAllDeliveryAreas(Id);
                 await branchRepo.Delete<int>(branch.Id);
                 return RedirectToAction("Index", "Home");
             }
@@ -207,7 +208,7 @@ namespace Akalaat.Controllers
             var branch = await branchRepo.GetByIdAsync(Id);
             if (branch == null) return BadRequest();
 
-            ViewBag.Cities = await cityRepo.GetAllAsync();
+            ViewBag.Cities = await branchDeliveryRepo.GetAllCitesAvailableAsDeliveryAreas(Id);
             ViewBag.BranchId = Id;
             return View();
         }

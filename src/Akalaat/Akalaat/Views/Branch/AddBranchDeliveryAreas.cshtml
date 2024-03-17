@@ -10,7 +10,7 @@
 
 
 <form asp-action="AddBranchDeliveryAreas" asp-controller="Branch" class="mt-4">
-    <input asp-for="BranchId" value="@ViewBag.BranchId" hidden />
+    <input id="branchID" asp-for="BranchId" value="@ViewBag.BranchId" hidden />
 
 
     <div class="form-group">
@@ -49,7 +49,8 @@
                 var cityId = $(this).val();
                 if (cityId) {
                     $('#districts').prop('disabled', false);
-                    $.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
+                    var branId = $('#branchID').val();
+                    $.getJSON('@Url.Action("GetAvailableDistricts", "DeliveryArea")', { BranchId: branId, CityId: cityId }, function (data) {
                         console.log("Districts data:", data);
                         $('#districts').empty().append($('<option>').val('').text('Select District'));
                         $.each(data, function (index, district) {
@@ -66,7 +67,8 @@
                 var districtId = $(this).val();
                 if (districtId) {
                     $('#regions').prop('disabled', false);
-                    $.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
+                    var branId = $('#branchID').val();
+                    $.getJSON('@Url.Action("GetAvailableRegions", "DeliveryArea")', { BranchId: branId, DistrictId: districtId }, function (data) {
                         $('#regions').empty().append($('<option>').val('').text('Select Region'));
                         $.each(data, function (index, region) {
                             $('#regions').append($('<option>').val(region.id).text(region.name));

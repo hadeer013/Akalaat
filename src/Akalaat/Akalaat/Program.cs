@@ -26,8 +26,8 @@ namespace Akalaat
 
             builder.Services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromDays(1);
-                options.Cookie.HttpOnly = true;
+                //options.IdleTimeout = TimeSpan.FromDays(1);
+                //options.Cookie.HttpOnly = true;
             });
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().

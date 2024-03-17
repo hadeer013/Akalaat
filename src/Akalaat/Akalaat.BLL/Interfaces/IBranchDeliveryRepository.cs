@@ -13,5 +13,10 @@ namespace Akalaat.BLL.Interfaces
 		Task<int> DeleteBranchDeliveryArea(Available_Delivery_Area delivery_Area);
 
 		Task<Available_Delivery_Area> GetBranchDeliveryArea(int BranchId,int RegionId);
-	}
+		Task<int> DeleteAllDeliveryAreas(int BranchId);
+		Task<IReadOnlyList<City>> GetAllCitesAvailableAsDeliveryAreas(int BranchId);
+		Task<IReadOnlyList<District>> GetAllDistrictsAvailableAsDeliveryAreas(int BranchId, int CityId);
+		Task<IReadOnlyList<Region>> GetAllRegionAvailableAsDeliveryAreas(int BranchId, int DistrictId);
+
+    }
 }
