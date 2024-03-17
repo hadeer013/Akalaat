@@ -4,6 +4,7 @@ using Akalaat.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Akalaat.DAL.Data.Migrations
 {
     [DbContext(typeof(AkalaatDbContext))]
-    partial class AkalaatDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240315211143_itemPrice")]
+    partial class itemPrice
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -130,7 +133,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("RegionId");
 
-                    b.ToTable("AvailableDeliveryAreas");
+                    b.ToTable("Available_Delivery_Area");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
@@ -326,6 +329,9 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.Property<int?>("OfferId")
                         .HasColumnType("int");
+
+                    b.Property<decimal?>("itemPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

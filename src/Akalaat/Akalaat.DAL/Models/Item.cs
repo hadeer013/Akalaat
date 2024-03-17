@@ -22,6 +22,7 @@ namespace Akalaat.DAL.Models
         [Required]
         public string Image_URL { get; set; }
 
+        //public decimal? itemPrice { get; set; }
         public decimal? Discount { get; set; }
 
         public OfferStatus IsOffer { get; set; }

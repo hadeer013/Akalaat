@@ -12,7 +12,8 @@
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.3",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
+          "Stripe.net": "43.19.0"
         },
         "runtime": {
           "Akalaat.dll": {}
@@ -1832,6 +1833,18 @@
           }
         }
       },
+      "Stripe.net/43.19.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "43.19.0.0",
+            "fileVersion": "43.19.0.0"
+          }
+        }
+      },
       "System.CodeDom/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -2109,7 +2122,8 @@
       },
       "Akalaat.BLL/1.0.0": {
         "dependencies": {
-          "Akalaat.DAL": "1.0.0"
+          "Akalaat.DAL": "1.0.0",
+          "Stripe.net": "43.19.0"
         },
         "runtime": {
           "Akalaat.BLL.dll": {}
@@ -2118,7 +2132,8 @@
       "Akalaat.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
+          "Stripe.net": "43.19.0"
         },
         "runtime": {
           "Akalaat.DAL.dll": {}
@@ -3139,6 +3154,13 @@
       "sha512": "sha512-ypnSvEtpNGo48bAWn95J1oHChycCXcevFSbn53fqzLxlXFSZP7dawu8p/7mHAfGufZQSV2sBpW80XQGIfXO8kQ==",
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
+    },
+    "Stripe.net/43.19.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-myTy0v3nlZsjrlOfcjWWdgHs64uffK1Z44FuaVdnzp1+XGeRBklR2LeANQC+v0lX64ruGkShTdi0u7qh/UEX3w==",
+      "path": "stripe.net/43.19.0",
+      "hashPath": "stripe.net.43.19.0.nupkg.sha512"
     },
     "System.CodeDom/5.0.0": {
       "type": "package",

@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "fo3M7sPxkczGeKI1s0JUQL4HO1HS7Nf13sSW5C0B33w=",
+=======
+  "Hash": "etI2PigCOSh1GZ7mhjwRl7pNi04lzVElbRkakG1nXrw=",
+>>>>>>> Stashed changes
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -131,7 +135,30 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png",
+=======
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg"
+    },
+    {
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
@@ -188,7 +215,30 @@
       "OriginalItemSpec": "wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
+=======
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg"
+    },
+    {
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
@@ -245,7 +295,30 @@
       "OriginalItemSpec": "wwwroot\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
+=======
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg"
+    },
+    {
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
@@ -302,7 +375,49 @@
       "OriginalItemSpec": "wwwroot\\Images\\b463779d-0af9-43a0-918e-3f4aecec234d.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\jquery-3.7.1.min.js",
+=======
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg"
+    },
+    {
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg"
+    },
+    {
+      "Identity": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\jquery-3.7.1.min.js",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",

@@ -21,6 +21,15 @@ namespace Akalaat.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var user = await userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                
+                return RedirectToAction("Login", "Account");
+            }
+            var customerName = user.UserName;            
+            ViewBag.CustomerName = customerName;
+
             var reviews = await reviewRepo.GetAllAsync();
             return View(reviews);
         }
@@ -53,6 +62,13 @@ namespace Akalaat.Controllers
                     await addReviewVM.ReviewImage.CopyToAsync(fileStream);
                 }
 
+                // Get the currently logged-in user
+                var user = await userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    // User is not logged in, handle accordingly
+                    return RedirectToAction("Login", "Account");
+                }
 
                 Review reviewEntity = new Review
                 {
@@ -60,7 +76,7 @@ namespace Akalaat.Controllers
                     Comment = addReviewVM.Comment,
                     No_of_Likes = addReviewVM.No_of_Likes,
                     ReviewImage = uniqueFileName,
-                    Customer_ID = addReviewVM.Customer_ID,
+                    Customer_ID = user.Id, // Assuming Customer_ID property in Review model represents UserId
                     Resturant_ID = addReviewVM.Resturant_ID
                 };
 
@@ -75,7 +91,6 @@ namespace Akalaat.Controllers
 
             return View(addReviewVM);
         }
-
         public async Task<IActionResult> Delete(int id)
         {
             var review = await reviewRepo.GetByIdAsync(id);
@@ -109,13 +124,18 @@ namespace Akalaat.Controllers
             {
                 return NotFound();
             }
-
+            var user = await userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                // User is not logged in, handle accordingly
+                return RedirectToAction("Login", "Account");
+            }
             var reviewVM = new AddReviewVM
             {
                 Rating = review.Rating,
                 Comment = review.Comment,
                 No_of_Likes = review.No_of_Likes,
-                Customer_ID = review.Customer_ID,
+                Customer_ID = user.Id,
                 Resturant_ID = review.Resturant_ID
             };
 
@@ -150,12 +170,18 @@ namespace Akalaat.Controllers
                 // Update the review entity with the new image path
                 review.ReviewImage = uniqueFileName;
             }
+            var user = await userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                // User is not logged in, handle accordingly
+                return RedirectToAction("Login", "Account");
+            }
 
             // Update other properties of the review entity
             review.Rating = addReviewVM.Rating;
             review.Comment = addReviewVM.Comment;
             review.No_of_Likes = addReviewVM.No_of_Likes;
-
+            review.Customer_ID = user.Id;
             await reviewRepo.Update(review);
             return RedirectToAction("Index");
         }

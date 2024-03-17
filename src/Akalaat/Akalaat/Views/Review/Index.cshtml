@@ -1,4 +1,14 @@
-﻿@model IEnumerable<Akalaat.DAL.Models.Review>
+﻿<link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+<style>
+    .star {
+        cursor: pointer;
+        color: orange;
+        font-weight: bolder;
+    }
+</style>
+
+
+@model IEnumerable<Akalaat.DAL.Models.Review>
 
 @{
     ViewData["Title"] = "Index";
@@ -12,6 +22,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                Name
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Rating)
             </th>
@@ -41,7 +54,22 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Rating)
+                    <p>@ViewBag.CustomerName</p>
+                </td>
+                <td>
+                    @{
+                        int goodRate = (int)item.Rating;
+                        int badRate = 5 - goodRate ;
+                        for (int i = 0; i < goodRate; i++)
+                        {
+                            <i class="bi bi-star-fill star "></i>
+                        }
+                        
+                        for (int i = 0; i < badRate; i++)
+                        {
+                            <i class="bi bi-star star "></i>
+                        }
+                     }
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Comment)

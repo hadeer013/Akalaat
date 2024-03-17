@@ -1078,6 +1078,7 @@ D:\New Clone\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\refint\Akalaat.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.pdb
 D:\New Clone\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.genruntimeconfig.cache
 D:\New Clone\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\ref\Akalaat.dll
+<<<<<<< Updated upstream
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.AssemblyReference.cache
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.GeneratedMSBuildEditorConfig.editorconfig
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.AssemblyInfoInputs.cache
@@ -1351,3 +1352,6 @@ F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\n
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.Up2Date
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.genruntimeconfig.cache
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\ref\Akalaat.dll
+=======
+D:\New Clone\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Stripe.net.dll
+>>>>>>> Stashed changes

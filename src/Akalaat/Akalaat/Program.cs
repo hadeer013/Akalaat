@@ -4,6 +4,7 @@ using Akalaat.DAL.Data;
 using Akalaat.DAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 namespace Akalaat
 {
@@ -69,7 +70,7 @@ namespace Akalaat
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
             app.UseAuthorization();
 
             app.UseSession();
