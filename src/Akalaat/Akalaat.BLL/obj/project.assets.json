@@ -624,7 +624,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -643,6 +643,36 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Stripe.net/43.19.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -650,7 +680,7 @@
           "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -688,7 +718,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -925,7 +955,7 @@
           "System.Windows.Extensions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -1052,7 +1082,7 @@
           "System.Drawing.Common": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
@@ -1073,7 +1103,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
+          "Stripe.net": "43.19.0"
         },
         "compile": {
           "bin/placeholder/Akalaat.DAL.dll": {}
@@ -2047,6 +2078,61 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Stripe.net/43.19.0": {
+      "sha512": "myTy0v3nlZsjrlOfcjWWdgHs64uffK1Z44FuaVdnzp1+XGeRBklR2LeANQC+v0lX64ruGkShTdi0u7qh/UEX3w==",
+      "type": "package",
+      "path": "stripe.net/43.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.43.19.0.nupkg.sha512",
+        "stripe.net.nuspec"
+      ]
+    },
     "System.Configuration.ConfigurationManager/6.0.1": {
       "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
       "type": "package",
@@ -2916,23 +3002,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Akalaat.DAL >= 1.0.0"
+      "Akalaat.DAL >= 1.0.0",
+      "Stripe.net >= 43.19.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hassan\\.nuget\\packages\\": {}
+    "C:\\Users\\smc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
+      "projectUniqueName": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
       "projectName": "Akalaat.BLL",
-      "projectPath": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
-      "packagesPath": "C:\\Users\\Hassan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\obj\\",
+      "projectPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
+      "packagesPath": "C:\\Users\\smc\\.nuget\\packages\\",
+      "outputPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Hassan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\smc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2940,15 +3032,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
-              "projectPath": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj"
+            "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
+              "projectPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj"
             }
           }
         }
@@ -2957,11 +3048,22 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[43.19.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -2978,7 +3080,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

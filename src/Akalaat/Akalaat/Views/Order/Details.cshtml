@@ -1,0 +1,43 @@
+﻿@model Akalaat.ViewModels.OrderVM
+
+<div class="card">
+    <h5 class="card-header">Order Details</h5>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Order Date:</dt>
+            <dd class="col-sm-9">@Model.DateTime</dd>
+
+            <dt class="col-sm-3">Arrival Time:</dt>
+            <dd class="col-sm-9">@Model.ArrivalTime</dd>
+
+            <dt class="col-sm-3">Total Price:</dt>
+            <dd class="col-sm-9">@Model.TotalPrice</dd>
+
+            <dt class="col-sm-3">Total Discount:</dt>
+            <dd class="col-sm-9">@Model.TotalDiscount</dd>
+
+            <dt class="col-sm-3">Customer UserName:</dt>
+            <td>@Model.Customer.UserName</td>
+            <!-- Display other customer details as needed -->
+
+            <dt class="col-sm-3">Order Items:</dt>
+           <dd class="col-sm-9">
+                @if (Model.Items != null && Model.Items.Any())
+                {
+                    <ul class="list-group">
+                        @foreach (var item in Model.Items)
+                        {
+                            <li class="list-group-item">
+                                Order ID: @item.Id, Name: @item.Name
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>No Items</p>
+                }
+            </dd> 
+        </dl>
+    </div>
+</div>

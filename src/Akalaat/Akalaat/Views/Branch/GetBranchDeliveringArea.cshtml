@@ -1,0 +1,46 @@
+﻿@model List<Region>
+@{
+    ViewData["Title"] = "GetBranchDeliveringArea";
+    var branchId = ViewBag.BranchId;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Branch Delivering Area</h1>
+            <br />
+            <a asp-action="AddBranchDeliveryAreas" asp-route-id="@branchId" class="btn btn-primary">Add Delivery Area</a>
+            <a asp-action="Index" asp-route-Id="@ViewBag.ResturantId" class="btn btn-outline-primary">Back To List</a>
+            <table class="table table-striped mt-4">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>City</th>
+                        <th>District</th>
+                        <th>Region</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.District.City.Name</td>
+                                <td>@item.District.Name</td>
+                                <td>@item.Name</td>
+                                <td><a class="btn btn-danger" asp-action="DeleteBranchDeliveringArea" asp-route-RegionId="@item.Id" asp-route-BranchId="@ViewBag.BranchId">Delete</a></td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center"><h3>No delivery Area</h3></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -17,13 +17,17 @@ namespace Akalaat.BLL.Specifications
             if (Spec.Criteria != null)
                 query = query.Where(Spec.Criteria);
 
+            if (Spec.Includes != null)
+                query = Spec.Includes.Aggregate(query,(current,include)=> current.Include(include));
 
-            query = Spec.Includes.Aggregate(query,(current,include)=> current.Include(include));
-            //hadeer
-            //ramzy
-            //alama
+            if (Spec.IncludeThenIncludes != null)
+                query = Spec.IncludeThenIncludes.Aggregate(query,(current,include)=> include(current));
+    
 
-            //hadeer ramzy alama 
+            if (Spec.OrderBy != null)
+            {
+                query = query.OrderBy(Spec.OrderBy);
+            }
             return query;
 
         }

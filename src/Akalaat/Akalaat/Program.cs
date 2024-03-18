@@ -5,6 +5,7 @@ using Akalaat.DAL.Models;
 using Akalaat.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 namespace Akalaat
 {
@@ -18,13 +19,24 @@ namespace Akalaat
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             builder.Services.AddScoped<FileManagement>();
+            builder.Services.AddScoped(typeof(IDistrictRepository),typeof(DistrictRepository));
+            builder.Services.AddScoped(typeof(IRegionRepository),typeof(RegionRepository));
+            builder.Services.AddScoped(typeof(IBranchDeliveryRepository),typeof(BranchDeliveryRepository));
             builder.Services.AddDbContext<AkalaatDbContext>(op =>
                 op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddDistributedMemoryCache();
+
+            builder.Services.AddSession(options =>
+            {
+                //options.IdleTimeout = TimeSpan.FromDays(1);
+                //options.Cookie.HttpOnly = true;
+            });
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
-
+           
 
 
 
@@ -60,8 +72,10 @@ namespace Akalaat
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

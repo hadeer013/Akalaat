@@ -1,50 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\",
+  "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\cityspec\\citywithdistrictspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\cityspec\\citywithdistrictspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat.bll\\repositories\\branchdeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\repositories\\branchdeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\deliveryareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\deliveryareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\controllers\\addressbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\addressbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\addressbookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\addressbookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\mvc final project\\akalaat\\src\\akalaat\\akalaat.dal\\models\\address_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\address_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\views\\branch\\addbranchdeliveryareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\branch\\addbranchdeliveryareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,92 +47,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Resturant.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
-              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Resturant.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
-              "RelativeToolTip": "Akalaat.DAL\\Models\\Resturant.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:33:40.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Reservation.cs",
-              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Reservation.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Reservation.cs",
-              "RelativeToolTip": "Akalaat.DAL\\Models\\Reservation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:33:37.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CityWithDistrictSpecification.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\CitySpec\\CityWithDistrictSpecification.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\EntitySpecs\\CitySpec\\CityWithDistrictSpecification.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\CitySpec\\CityWithDistrictSpecification.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Specifications\\EntitySpecs\\CitySpec\\CityWithDistrictSpecification.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:26:01.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SpecificationEvaluator.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\SpecificationEvaluator.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\SpecificationEvaluator.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\SpecificationEvaluator.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Specifications\\SpecificationEvaluator.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAYwAwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:14:00.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseSpecification.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\BaseSpecification.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\BaseSpecification.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\BaseSpecification.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Specifications\\BaseSpecification.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAiwA0AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:14:35.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ISpecification.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\ISpecification.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\ISpecification.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\ISpecification.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Specifications\\ISpecification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:10:22.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAYwDkAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T20:03:44.948Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T16:37:55.02Z",
               "EditorCaption": ""
             },
             {
@@ -153,54 +63,90 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\appsettings.json",
+              "RelativeDocumentMoniker": "Akalaat\\appsettings.json",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\appsettings.json",
+              "RelativeToolTip": "Akalaat\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T16:30:31.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Program.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeToolTip": "Akalaat\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:20:58.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DistrictController.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DistrictController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\DistrictController.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DistrictController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\DistrictController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAqwHcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:16:40.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeliveryAreaController.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAewBcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T00:44:16.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddBranchDeliveryAreas.cshtml",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowDEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-17T00:42:27.613Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CityController.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\CityController.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\CityController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCMAAABMAAAA",
+              "Title": "BranchDeliveryRepository.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "RelativeDocumentMoniker": "Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "RelativeToolTip": "Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAqwEkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T19:56:20.476Z",
+              "WhenOpened": "2024-03-17T00:09:22.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddressBookVM.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\AddressBookVM.cs",
-              "RelativeDocumentMoniker": "Akalaat\\ViewModels\\AddressBookVM.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\AddressBookVM.cs",
-              "RelativeToolTip": "Akalaat\\ViewModels\\AddressBookVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "DocumentIndex": 4,
+              "Title": "BranchController.cs",
+              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\BranchController.cs",
+              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\BranchController.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAAA7wNkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T18:20:34.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddressBookController.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\AddressBookController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\AddressBookController.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\AddressBookController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\AddressBookController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAYwBoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T18:16:39.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Address_Book.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Address_Book.cs",
-              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Address_Book.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\MVC final project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Address_Book.cs",
-              "RelativeToolTip": "Akalaat.DAL\\Models\\Address_Book.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABcAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T18:15:30.816Z",
+              "WhenOpened": "2024-03-16T18:55:00.569Z",
               "EditorCaption": ""
             }
           ]

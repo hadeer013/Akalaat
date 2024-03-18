@@ -17,7 +17,7 @@ namespace Akalaat.DAL.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -43,7 +43,8 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Customer_ID");
+                    b.HasIndex("Customer_ID")
+                        .IsUnique();
 
                     b.HasIndex("Region_ID");
 
@@ -129,7 +130,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasIndex("RegionId");
 
-                    b.ToTable("Available_Delivery_Area");
+                    b.ToTable("AvailableDeliveryAreas");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Branch", b =>
@@ -140,8 +141,12 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Close_Hour")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("AddressDetails")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Close_Hour")
+                        .HasColumnType("int");
 
                     b.Property<int>("Estimated_Delivery_Time")
                         .HasColumnType("int");
@@ -152,8 +157,8 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<bool>("IsDineIn")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("Open_Hour")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("Open_Hour")
+                        .HasColumnType("int");
 
                     b.Property<int>("Region_ID")
                         .HasColumnType("int");
@@ -459,9 +464,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("Item_ID")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Total_Discount")
                         .HasColumnType("decimal(18,2)");
 
@@ -471,8 +473,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Customer_ID");
-
-                    b.HasIndex("Item_ID");
 
                     b.ToTable("Orders");
                 });
@@ -590,6 +590,9 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("Resturant_ID")
                         .HasColumnType("int");
 
+                    b.Property<string>("ReviewImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Customer_ID");
@@ -612,6 +615,21 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasIndex("resturantDishesId");
 
                     b.ToTable("DishResturant");
+                });
+
+            modelBuilder.Entity("ItemOrder", b =>
+                {
+                    b.Property<int>("ItemsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrdersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ItemsId", "OrdersId");
+
+                    b.HasIndex("OrdersId");
+
+                    b.ToTable("OrderItems", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -773,11 +791,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasBaseType("Akalaat.DAL.Models.ApplicationUser");
 
-                    b.Property<int?>("Address_Book_ID")
-                        .HasColumnType("int");
-
-                    b.HasIndex("Address_Book_ID");
-
                     b.ToTable("Customer");
                 });
 
@@ -796,8 +809,8 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Address_Book", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("Customer_ID")
+                        .WithOne("Address_Book")
+                        .HasForeignKey("Akalaat.DAL.Models.Address_Book", "Customer_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -942,13 +955,7 @@ namespace Akalaat.DAL.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("Item_ID");
-
                     b.Navigation("Customer");
-
-                    b.Navigation("Item");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Region", b =>
@@ -1018,6 +1025,21 @@ namespace Akalaat.DAL.Data.Migrations
                     b.HasOne("Akalaat.DAL.Models.Resturant", null)
                         .WithMany()
                         .HasForeignKey("resturantDishesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ItemOrder", b =>
+                {
+                    b.HasOne("Akalaat.DAL.Models.Item", null)
+                        .WithMany()
+                        .HasForeignKey("ItemsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Akalaat.DAL.Models.Order", null)
+                        .WithMany()
+                        .HasForeignKey("OrdersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -1099,17 +1121,11 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Customer", b =>
                 {
-                    b.HasOne("Akalaat.DAL.Models.Address_Book", "Address_Book")
-                        .WithMany()
-                        .HasForeignKey("Address_Book_ID");
-
                     b.HasOne("Akalaat.DAL.Models.ApplicationUser", null)
                         .WithOne()
                         .HasForeignKey("Akalaat.DAL.Models.Customer", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Address_Book");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Vendor", b =>
@@ -1187,6 +1203,8 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Customer", b =>
                 {
+                    b.Navigation("Address_Book");
+
                     b.Navigation("orders");
 
                     b.Navigation("reservations");

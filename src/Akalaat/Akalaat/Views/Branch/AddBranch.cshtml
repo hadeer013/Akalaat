@@ -1,0 +1,101 @@
+﻿@model AddBranchVM
+@{
+    ViewData["Title"] = "AddBranch";
+    var Allcities = ViewBag.Cities;
+}
+
+<h1>AddBranch</h1>
+
+
+
+<form asp-action="AddBranch" asp-controller="Branch" class="mt-4">
+    <input asp-for="ResturantId" value="@ViewBag.ResId" hidden/>
+
+    <div class="form-group">
+        <label asp-for="AddressDetails" class="control-label">Address Details</label>
+        <input asp-for="AddressDetails" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="OpenHour" class="control-label">Open Hour</label>
+        <input asp-for="OpenHour" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CloseHour" class="control-label">Close Hour</label>
+        <input asp-for="CloseHour" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="checkbox" asp-for="IsDelivery" />
+        <label asp-for="IsDelivery" class="control-label">Is Delivery</label>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" asp-for="IsDineIn" />
+        <label asp-for="IsDineIn" class="control-label">Is DineIn</label>
+    </div>
+
+    <div class="form-group">
+        <label for="cities">City</label>
+        <select id="cities" class="form-control">
+            <option value="">Select City</option>
+            @foreach (var city in Allcities)
+            {
+                <option value="@city.Id">@city.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="districts">District</label>
+        <select id="districts" class="form-control" disabled>
+            <option value="">Select District</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="regions">Region</label>
+        <select id="regions" asp-for="RegionId" class="form-control" disabled>
+            <option value="">Select Region</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+
+@section scripts {
+    <script>
+        $(function () {
+            $('#cities').change(function () {
+                var cityId = $(this).val();
+                if (cityId) {
+                    $('#districts').prop('disabled', false);
+                    $.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
+                        console.log("Districts data:", data);
+                        $('#districts').empty().append($('<option>').val('').text('Select District'));
+                        $.each(data, function (index, district) {
+                            $('#districts').append($('<option>').val(district.id).text(district.name));
+                        });
+                    });
+                } else {
+                    $('#districts').prop('disabled', true).empty();
+                    $('#regions').prop('disabled', true).empty();
+                }
+            });
+
+            $('#districts').change(function () {
+                var districtId = $(this).val();
+                if (districtId) {
+                    $('#regions').prop('disabled', false);
+                    $.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
+                        $('#regions').empty().append($('<option>').val('').text('Select Region'));
+                        $.each(data, function (index, region) {
+                            $('#regions').append($('<option>').val(region.id).text(region.name));
+                        });
+                    });
+                } else {
+                    $('#regions').prop('disabled', true).empty();
+                }
+            });
+        });
+    </script>
+}

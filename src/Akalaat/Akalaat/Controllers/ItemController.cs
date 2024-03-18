@@ -1,6 +1,7 @@
 ﻿using Akalaat.BLL.Interfaces;
 using Akalaat.DAL.Models;
 using Akalaat.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
@@ -8,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Stripe.Checkout;
 
 namespace Akalaat.Controllers
 {
@@ -16,7 +18,8 @@ namespace Akalaat.Controllers
         private readonly IGenericRepository<Item> _itemRepository;
         private readonly IGenericRepository<Category> _categoryRepository;
         private IGenericRepository<Menu> _menuRepository;
-
+        private readonly IGenericRepository<Menu_Item_Size> menuitemsizeRepository;
+        private readonly UserManager<ApplicationUser> userManager;
         public ItemController(IGenericRepository<Item> itemRepository,
             IGenericRepository<Category> categoryRepository,
             IGenericRepository<Menu> menuRepository)
@@ -24,12 +27,16 @@ namespace Akalaat.Controllers
             _itemRepository = itemRepository;
             _categoryRepository = categoryRepository;
             _menuRepository = menuRepository;
+            this.userManager = userManager;
+            this.menuitemsizeRepository = menuitemsizeRepository;
         }
 
-        public async Task<IActionResult> Index(int menuId, int categoryId =-1, string searchItem="")
+
+
+        public async Task<IActionResult> Index(int menuId, int categoryId = -1, string searchItem = "")
         {
             // Retrieve restaurant name from the menu ID using the existing repositories or context
-            var menu = await _menuRepository.GetByIdIncludingAsync(menuId,m=>m.Resturant);
+            var menu = await _menuRepository.GetByIdIncludingAsync(menuId, m => m.Resturant);
             var restaurantName = menu?.Resturant?.Name;
             var orderBy = (Func<IQueryable<Item>, IOrderedQueryable<Item>>)null;
             orderBy = items => items.OrderByDescending(item => item.Likes);
@@ -45,7 +52,7 @@ namespace Akalaat.Controllers
             {
                 filters.Add(item => item.CategoryID == categoryId);
             }
-           
+
 
             // Add filter for SearchItem if provided
             if (!string.IsNullOrEmpty(searchItem))
@@ -54,7 +61,7 @@ namespace Akalaat.Controllers
             }
 
             // Retrieve items based on filters
-            var items = await _itemRepository.GetAllAsync(filters,orderBy);
+            var items = await _itemRepository.GetAllAsync(filters, orderBy);
 
             // Map items to view models
             var itemViewModels = items.Select(MapToViewModel).ToList();
@@ -67,7 +74,7 @@ namespace Akalaat.Controllers
             ViewBag.RestaurantName = restaurantName;
             ViewBag.SelectedCategory = categoryId;
             ViewBag.SearchValue = searchItem;
-            
+
             // Return view with view models
             return View(itemViewModels);
         }
@@ -202,7 +209,7 @@ namespace Akalaat.Controllers
                 ImageUrl = item.Image_URL,
                 Discount = item.Discount,
                 IsOffer = item.IsOffer,
-                CategoryID = item.CategoryID??0
+                CategoryID = item.CategoryID ?? 0
             };
         }
 
@@ -229,5 +236,59 @@ namespace Akalaat.Controllers
                 }
             }
         }
+
+        //public async Task<IActionResult> Checkout()
+        //{
+        //    var domain = "http://localhost:5208/";
+        //    var user = await userManager.GetUserAsync(User);
+        //    if (user == null)
+        //    {
+        //        return RedirectToAction("Login", "Account"); 
+        //    }
+
+        //    var options = new SessionCreateOptions
+        //    {
+        //        SuccessUrl = domain + "Item/SuccessfulPayment",
+        //        CancelUrl = domain + "Item/Index",
+        //        LineItems = new List<SessionLineItemOptions>(),
+        //        Mode = "payment",
+        //        CustomerEmail = user.Email
+        //    };
+
+        //    var items = await _itemRepository.GetAllAsync();
+        //    var sizes = await menuitemsizeRepository.GetAllAsync();
+
+        //    foreach (var size in sizes)
+        //    {
+
+        //        var item = items.FirstOrDefault(i => i.Id == size.Item_ID);
+        //        if (item != null)
+        //        {
+        //            var sessionListItem = new SessionLineItemOptions
+        //            {
+        //                PriceData = new SessionLineItemPriceDataOptions
+        //                {
+        //                    UnitAmount = (long)size.Price * 100, 
+        //                    Currency = "EGP",
+        //                    ProductData = new SessionLineItemPriceDataProductDataOptions
+        //                    {
+        //                        Name = item.Name,
+        //                    }
+        //                },
+        //                Quantity = 1
+        //            };
+        //            options.LineItems.Add(sessionListItem);
+        //        }
+        //    }
+        //    var service = new SessionService();
+        //    Session session = service.Create(options);
+
+        //    Response.Headers.Add("Location", session.Url);
+        //    return new StatusCodeResult(303);
+        //}
+        //public IActionResult SuccessfulPayment() 
+        //{
+        //    return View();
+        //}
     }
 }

@@ -13,7 +13,8 @@ namespace Akalaat.BLL.Specifications
     {
         public Expression<Func<T, bool>> Criteria { get; set; }
         public List<Expression<Func<T, object>>> Includes { get; set; } = new List<Expression<Func<T, object>>>();
-        public List<Func<IQueryable<T>, IIncludableQueryable<T, object>>> IncludeThenIncludes { get; set; }
+        public List<Func<IQueryable<T>, IIncludableQueryable<T, object>>> IncludeThenIncludes { get; set; } = new List<Func<IQueryable<T>, IIncludableQueryable<T, object>>>();
+        public Expression<Func<T, object>> OrderBy { get ; set ; }
 
         public BaseSpecification() //for get All
         {
@@ -28,5 +29,7 @@ namespace Akalaat.BLL.Specifications
 
             Includes.Add(Include);
         }
+        public void AddThenInclude(Func<IQueryable<T>, IIncludableQueryable<T, object>> Theninclude)
+          => this.IncludeThenIncludes.Add(Theninclude);
     }
 }
