@@ -1,9 +1,12 @@
 ﻿using Akalaat.BLL.Interfaces;
+using Akalaat.BLL.Specifications.EntitySpecs.CustomerSpec;
 using Akalaat.BLL.Specifications.EntitySpecs.OrderSpec;
 using Akalaat.DAL.Models;
 using Akalaat.Helper;
 using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq.Expressions;
 using System.Security.Claims;
 
 namespace Akalaat.Controllers
@@ -12,11 +15,16 @@ namespace Akalaat.Controllers
     {
         private readonly IGenericRepository<Order> _orderRepository;
         private readonly IGenericRepository<Item> _itemRepository;
-
-        public OrderController(IGenericRepository<Order> orderRepository, IGenericRepository<Item> itemRepository)
+        private readonly IGenericRepository<ShoppingCart> ShoppingCartRepository;
+        private readonly IGenericRepository<ShoppingCartItem> ShoppingCartItemRepository;
+        private readonly IGenericRepository<Customer> CustomerRepository;
+        public OrderController(IGenericRepository<Order> orderRepository, IGenericRepository<Item> itemRepository, IGenericRepository<ShoppingCart> ShoppingCartRepository, IGenericRepository<ShoppingCartItem> ShoppingCartItemRepository, IGenericRepository<Customer> CustomerRepository)
         {
             _orderRepository = orderRepository;
             _itemRepository = itemRepository;
+            this.ShoppingCartRepository = ShoppingCartRepository;
+            this.ShoppingCartItemRepository = ShoppingCartItemRepository;
+            this.CustomerRepository = CustomerRepository;
         }
         public async Task<IActionResult> Index()
         {
@@ -33,46 +41,92 @@ namespace Akalaat.Controllers
         {
             var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            var items =await _itemRepository.GetAllAsync();
+
+            var itemSelectList = items.Select(item => new SelectListItem
+            {
+                Value = item.Id.ToString(),
+                Text = item.Name
+            });
+
             var orderViewModel = new OrderVM
             {
                 Customer_ID = customerId,
+                Items = itemSelectList.ToList()
             };
-            ViewBag.AllItems = await _itemRepository.GetAllAsync();
 
             return View(orderViewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(OrderVM orderViewModel)
-        {
-            ViewBag.AllItems = await _itemRepository.GetAllAsync();
 
+        public async Task<IActionResult> Create(float? TotalPrice /*[FromBody]CartVM cartVM*/)
+        {
+            var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            CustomerWithShoppingCartSpecification spec = new CustomerWithShoppingCartSpecification(customerId);
+
+            var CurrentCustomer = await CustomerRepository.GetByIdWithSpec(spec);
+            var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
+            ShoppingCart shoppingCart = await ShoppingCartRepository.GetByIdAsync(Shopping_ID);
+            var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item => item.ShoppingCartId == Shopping_ID], includeProperties: "Item");
+                List<Item> _items = new List<Item>();
+
+            if (shoppingCartItem.Count != 0)
+            {
+                foreach (var item in shoppingCartItem)
+                {
+                    _items.Add(item.Item);
+                }
+            }
             if (ModelState.IsValid)
             {
+
                 var order = new Order
                 {
-                    // Map properties from the view model
-                    DateTime = orderViewModel.DateTime,
-                    Arrival_Time = orderViewModel.ArrivalTime,
-                    Total_Price = orderViewModel.TotalPrice,
-                    Total_Discount = orderViewModel.TotalDiscount,
-                    Customer_ID = orderViewModel.Customer_ID,
-                   // OrderItems = orderViewModel.OrderItems
+                   
+                    DateTime = DateTime.Now,
+                  Total_Price = (int) TotalPrice,
+                    Items = _items,
+                    Customer_ID = customerId,
+
                 };
 
-                // Save the order
                 await _orderRepository.Add(order);
-
-                // Redirect to the Index action after successful creation
+                if (shoppingCartItem.Count != 0)
+                {
+                    foreach (var item in shoppingCartItem)
+                    {
+                        item.Item = null;
+                        item.ShoppingCart = null;
+                        item.Quantity = null;
+                        await ShoppingCartItemRepository.Update(item);
+                    }
+                }
+                if (shoppingCart != null)
+                {
+                    shoppingCart.TotalPrice = null;
+                    await ShoppingCartRepository.Update(shoppingCart);
+                }
                 return RedirectToAction("Index");
             }
+            var items = await _itemRepository.GetAllAsync();
+
+            var itemSelectList = items.Select(item => new SelectListItem
+            {
+                Value = item.Id.ToString(),
+                Text = item.Name
+            });
+           // orderViewModel.Items = itemSelectList.ToList();
 
             ModelState.AddModelError("", "Invalid Item");
-            return View(orderViewModel);
+            return View();
         }
         public async Task<IActionResult> Details(int Id)
         {
-            var order = await _orderRepository.GetByIdIncludingAsync(Id,o => o.Customer);
+           // Expression<Func<Order, object>>[] includes = { o => o.Customer, o => o.Items };
+            var spec = new OrderWithCustomerAndItemSpecification(Id);
+
+            var order = await _orderRepository.GetByIdWithSpec( spec);
 
             if (order == null)
             {
@@ -86,14 +140,27 @@ namespace Akalaat.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
+            var spec = new OrderWithCustomerAndItemSpecification(id);
+
+            var order = await _orderRepository.GetByIdWithSpec(spec);
+            var items = await _itemRepository.GetAllAsync();
+
+            var itemSelectList = items.Select(item => new SelectListItem
+            {
+                Value = item.Id.ToString(),
+                Text = item.Name,
+                Selected = order.Items.Any(i => i.Id == item.Id)
+            });
+
             if (order == null)
             {
                 return View();
             }
-
+ 
             var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
-            ViewBag.AllItems = await _itemRepository.GetAllAsync();
+
+            orderViewModel.SelectedItemS = items.Select(I=>I.Id).ToList();
+
             return View(orderViewModel);
         }
         [HttpPost]
@@ -107,19 +174,27 @@ namespace Akalaat.Controllers
 
             if (ModelState.IsValid)
             {
-                var order = await _orderRepository.GetByIdAsync(id);
+                var spec = new OrderWithCustomerAndItemSpecification(id);
+
+                var order = await _orderRepository.GetByIdWithSpec(spec);
                 if (order == null)
                 {
                     return View();
                 }
 
+                ICollection<Item> _Items = new HashSet<Item>();
+
+                foreach (var Id in orderViewModel.SelectedItemS)
+                {
+                    var item = await _itemRepository.GetByIdAsync(Id);
+                    _Items.Add(item);
+                }
                 order.DateTime = orderViewModel.DateTime;
                 order.Arrival_Time = orderViewModel.ArrivalTime;
                 order.Total_Price = orderViewModel.TotalPrice;
                 order.Total_Discount = orderViewModel.TotalDiscount;
                 order.Customer_ID = orderViewModel.Customer_ID;
-            //    order.OrderItems = orderViewModel.OrderItems;
-
+                order.Items = _Items.ToList();
                 await _orderRepository.Update(order);
 
                 return RedirectToAction(nameof(Index));

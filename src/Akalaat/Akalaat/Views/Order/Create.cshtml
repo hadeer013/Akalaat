@@ -2,9 +2,6 @@
 
 <h2>Create Order</h2>
 
-@{
-    SelectList Items = new SelectList(ViewBag.AllItems, "Id", "Name");
-}
 <form asp-action="Create" method="post">
     <div class="form-group">
         <label asp-for="DateTime">Order Date:</label>
@@ -29,12 +26,12 @@
         <input asp-for="TotalDiscount" class="form-control" />
         <span asp-validation-for="TotalDiscount" class="text-danger"></span>
     </div>
-   @*  <div class="form-group">
-        <label asp-for="SelectableItems">Select Item(s):</label>
-        <select asp-for="SelectableItems" asp-items="Items" class="form-control" multiple size="5">
+    <div class="form-group">
+        <label asp-for="SelectedItemS">Select Item(s):</label>
+        <select asp-for="SelectedItemS" asp-items="Model.Items" class="form-control" multiple size="5">
         </select>
-        <span asp-validation-for="SelectableItems" class="text-danger"></span>
-    </div> *@
+        <span asp-validation-for="SelectedItemS" class="text-danger"></span>
+    </div> 
    @*  <div class="form-group">
         <label asp-for="OrderItems">Select Item(s):</label>
         <select asp-for="OrderItems" asp-items="Items" class="form-control" multiple size="5"> </select>

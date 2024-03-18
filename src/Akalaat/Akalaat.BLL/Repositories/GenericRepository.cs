@@ -115,5 +115,34 @@ namespace Akalaat.BLL.Repositories
             }
             return await query.FirstOrDefaultAsync();
         }
+        public async Task<IReadOnlyList<T>> GetAllAsync(List<Expression<Func<T, bool>>> filters = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "")
+        {
+            IQueryable<T> query = context.Set<T>();
+
+            // Apply filters
+            if (filters != null)
+            {
+                foreach (var filter in filters)
+                {
+                    query = query.Where(filter);
+                }
+            }
+
+            // Include properties
+            foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+
+            // Apply ordering
+            if (orderBy != null)
+            {
+                return await orderBy(query).ToListAsync();
+            }
+            else
+            {
+                return await query.ToListAsync();
+            }
+        }
     }
 }

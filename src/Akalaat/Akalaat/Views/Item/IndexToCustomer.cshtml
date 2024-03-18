@@ -1,0 +1,38 @@
+﻿@model List<Akalaat.ViewModels.ItemViewModel>
+<link href="~/font-awesome/css/fontawesome.css" rel="stylesheet" />
+<link href="~/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+<h2>Item Index</h2>
+<p>
+    <a asp-action="Create" class="btn btn-outline-info">Create New</a>
+</p>
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/Images/@item.ImageUrl" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Likes: @item.Likes</li>
+                            <li class="list-group-item">Discount: @item.Discount</li>
+                            <li class="list-group-item">IsOffer: @item.IsOffer</li>
+                            <li class="list-group-item">Price: @item.Price</li>
+                        </ul>
+                        <div class="card-footer">
+                            <form asp-controller="ShoppingCart" asp-action="Index" method="post" asp-route-id="@item.Id">
+                                <input type="hidden" asp-for="@item.Id" value="@item.Id" />
+                                <button type="submit" class="btn btn-success btn-icon">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

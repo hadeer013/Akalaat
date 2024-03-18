@@ -327,6 +327,9 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("OfferId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("Price")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MenuId");
@@ -597,6 +600,40 @@ namespace Akalaat.DAL.Data.Migrations
                     b.ToTable("Reviews");
                 });
 
+            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float?>("TotalPrice")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ShoppingCart");
+                });
+
+            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCartItem", b =>
+                {
+                    b.Property<int>("ShoppingCartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("ShoppingCartId", "ItemId");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("ShoppingCartItems");
+                });
+
             modelBuilder.Entity("DishResturant", b =>
                 {
                     b.Property<int>("DishesId")
@@ -785,6 +822,11 @@ namespace Akalaat.DAL.Data.Migrations
             modelBuilder.Entity("Akalaat.DAL.Models.Customer", b =>
                 {
                     b.HasBaseType("Akalaat.DAL.Models.ApplicationUser");
+
+                    b.Property<int?>("ShoppingCart_ID")
+                        .HasColumnType("int");
+
+                    b.HasIndex("ShoppingCart_ID");
 
                     b.ToTable("Customer");
                 });
@@ -999,6 +1041,25 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Resturant");
                 });
 
+            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCartItem", b =>
+                {
+                    b.HasOne("Akalaat.DAL.Models.Item", "Item")
+                        .WithMany("ShoppingCartItems")
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Akalaat.DAL.Models.ShoppingCart", "ShoppingCart")
+                        .WithMany("ShoppingCartItems")
+                        .HasForeignKey("ShoppingCartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("ShoppingCart");
+                });
+
             modelBuilder.Entity("DishResturant", b =>
                 {
                     b.HasOne("Akalaat.DAL.Models.Dish", null)
@@ -1111,6 +1172,12 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasForeignKey("Akalaat.DAL.Models.Customer", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Akalaat.DAL.Models.ShoppingCart", "ShoppingCart")
+                        .WithMany()
+                        .HasForeignKey("ShoppingCart_ID");
+
+                    b.Navigation("ShoppingCart");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Vendor", b =>
@@ -1140,6 +1207,8 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
+                    b.Navigation("ShoppingCartItems");
+
                     b.Navigation("extras");
 
                     b.Navigation("menu_Item_Sizes");
@@ -1184,6 +1253,11 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Branches");
 
                     b.Navigation("reviews");
+                });
+
+            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCart", b =>
+                {
+                    b.Navigation("ShoppingCartItems");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Customer", b =>

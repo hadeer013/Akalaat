@@ -20,10 +20,24 @@ namespace Akalaat.DAL.Data
         {
 
             builder.Entity<Menu_Item_Size>().HasKey(MS => new { MS.Item_ID,MS.Item_Size_ID });
+
             builder.Entity<Order>()
              .HasMany(o => o.Items) 
              .WithMany(i => i.Orders) 
              .UsingEntity(m => m.ToTable("OrderItems"));
+
+            //builder.Entity<ShoppingCart>()
+            // .HasMany(o => o.Items)
+            // .WithMany(i => i.ShoppingCarts)
+            // .UsingEntity(m => m.ToTable("ShoppingCartItems"));
+
+            builder.Entity<ShoppingCartItem>()
+         .HasKey(sc => new { sc.ShoppingCartId, sc.ItemId }); 
+
+            builder.Entity<Item>()
+             .Property(i => i.Id)
+             .ValueGeneratedOnAdd();
+
             builder.Entity<Branch>()
             .HasOne(b => b.Region)
             .WithMany(ada => ada.Branches)
@@ -64,7 +78,8 @@ namespace Akalaat.DAL.Data
         public virtual DbSet<Reservation> Reservations { get; set; }
         public virtual DbSet<Resturant> Resturants { get; set; }
         public virtual DbSet<Review> Reviews { get; set; }
-
+        public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
 
     }

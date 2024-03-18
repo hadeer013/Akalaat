@@ -13,7 +13,15 @@
       "PackagePath": "staticwebassets\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png"
     },
     {
+<<<<<<< Updated upstream
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\27982a85-7bc3-4af5-ac63-32a9dc093395.jpg",
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\2403127b-dc06-42e5-b237-3f0d8bfc8e32.jpg",
+      "PackagePath": "staticwebassets\\Images\\2403127b-dc06-42e5-b237-3f0d8bfc8e32.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\27982a85-7bc3-4af5-ac63-32a9dc093395.jpg",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\Images\\27982a85-7bc3-4af5-ac63-32a9dc093395.jpg"
     },
     {
@@ -21,6 +29,7 @@
       "PackagePath": "staticwebassets\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg"
     },
@@ -31,12 +40,21 @@
     {
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\7dc9cb08-23cd-49a2-9cd1-bacc94e94dcb.jpg",
       "PackagePath": "staticwebassets\\Images\\7dc9cb08-23cd-49a2-9cd1-bacc94e94dcb.jpg"
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\681f1e6e-eb67-416d-8b79-93a517541b31.jpg",
+      "PackagePath": "staticwebassets\\Images\\681f1e6e-eb67-416d-8b79-93a517541b31.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
+      "PackagePath": "staticwebassets\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
+>>>>>>> Stashed changes
     },
     {
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg",
       "PackagePath": "staticwebassets\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg"
     },
@@ -46,6 +64,21 @@
     },
     {
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b33f5547-4f2e-4f44-91f9-a04657b94ba4.jpg",
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\8dda4528-5eb3-42cd-9372-89a17af78ec3.jpg",
+      "PackagePath": "staticwebassets\\Images\\8dda4528-5eb3-42cd-9372-89a17af78ec3.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
+      "PackagePath": "staticwebassets\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b2fa1f0d-6661-44ed-b919-677d489eab9e.jpg",
+      "PackagePath": "staticwebassets\\Images\\b2fa1f0d-6661-44ed-b919-677d489eab9e.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b33f5547-4f2e-4f44-91f9-a04657b94ba4.jpg",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\Images\\b33f5547-4f2e-4f44-91f9-a04657b94ba4.jpg"
     },
     {
@@ -77,11 +110,187 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< Updated upstream
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\jquery-3.7.1.min.js",
       "PackagePath": "staticwebassets\\jquery-3.7.1.min.js"
     },
     {
       "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\js\\site.js",
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\js\\site.js",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

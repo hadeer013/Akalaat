@@ -1,0 +1,73 @@
+﻿@model CartVM
+@{
+    var count = 0;
+}
+<h2>Cart Checkout</h2>
+
+@if (Model.Items.Count > 0)
+{
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="~/Images/@item.Image_URL" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text">Price: @item.Price</p>
+                        <p class="card-text">Quantity: @Model.Quantity[count++]</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="row">
+       @*  <div class="col-md-6">
+            <button class="btn btn-primary" id="checkoutButton">Checkout</button>
+        </div> *@
+        <form method="post" asp-action="Create" asp-controller="Order">
+            <input type="hidden" asp-for="SelectedItemS"/>
+            <input type="hidden" asp-for="TotalPrice" />
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary" id="checkoutButton">Checkout</button>
+            </div>
+        </form>
+        <div class="col-md-6">
+            <a asp-controller="ShoppingCart" asp-action="ClearShoppingCart" class="btn btn-secondary">Cancel</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Total Price: @Model.TotalPrice</p>
+        </div>
+    </div>
+}
+else
+{
+    <p>No items in the cart.</p>
+}
+@* @section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#checkoutButton').on('click', function () {
+                var cartData = @Html.Raw(Json.Serialize(Model));
+                $.ajax({
+                    url: '@Url.Action("Create", "Order")',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ cartVM: cartData }),
+                    success: function (response) {
+                        // Handle success
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle error
+                    }
+                });
+            });
+        });
+    </script>
+} *@

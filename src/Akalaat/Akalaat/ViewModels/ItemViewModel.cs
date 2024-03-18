@@ -19,6 +19,7 @@ namespace Akalaat.ViewModels
         public decimal? Discount { get; set; }
         [EnumDataType(typeof(OfferStatus), ErrorMessage = "Invalid value for IsOffer.")]
         public OfferStatus IsOffer { get; set; }
-  
+        [Range(0, int.MaxValue, ErrorMessage = "Price must be a positive integer.")]
+        public int? Price { get; set; }
     }
 }

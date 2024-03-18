@@ -25,6 +25,12 @@ namespace Akalaat.Controllers
             var itemViewModels = items.Select(MapToViewModel).ToList();
             return View(itemViewModels);
         }
+        public async Task<IActionResult> IndexToCustomer()
+        {
+            var items = await _itemRepository.GetAllAsync();
+            var itemViewModels = items.Select(MapToViewModel).ToList();
+            return View(itemViewModels);
+        }
         [HttpGet]
         public async Task<IActionResult> Create()
         {
@@ -41,7 +47,8 @@ namespace Akalaat.Controllers
                     Description = itemViewModel.Description,
                     Image_URL = "",
                     IsOffer = itemViewModel.IsOffer,
-                    Discount = itemViewModel.Discount
+                    Discount = itemViewModel.Discount,
+                    Price = itemViewModel.Price,
                 };
                 await _itemRepository.Add(item);
                 if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
@@ -76,7 +83,8 @@ namespace Akalaat.Controllers
                         IsOffer = item.IsOffer,
                         Discount = item.Discount,
                         Likes=item.Likes,
-                        Name=item.Name
+                        Name=item.Name,
+                        Price =item.Price
                     };
                     return View(ItemViewModel);
 
@@ -102,7 +110,8 @@ namespace Akalaat.Controllers
                 IsOffer = item.IsOffer,
                 Discount = item.Discount,
                 Likes = item.Likes,
-                Name = item.Name
+                Name = item.Name,
+                Price = item.Price
             };
 
             return View(ItemViewModel);
@@ -123,6 +132,7 @@ namespace Akalaat.Controllers
                     existingItem.Description = itemViewModel.Description;
                     existingItem.Discount = itemViewModel.Discount ?? 0;
                     existingItem.IsOffer = itemViewModel.IsOffer;
+                    existingItem.Price = itemViewModel.Price;
                     if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
                     {
                         // Add logic to save the uploaded image and update the existingItem.Image_URL property
@@ -153,7 +163,9 @@ namespace Akalaat.Controllers
                 IsOffer = item.IsOffer,
                 Discount = item.Discount,
                 Likes = item.Likes,
-                Name = item.Name
+                Name = item.Name,
+                Price = item.Price
+                
             };
 
             return View(ItemViewModel);
@@ -182,6 +194,7 @@ namespace Akalaat.Controllers
                 ImageUrl = item.Image_URL,
                 Discount = item.Discount,
                 IsOffer = item.IsOffer,
+                Price =item.Price
             };
         }
         private async Task<string> SaveImageAsync(ItemViewModel itemViewModel)
