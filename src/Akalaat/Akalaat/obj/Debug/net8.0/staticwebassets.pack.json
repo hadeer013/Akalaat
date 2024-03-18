@@ -5,15 +5,11 @@
       "PackagePath": "staticwebassets\\Akalaat.bundle.scp.css"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png",
-=======
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg",
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg"
     },
     {
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png",
->>>>>>> Stashed changes
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png",
       "PackagePath": "staticwebassets\\Images\\1b171f1e-663f-4d50-a67b-defeaf2c4096.png"
     },
     {
@@ -25,15 +21,11 @@
       "PackagePath": "staticwebassets\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
-=======
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg",
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg"
     },
     {
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
->>>>>>> Stashed changes
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg",
       "PackagePath": "staticwebassets\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
     },
     {
@@ -45,15 +37,11 @@
       "PackagePath": "staticwebassets\\Images\\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
-=======
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg",
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg"
     },
     {
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
->>>>>>> Stashed changes
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg",
       "PackagePath": "staticwebassets\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg"
     },
     {
@@ -65,19 +53,15 @@
       "PackagePath": "staticwebassets\\Images\\b463779d-0af9-43a0-918e-3f4aecec234d.jpg"
     },
     {
-<<<<<<< Updated upstream
-      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Vendor\\1\\CoverImage.jpg",
-=======
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg",
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg"
     },
     {
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg",
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg",
       "PackagePath": "staticwebassets\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg"
     },
     {
-      "Id": "D:\\New Clone\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Vendor\\1\\CoverImage.jpg",
->>>>>>> Stashed changes
+      "Id": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Vendor\\1\\CoverImage.jpg",
       "PackagePath": "staticwebassets\\Vendor\\1\\CoverImage.jpg"
     },
     {
