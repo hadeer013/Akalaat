@@ -1,139 +1,162 @@
-using System.Security.AccessControl;
 using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
 using Akalaat.DAL.Models;
+using Akalaat.Models;
+using Akalaat.ViewModels;
+using Azure.Core;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Akalaat.Controllers;
 
-public class VendorController:Controller
+public class VendorController : Controller
 {
-    private readonly IGenericRepository<Vendor> _vendorRepository;
-    private readonly IGenericRepository<Resturant> _restaurantRepository;
+    private readonly IGenericRepository<Vendor>  _vendorRepository;
 
-    private readonly IWebHostEnvironment _webHostEnvironment;
+    private readonly RoleManager<IdentityRole> RoleManager;
+    public UserManager<ApplicationUser> UserManager { get; }
+    public SignInManager<ApplicationUser> SignInManager { get; }
 
 
-
-    public VendorController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
-        IWebHostEnvironment webHostEnvironment)
+    public VendorController(IGenericRepository<Vendor>  vendorRepository, UserManager<ApplicationUser> userManager,
+        SignInManager<ApplicationUser> signInManager
+        , RoleManager<IdentityRole> roleManager)
     {
         _vendorRepository = vendorRepository;
-        _restaurantRepository = restaurantRepository;
-        _webHostEnvironment = webHostEnvironment;
+        UserManager = userManager;
+        SignInManager = signInManager;
+        RoleManager = roleManager;
     }
+
     public async Task<IActionResult> Index()
     {
-        var allRestaurants = await _restaurantRepository.GetAllAsync();
-        var firstRestaurant = allRestaurants.FirstOrDefault();
-        return View(firstRestaurant);
+        ViewBag.Vendors  = await _vendorRepository.GetAllIncludingAsync(v=>v.Resturant);
+        return View(new RegisterViewModel());
     }
+
     [HttpPost]
-    // [Route("/Edit/CoverImage/{coverImage}")]
-    public async Task<IActionResult> EditCoverImage(int id,IFormFile Cover_URL)
+    public async Task<IActionResult> AddVendor(RegisterViewModel newUserVM)
     {
-        if (Cover_URL != null && Cover_URL.Length > 0)
+        try
         {
+            await _vendorRepository.BeginTransactionAsync();
+
+            var vendor = await Register(newUserVM);
+            if (vendor == null)
+            {
+                await _vendorRepository.RollbackTransactionAsync();
+                return RedirectToAction("Index");
+            }
+
+            // Create a new Restaurant along with the Vendor
+            var restaurant = new Resturant()
+            {
+                Name = "New Restaurant",
+                Logo_URL = "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
+                Cover_URL = "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
+                Rating = 5,
+                Vendor_ID = vendor.Id,
+                Menu = new Menu()
+            };
+
+            // Add the Restaurant to the Vendor
+            vendor.Resturant = restaurant;
+
+            // Update the Vendor
+            await _vendorRepository.Update(vendor);
+
+            await _vendorRepository.ClearTrackingAsync();
+        
+            await _vendorRepository.CommitTransactionAsync();
+        }
+        catch (Exception ex)
+        {
+            await _vendorRepository.RollbackTransactionAsync();
+            // Log the exception or handle it appropriately
+        }
+    
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteVendor(string vendorId)
+    {
+       
             try
             {
-                //get restaurant info
-                var restaurant = await _restaurantRepository.GetByIdAsync(id);
-                
-                // Generate unique file name
-                var fileName = "CoverImage" + Path.GetExtension(Cover_URL.FileName);
-                    
-                // Save file to wwwroot/images folder
-                var DirectoryPath = Path.Combine(_webHostEnvironment.WebRootPath, "Vendor",restaurant?.Id.ToString() ?? string.Empty);
-                var imagePath = Path.Combine(DirectoryPath,fileName);
+                await _vendorRepository.BeginTransactionAsync();
 
-               //create directories if not exist
-               if (!Directory.Exists(DirectoryPath))
-               {
-                    Directory.CreateDirectory(DirectoryPath);
-                  
-               }
-                using (var stream = new FileStream(imagePath, FileMode.Create))
+                var vendorToDelete = await _vendorRepository.GetByIdAsync(vendorId);
+                if (vendorToDelete != null)
                 {
-                    await Cover_URL.CopyToAsync(stream);
+                    await _vendorRepository.Delete(vendorToDelete.Id);
+                }
+                else
+                {
+                    throw new InvalidOperationException("Vendor not found.");
                 }
 
-                // Update database with file path
-               
-                if (restaurant != null)
-                {
-                    restaurant.Cover_URL = $"/Vendor/{restaurant.Id}/" + fileName; 
-                    await _restaurantRepository.Update(restaurant);
-                }
-
-                return RedirectToAction("Index"); 
+                await _vendorRepository.CommitTransactionAsync();
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError("", "Error uploading cover image: " + ex.Message);
+                await _vendorRepository.RollbackTransactionAsync();
             }
-        }
-        return RedirectToAction("Index"); // Redirect to the page where you want to display the uploaded image
+            
+        
+        return RedirectToAction("Index");
     }
-   
 
-    // Action for uploading logo image (similar to the UploadCoverImage action)
-    public async Task<IActionResult> EditLogoImage(int id,IFormFile Logo_Url)
+    public async Task<Vendor?> Register(RegisterViewModel newUserVM, string Role = "Vendor")
     {
-        if (Logo_Url != null && Logo_Url.Length > 0)
-        {
-            try
-            {
-                //get restaurant info
-                var restaurant = await _restaurantRepository.GetByIdAsync(id);
-                
-                // Generate unique file name
-                var fileName = "LogoImage" + Path.GetExtension(Logo_Url.FileName);
-                    
-                // Save file to wwwroot/images folder
-                var DirectoryPath = Path.Combine(_webHostEnvironment.WebRootPath, "Vendor",restaurant?.Id.ToString() ?? string.Empty);
-                var imagePath = Path.Combine(DirectoryPath,fileName);
-
-                //create directories if not exist
-                if (!Directory.Exists(DirectoryPath))
-                {
-                    Directory.CreateDirectory(DirectoryPath);
-                  
-                }
-                using (var stream = new FileStream(imagePath, FileMode.Create))
-                {
-                    await Logo_Url.CopyToAsync(stream);
-                }
-
-                // Update database with file path
-               
-                if (restaurant != null)
-                {
-                    restaurant.Logo_URL = $"/Vendor/{restaurant.Id}/" + fileName; 
-                    await _restaurantRepository.Update(restaurant);
-                }
-
-                return RedirectToAction("Index"); 
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", "Error uploading cover image: " + ex.Message);
-            }
-        }
-        return RedirectToAction("Index"); // Redirect to the page where you want to display the uploaded image
-    }
-    public async Task<IActionResult> EditResturantTitle(int id,string Name)
-    {
+        //View("Error", new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" })
+        if (string.IsNullOrEmpty(Role)) return null;
         if (ModelState.IsValid)
         {
-            var restaurant = await _restaurantRepository.GetByIdAsync(id);
-           if(restaurant!=null)
-                restaurant.Name = Name;
-           await _restaurantRepository.Update(restaurant);
+            Vendor userModel = new Vendor();
+            userModel.UserName = newUserVM.UserName;
+            userModel.Email = newUserVM.Email;
+
+
+            var result = await UserManager.CreateAsync(userModel, newUserVM.Password);
+
+            if (result.Succeeded)
+            {
+
+                var role = await RoleManager.FindByNameAsync(Role);
+                if (role != null)
+                {
+                    var RoleAddRes = await UserManager.AddToRoleAsync(userModel, role.Name);
+                    if (RoleAddRes.Succeeded)
+                    {
+                        //await SignInManager.SignInAsync(userModel, isPersistent: false);
+                        return userModel;
+                    }
+
+                    await UserManager.DeleteAsync(userModel);
+                    return null;
+                }
+                else
+                {
+                    await UserManager.DeleteAsync(userModel);
+                    return null;
+                }
+            }
+            else
+            {
+                foreach (var errorItem in result.Errors)
+                {
+                    ModelState.AddModelError("", errorItem.Description);
+                }
+            }
+
         }
-        
-           
-        return RedirectToAction("Index"); 
-        
+
+        return null;
     }
-   
 }
+
+
+    

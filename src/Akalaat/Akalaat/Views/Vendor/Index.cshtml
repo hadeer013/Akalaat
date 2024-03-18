@@ -1,124 +1,117 @@
-@model Akalaat.DAL.Models.Resturant
+@model Akalaat.ViewModels.RegisterViewModel
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Details</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
+@{
+    ViewBag.Title = "Vendor Management";
+}
 
-        .btn:focus {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-    </style>
-</head>
+<!-- Include Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Include Font Awesome CSS for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-<body>
-    <main class="container vh-100 p-0 mt-4 rounded-top-3">
-        <section id="header" class=" bg-secondary position-relative" style="height: 35%;">
-            <img class="w-100"  src="@Model.Cover_URL" alt="coverImage" />
-            <form id="CoverImage" asp-action="EditCoverImage" asp-controller="Vendor" method="post" enctype="multipart/form-data">
-                <label asp-for="Cover_URL" class="btn btn-sm position-absolute end-0 mt-2 me-2" style="top: 70%;">
-                    <i class="bi bi-pencil-fill text-dark"></i> 
-                    <input asp-for="Cover_URL" type="file" style="display: none;"  onchange="submitForm('CoverImage')"  />
-                    <input type="hidden" asp-for="Id">
-                    
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col">
+            <h2>Restaurant Vendors</h2>
+        </div>
+        <div class="col text-right">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#addVendorModal">Add Vendor</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>UserName</th>
+                <th>E-mail</th>
+                <th>Restaurant Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vendor in ViewBag.Vendors)
+            {
+                <tr>
+                    <td>@vendor.Id</td>
+                    <td>@vendor.UserName</td>
+                    <td>@vendor.Email</td>
+                    <td>@vendor.Resturant.Name</td>
 
-                    </label>
-            </form>
-        </section>
-        <section id="body" class="d-flex mt-3">
-            <aside style="width: 15%;" class="text-center p-2 m-0">
-                <div class="h-50 bg-secondary rounded-circle position-relative">
-                    <img width="100" height="200" src="@Model.Logo_URL" alt="coverImage" />
-                    <form id="LogoImage" asp-action="EditLogoImage" asp-controller="Vendor" method="post" enctype="multipart/form-data">
-                        <label asp-for="Logo_URL" class="btn position-absolute" style="top: 70%; left: 35%;">
-                            <i class="bi bi-pencil-fill text-dark"></i> 
-                            <input asp-for="Logo_URL" type="file" style="display: none;" onchange="submitForm('LogoImage')"/>
-                            <input type="hidden" asp-for="Id">
+                    <td>
+                        <form asp-action="DeleteVendor" asp-controller="Vendor" method="post">
+                            <input type="hidden" name="vendorId" value="@vendor.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
-                        </label>
-                    </form>
-                </div>
-            </aside>
-            <article id="core" class="p-2 d-flex flex-column justify-content-between">
-                <div>
-                    <div class="d-flex flex-row">
-                        <h3>@Model.Name</h3>
-                        <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#editNameModal">
-                            <i class="bi bi-pencil-fill"></i>
-                        </button>
+<!-- Add Vendor Modal -->
+<div class="modal fade" id="addVendorModal" tabindex="-1" role="dialog" aria-labelledby="addVendorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addVendorModalLabel">Add New Vendor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Form for adding a new vendor -->
+                <form asp-action="AddVendor" asp-controller="Vendor" method="post">
+                    <div class="form-group">
+                        <label asp-for="UserName">UserName</label>
+                        <input asp-for="UserName" class="form-control" placeholder="Enter username">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
-                    <div class="rating">
-                        @for (int i = 0; i < @Model.Rating; i++)
-                        {
-                            <span><i class="bi bi-star-fill text-warning"></i></span>
-                        }
-                        @for (int i = 0; i < 5 - @Model.Rating; i++)
-                        {
-                            <span><i class="bi bi-star-fill text-gray"></i></span>
-                        }
-                        <h6 class="text-muted">Rating: @Model.Rating/5</h6>
+                    <div class="form-group">
+                        <label asp-for="Email">E-mail</label>
+                        <input asp-for="Email" class="form-control" placeholder="Enter email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
-                </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Branch Management</button>
-                      </div>
-                      <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Categories Management</button>
-                      </div>
-                      <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Menu Management</button>
-                      </div>
-                      <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Offer Management</button>
-                      </div>
-                  </div>
-              </div>
-
-            </article>
-        </section>
-    </main>
-
-    <!-- Edit Name Modal -->
-    <div class="modal fade" id="editNameModal" tabindex="-1" aria-labelledby="editNameModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editNameModalLabel">Edit Restaurant Name</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form id="editNameForm" asp-action="EditResturantTitle" asp-controller="Vendor" method="post">
-                    <div class="modal-body">
-                        <input type="text" class="form-control" asp-for="Name" placeholder="Enter new name">
-                        <input type="hidden" asp-for="Id">
+                    <div class="form-group">
+                        <label asp-for="Password">Password</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" asp-for="Password" placeholder="Auto-generated password" readonly>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button" id="generatePassword">Generate</button>
+                            </div>
+                        </div>
+                        <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+</div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Include Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-     function submitForm(formID) {
-         document.getElementById(formID).submit();
-     }
+    $(document).ready(function () {
+        function generatePassword() {
+            var length = 20,
+                charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%^&*()_+{}|:<>?-=[];',./",
+                password = "";
+            for (var i = 0, n = charset.length; i < length; ++i) {
+                password += charset.charAt(Math.floor(Math.random() * n));
+            }
+            return password;
+        }
+
+        $("#generatePassword").click(function () {
+            $("#Password").val(generatePassword());
+        });
+    });
 </script>
-    </body>
-</html>
