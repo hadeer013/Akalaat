@@ -295,6 +295,9 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("CategoryID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -312,7 +315,7 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("Likes")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MenuId")
+                    b.Property<int>("MenuID")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -324,7 +327,9 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MenuId");
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("MenuID");
 
                     b.HasIndex("OfferId");
 
@@ -880,13 +885,23 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-                    b.HasOne("Akalaat.DAL.Models.Menu", null)
+                    b.HasOne("Akalaat.DAL.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryID");
+
+                    b.HasOne("Akalaat.DAL.Models.Menu", "menu")
                         .WithMany("items")
-                        .HasForeignKey("MenuId");
+                        .HasForeignKey("MenuID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Akalaat.DAL.Models.Offer", null)
                         .WithMany("Items")
                         .HasForeignKey("OfferId");
+
+                    b.Navigation("Category");
+
+                    b.Navigation("menu");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Menu_Item_Size", b =>

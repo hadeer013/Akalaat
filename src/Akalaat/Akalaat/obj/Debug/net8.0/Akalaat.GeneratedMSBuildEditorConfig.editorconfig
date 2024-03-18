@@ -17,119 +17,127 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Akalaat
 build_property.RootNamespace = Akalaat
-build_property.ProjectDir = C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat\
+build_property.ProjectDir = c:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat
+build_property.MSBuildProjectDirectory = c:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangeEmail.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangeEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangePassword.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/Login.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/Register.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Create.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Details.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Edit.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Index.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/City/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Create.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Details.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Edit.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/District/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpY3RcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Home/Index.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Home/Privacy.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Create.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Delete.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Details.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Edit.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Index.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Item/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Region/Create.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Region/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Region/Edit.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Region/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/Error.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Restaurant/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Vendor/Index.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Vendor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/_ViewImports.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/_ViewStart.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/_Layout.cshtml]
+[c:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8d9jccxdaz

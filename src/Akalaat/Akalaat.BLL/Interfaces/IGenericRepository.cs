@@ -15,7 +15,7 @@ namespace Akalaat.BLL.Interfaces
         Task<int> Update(T type);
         Task<int> Delete<Y>(Y Id);
         Task<IReadOnlyList<T>> GetAllAsync();
-        Task<T> GetByIdAsync<Y>(Y Id);
+        Task<T?> GetByIdAsync<Y>(Y Id);
 
         /// Spec Pattern \\\
 
@@ -30,5 +30,11 @@ namespace Akalaat.BLL.Interfaces
         Task RollbackTransactionAsync();
         Task<IEnumerable<T>> GetAllIncludingAsync(params Expression<Func<T, object>>[] includeProperties);
         Task<T?> GetByIdIncludingAsync(int id, params Expression<Func<T, object>>[] includeProperties);
+
+        Task<IReadOnlyList<T>> GetAllAsync(List<Expression<Func<T, bool>>> filters = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
+
+        Task<object[]> GetPrimaryKeyValues<T>(T entity);
+
     }
 }

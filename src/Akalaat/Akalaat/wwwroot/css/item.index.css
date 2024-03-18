@@ -1,0 +1,203 @@
+.menu-cats
+{
+    padding-right: 10px;
+
+}
+* {
+
+    box-sizing: border-box;
+
+}
+ul {
+    list-style-type: none;
+}
+.cat {
+    padding: 1em;
+    height: 7vh;
+    position: relative;
+    font-size: 16px;
+    color: #7b7d7f;
+    border-radius: 8px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-arrow-right{
+    color:white
+}
+.cat:hover{
+    color: #fff;
+    background-color: #e32207;
+}
+
+.cat.active
+{
+    color: #fff;
+    background-color: #e32207;
+
+}
+.search-menu {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 5px;
+    overflow: hidden;
+    transform: translateY(-4em);
+}
+.search-label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.search-menu > .search-icon {
+    vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+.fa-search{
+    color: gray;
+}
+.search-menu > input {
+    width: calc(100% - 25px);
+    border: 0;
+    padding: 10px;
+    margin-left: 25px;
+    color: #7b7d7f;
+}
+.search-input{
+    outline: none;
+}
+/*item card*/
+.cat-section {
+    margin-top: -3em;
+}
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2a2b2c;
+    padding-left: 25px;
+    display: inline-block;
+    margin-top: 0;
+}
+.menu-item {
+    width: calc(100% + 39px);
+    margin-left: -8px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 30px 20px 35px;
+    height: 170px;
+}
+.menu-item .content {
+    padding-right: 10px;
+    width: calc(100% - 108px);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.menu-item .item-header {
+    margin-bottom: 6px;
+}
+/*.clickable-item .clickable-anchor {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    z-index: 5;*/
+/*    width: 100%;*/
+/*}*/
+.menu-item .title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #2a2b2c;
+    margin-top: 4px;
+}
+.menu-item .content {
+    padding-right: 10px;
+    width: calc(100% - 108px);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.menu-item .price {
+    font-size: 13px;
+    color: #e32207;
+}
+.menu-item .description {
+    color: #a9acae;
+    font-size: 14px;
+    margin-bottom: 10px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.menu-item .edit-btn{
+    color:#bbb8b8;
+}
+.menu-item .edit-btn:hover{
+    color: gray;
+}
+.menu-item .delete-btn{
+    color:lightcoral;
+}
+.menu-item .delete-btn:hover{
+    color: red;
+}
+.menu-item .image-holder {
+    width: 108px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-item .image,img {
+    object-fit: contain;
+    max-width: 108px;
+    height: auto;
+    position: relative;
+    z-index: 9;
+}
+
+.image-ratio.radius {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.pull-right {
+    text-align: center;
+}

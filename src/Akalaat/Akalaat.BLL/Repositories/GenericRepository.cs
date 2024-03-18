@@ -40,15 +40,34 @@ namespace Akalaat.BLL.Repositories
             return await context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync<Y>(Y Id)
+        public async Task<T?> GetByIdAsync<Y>(Y Id)
         {
             return await context.Set<T>().FindAsync(Id);
         }
 
         public async Task<int> Update(T type)
         {
-            context.Set<T>().Update(type);
+            //old code
+            // context.Set<T>().Update(type);
+            // return await context.SaveChangesAsync();
+            
+            var primaryKeyValues = await GetPrimaryKeyValues( type);
+
+            // Search for an existing entity with the same primary key values
+            var existingEntity = await context.Set<T>().FindAsync(primaryKeyValues);
+
+            if (existingEntity != null)
+            {
+                // Detach the existing entity if found
+                context.Entry(existingEntity).State = EntityState.Detached;
+            }
+
+            // Attach the new entity and mark it as modified
+            context.Set<T>().Attach(type);
+            context.Entry(type).State = EntityState.Modified;
+
             return await context.SaveChangesAsync();
+           
         }
 
 
@@ -106,14 +125,89 @@ namespace Akalaat.BLL.Repositories
             return await query.ToListAsync();
         }
 
-        public virtual async Task<T?> GetByIdIncludingAsync(int id, params Expression<Func<T, object>>[] includeProperties)
+        public virtual async Task<T> GetByIdIncludingAsync(int id, params Expression<Func<T, object>>[] includeProperties)
+            
         {
+            // Get the key property name
+            var keyPropertyName = context.Model.FindEntityType(typeof(T)).FindPrimaryKey().Properties
+                .Select(x => x.PropertyInfo.Name)
+                .Single();
+
+            // Create the expression for the key property
+            var parameter = Expression.Parameter(typeof(T));
+            var property = Expression.Property(parameter, keyPropertyName);
+            var equals = Expression.Equal(property, Expression.Constant(id));
+            var lambda = Expression.Lambda<Func<T, bool>>(equals, parameter);
+
+            // Build the query
             IQueryable<T> query = context.Set<T>();
             foreach (var includeProperty in includeProperties)
             {
                 query = query.Include(includeProperty);
             }
-            return await query.FirstOrDefaultAsync();
+
+            // Execute the query
+            return await query.FirstOrDefaultAsync(lambda);
         }
+
+        public async Task<IReadOnlyList<T>> GetAllAsync(List<Expression<Func<T, bool>>> filters = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "")
+        {
+            IQueryable<T> query = context.Set<T>();
+
+            // Apply filters
+            if (filters != null)
+            {
+                foreach (var filter in filters)
+                {
+                    query = query.Where(filter);
+                }
+            }
+
+            // Include properties
+            foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+
+            // Apply ordering
+            if (orderBy != null)
+            {
+                return await orderBy(query).ToListAsync();
+            }
+            else
+            {
+                return await query.ToListAsync();
+            }
+        }
+
+
+            public async Task<object[]> GetPrimaryKeyValues<T>( T entity)
+              
+            {
+                var entityEntry = context.Entry(entity);
+                var primaryKey = entityEntry.Metadata.FindPrimaryKey();
+
+                if (primaryKey.Properties.Count == 1)
+                {
+                    var primaryKeyProperty = primaryKey.Properties.First();
+                    return new object[] { entityEntry.Property(primaryKeyProperty.Name).CurrentValue };
+                }
+                else if (primaryKey.Properties.Count > 1)
+                {
+                    var primaryKeyValues = new object[primaryKey.Properties.Count];
+                    for (int i = 0; i < primaryKey.Properties.Count; i++)
+                    {
+                        var propertyName = primaryKey.Properties[i].Name;
+                        primaryKeyValues[i] = entityEntry.Property(propertyName).CurrentValue;
+                    }
+                    return primaryKeyValues;
+                }
+                else
+                {
+                    throw new InvalidOperationException("Entity does not have a primary key.");
+                }
+            }
+        
+    
     }
 }

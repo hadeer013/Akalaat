@@ -76,13 +76,13 @@
                           <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Branch Management</button>
                       </div>
                       <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Categories Management</button>
+                          <a asp-controller="Category" asp-action="Index" asp-route-menuId="@Model.Menu_ID"  class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Categories Management</a>
                       </div>
                       <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Menu Management</button>
+                          <a asp-controller="Item" asp-action="Index" asp-route-menuId="@Model.Menu_ID" class="w-75 btn btn-warning mb-2"><i class="bi bi-pencil"></i> Menu Management</a>
                       </div>
                       <div class="col-md-6">
-                          <button type="button" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Offer Management</button>
+                          <button  type="button" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Offer Management</button>
                       </div>
                   </div>
               </div>

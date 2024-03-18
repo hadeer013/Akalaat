@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Akalaat.Controllers;
 
-public class VendorController:Controller
+public class RestaurantController:Controller
 {
     private readonly IGenericRepository<Vendor> _vendorRepository;
     private readonly IGenericRepository<Resturant> _restaurantRepository;
@@ -15,7 +15,7 @@ public class VendorController:Controller
 
 
 
-    public VendorController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
+    public RestaurantController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
         IWebHostEnvironment webHostEnvironment)
     {
         _vendorRepository = vendorRepository;

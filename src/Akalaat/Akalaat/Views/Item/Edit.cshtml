@@ -1,5 +1,6 @@
 ﻿@model Akalaat.ViewModels.ItemViewModel
 @using Akalaat.DAL.Models
+
 <h2>Edit Item</h2>
 
 <form asp-action="Edit" method="post" enctype="multipart/form-data">
@@ -11,11 +12,7 @@
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Likes"></label>
-        <input asp-for="Likes" class="form-control" />
-        <span asp-validation-for="Likes" class="text-danger"></span>
-    </div>
+    
 
     <div class="form-group">
         <label asp-for="Description"></label>
@@ -28,12 +25,14 @@
         <input asp-for="Discount" class="form-control" />
         <span asp-validation-for="Discount" class="text-danger"></span>
     </div>
+
     <div class="col-md-6">
         <img src="~/Images/@Model.ImageUrl" alt="Item Image" class="img-fluid" />
     </div>
+
     <div class="form-group">
         <label asp-for="ImageUrl" class="control-label">Image</label>
-        <input asp-for="Image" type="file"  class="form-control" />
+        <input asp-for="Image" type="file" class="form-control" />
         <span asp-validation-for="Image" class="text-danger"></span>
     </div> 
 
@@ -42,6 +41,8 @@
         <select asp-for="IsOffer" asp-items="@Html.GetEnumSelectList<OfferStatus>()" class="form-control"></select>
         <span asp-validation-for="IsOffer" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Save Changes</button>
+
+    <button type="submit" class="btn btn-primary">Update</button>
 </form>
+
 <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>

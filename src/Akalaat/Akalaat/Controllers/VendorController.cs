@@ -66,6 +66,9 @@ public class VendorController : Controller
 
             // Update the Vendor
             await _vendorRepository.Update(vendor);
+            // update menu
+            vendor.Resturant.Menu.Resturant_ID = vendor.Resturant.Id;
+            await _vendorRepository.Update(vendor);
 
             await _vendorRepository.ClearTrackingAsync();
         

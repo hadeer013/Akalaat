@@ -38,9 +38,19 @@
             <span asp-validation-for="IsOffer" class="text-danger"></span>
         </div>
 
+        <!-- Hidden MenuId field -->
+        <input type="hidden" asp-for="MenuID"  value="@Model.MenuID"/>
+
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Create</button>
         </div>
+        <div class="form-group">
+            <label asp-for="CategoryID" class="control-label">Category</label>
+            <select asp-for="CategoryID" asp-items="@ViewBag.Categories" class="form-control">
+                <option value="">Select Category</option>
+            </select>
+            <span asp-validation-for="CategoryID" class="text-danger"></span>
+        </div>
+
     </form>
 </div>
-

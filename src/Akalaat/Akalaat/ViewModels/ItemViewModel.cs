@@ -8,8 +8,9 @@ namespace Akalaat.ViewModels
         public int Id { get; set; }
         [Required(ErrorMessage = "The Name field is required.")]
         public string Name { get; set; }
+
         [Range(0, int.MaxValue, ErrorMessage = "Likes must be a non-negative integer.")]
-        public int? Likes { get; set; }
+        public int Likes { get; set; } = 0;
         [StringLength(1000, ErrorMessage = "The Description field must not exceed 1000 characters.")]
         public string Description { get; set; }
 
@@ -19,6 +20,9 @@ namespace Akalaat.ViewModels
         public decimal? Discount { get; set; }
         [EnumDataType(typeof(OfferStatus), ErrorMessage = "Invalid value for IsOffer.")]
         public OfferStatus IsOffer { get; set; }
+        
+        public int MenuID { get; init; }
+        public int CategoryID { get; set; }
   
     }
 }
