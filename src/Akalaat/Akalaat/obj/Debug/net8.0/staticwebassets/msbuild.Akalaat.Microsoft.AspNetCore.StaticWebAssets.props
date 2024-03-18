@@ -48,20 +48,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-<<<<<<< Updated upstream
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg))">
-=======
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\font-awesome\css\all.css))">
->>>>>>> Stashed changes
       <SourceType>Package</SourceType>
       <SourceId>Akalaat</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Akalaat</BasePath>
-<<<<<<< Updated upstream
-      <RelativePath>Images/0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg</RelativePath>
-=======
       <RelativePath>font-awesome/css/all.css</RelativePath>
->>>>>>> Stashed changes
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -70,9 +62,6 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-<<<<<<< Updated upstream
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg))</OriginalItemSpec>
-=======
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\font-awesome\css\all.css))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\font-awesome\css\all.min.css))">
@@ -746,7 +735,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\font-awesome\webfonts\fa-v4compatibility.woff2))</OriginalItemSpec>
->>>>>>> Stashed changes
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Akalaat</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Akalaat</BasePath>
+      <RelativePath>Images/0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\0662cabf-2d87-4afd-9e44-d23d76d3640d_download.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1b171f1e-663f-4d50-a67b-defeaf2c4096.png))">
       <SourceType>Package</SourceType>
@@ -812,20 +816,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-<<<<<<< Updated upstream
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg))">
-=======
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\681f1e6e-eb67-416d-8b79-93a517541b31.jpg))">
->>>>>>> Stashed changes
       <SourceType>Package</SourceType>
       <SourceId>Akalaat</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Akalaat</BasePath>
-<<<<<<< Updated upstream
       <RelativePath>Images/4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg</RelativePath>
-=======
-      <RelativePath>Images/681f1e6e-eb67-416d-8b79-93a517541b31.jpg</RelativePath>
->>>>>>> Stashed changes
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -834,11 +830,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-<<<<<<< Updated upstream
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\4f8115d0-1ada-48d5-9995-30078e5f2ae8_download.jpeg))</OriginalItemSpec>
-=======
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\681f1e6e-eb67-416d-8b79-93a517541b31.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Akalaat</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Akalaat</BasePath>
+      <RelativePath>Images/681f1e6e-eb67-416d-8b79-93a517541b31.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\681f1e6e-eb67-416d-8b79-93a517541b31.jpg))</OriginalItemSpec>
->>>>>>> Stashed changes
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg))">
       <SourceType>Package</SourceType>
@@ -872,20 +880,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\87efe383-0dbd-4c47-8fe3-3374846b6d0f.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-<<<<<<< Updated upstream
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg))">
-=======
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8dda4528-5eb3-42cd-9372-89a17af78ec3.jpg))">
->>>>>>> Stashed changes
       <SourceType>Package</SourceType>
       <SourceId>Akalaat</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Akalaat</BasePath>
-<<<<<<< Updated upstream
-      <RelativePath>Images/978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg</RelativePath>
-=======
       <RelativePath>Images/8dda4528-5eb3-42cd-9372-89a17af78ec3.jpg</RelativePath>
->>>>>>> Stashed changes
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -894,11 +894,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-<<<<<<< Updated upstream
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg))</OriginalItemSpec>
-=======
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8dda4528-5eb3-42cd-9372-89a17af78ec3.jpg))</OriginalItemSpec>
->>>>>>> Stashed changes
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Akalaat</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Akalaat</BasePath>
+      <RelativePath>Images/978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\978393e9-db93-40ee-a6fb-8f78e88fd2b5_download.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg))">
       <SourceType>Package</SourceType>

@@ -34,15 +34,7 @@ namespace Akalaat
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
-<<<<<<< Updated upstream
-           
-=======
-            builder.Services.AddControllersWithViews()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-    });
->>>>>>> Stashed changes
+
 
 
 

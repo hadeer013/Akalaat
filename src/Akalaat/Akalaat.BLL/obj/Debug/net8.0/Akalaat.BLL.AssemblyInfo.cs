@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2b26d02727f656c6130f17f542c114abc0de312")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5070ec9b45d7803545636597394e276780b10808")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da945873b6415d94234b62119700b06776f3a8ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
