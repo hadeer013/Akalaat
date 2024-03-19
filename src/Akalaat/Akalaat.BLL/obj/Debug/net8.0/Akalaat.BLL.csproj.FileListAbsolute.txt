@@ -46,22 +46,6 @@ F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Deb
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CopyComplete
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
@@ -78,3 +62,19 @@ C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CopyComplete
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll

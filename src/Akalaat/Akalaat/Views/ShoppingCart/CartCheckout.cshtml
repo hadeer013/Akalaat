@@ -93,47 +93,46 @@
                           <div style="width: 80px;">
                             <h5 class="mb-0">@item.Price EGP </h5 >
                           </div >
-                          <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i ></a >
-
+                                                    <a asp-controller="ShoppingCart" asp-action="DeleteItemFromShoppingCart" asp-route-id="@item.Id" class="delete-item"  style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
 
                 }
-
-
-
               </div >
-              <form method = "post" asp - action = "Create" asp - controller = "Order" class ="m-auto" >
-                <input type = "hidden" asp -for= "TotalPrice"/>
-
+              <form method = "post" asp-action = "Create" asp-controller = "Order" class ="m-auto" >
+                <input type = "hidden" asp-for= "TotalPrice"/>
                 <button type = "submit" class ="btn btn-danger w-25  btn-block btn-lg" >
                   <div class ="d-flex justify-content-between" >
                     <span > @Model.TotalPrice EGP </span >
                     <span > Checkout <i class ="fas fa-long-arrow-alt-right ms-2" ></i>
                       </span>
                   </div >
-                </button >
-                    
+                </button >             
               </form >
-
-
-
             </div >
-                
+ 
           </div >
-                  
-
         </div >
-        
-
       </div >
-      
-                
-
-
-    </div>
-    
-  </div>
+    </div>  
+ </div>
+  @*   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.delete-item').forEach(function (deleteBtn) {
+            deleteBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+                var itemId = deleteBtn.getAttribute('data-item-id');
+                var itemElement = document.getElementById('item-' + itemId);
+                if (itemElement) {
+                    itemElement.style.display = 'none';
+                }
+            });
+        });
+    });
+</script> *@
