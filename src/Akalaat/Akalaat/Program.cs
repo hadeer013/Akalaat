@@ -36,7 +36,7 @@ namespace Akalaat
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
-           
+
 
 
 

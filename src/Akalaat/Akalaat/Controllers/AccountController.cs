@@ -59,7 +59,8 @@ namespace Akalaat.Controllers
                     user = new Customer()
                     {
                         UserName = newUserVM.UserName,
-                        Email = newUserVM.Email
+                        Email = newUserVM.Email,
+                        ShoppingCart = new ShoppingCart()
                     };
                     
                 }

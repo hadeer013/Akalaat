@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Akalaat.styles.css" asp-append-version="true" />
+    <link href="~/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/fontawesome.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -29,6 +31,11 @@
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Log out</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ShoppingCart" asp-action="CartCheckout">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
                             </li>
                         }
                         else

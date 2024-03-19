@@ -11,9 +11,14 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.OrderSpec
     {
         public OrderWithCustomerAndItemSpecification() 
         {
-          // AddInclude( O=> O.Item);
             AddInclude(O => O.Customer);
+            AddInclude(O => O.Items);
             OrderBy = O => O.DateTime;
+        }
+        public OrderWithCustomerAndItemSpecification(int id ):base(o=>o.Id==id)
+        {
+            AddInclude(O => O.Customer);
+            AddInclude(O => O.Items);
         }
     }
 }

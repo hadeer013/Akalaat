@@ -24,5 +24,7 @@ namespace Akalaat.ViewModels
         public int MenuID { get; init; }
         public int CategoryID { get; set; }
   
+        [Range(0, int.MaxValue, ErrorMessage = "Price must be a positive integer.")]
+        public int? Price { get; set; }
     }
 }

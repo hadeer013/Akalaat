@@ -80,6 +80,12 @@ namespace Akalaat.Controllers
         }
 
 
+        public async Task<IActionResult> IndexToCustomer()
+        {
+            var items = await _itemRepository.GetAllAsync();
+            var itemViewModels = items.Select(MapToViewModel).ToList();
+            return View(itemViewModels);
+        }
         [HttpGet]
         public async Task<IActionResult> Create(int menuId)
         {
@@ -105,7 +111,8 @@ namespace Akalaat.Controllers
                     IsOffer = itemViewModel.IsOffer,
                     Discount = itemViewModel.Discount,
                     MenuID = itemViewModel.MenuID,
-                    CategoryID = itemViewModel.CategoryID
+                    CategoryID = itemViewModel.CategoryID,
+                    Price = itemViewModel.Price,
                 };
                 await _itemRepository.Add(item);
                 if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
@@ -129,6 +136,16 @@ namespace Akalaat.Controllers
                 {
                     var item = await _itemRepository.GetByIdAsync(id);
                     var ItemViewModel = MapToViewModel(item);
+                    // var ItemViewModel = new ItemViewModel()
+                    // {
+                    //     Description = item.Description,
+                    //     ImageUrl=item.Image_URL,
+                    //     IsOffer = item.IsOffer,
+                    //     Discount = item.Discount,
+                    //     Likes=item.Likes,
+                    //     Name=item.Name,
+                    //     Price =item.Price
+                    // };
                     return View(ItemViewModel);
                 }
                 return View();
@@ -147,6 +164,17 @@ namespace Akalaat.Controllers
             ViewBag.Categories = new SelectList(
                 await _categoryRepository.GetAllAsync(),
                 "ID", "Name", item.CategoryID);
+            // var ItemViewModel = new ItemViewModel()
+            // {
+            //     Description = item.Description,
+            //     ImageUrl = item.Image_URL,
+            //     IsOffer = item.IsOffer,
+            //     Discount = item.Discount,
+            //     Likes = item.Likes,
+            //     Name = item.Name,
+            //     Price = item.Price
+            // };
+
             return View(ItemViewModel);
         }
 
@@ -165,6 +193,7 @@ namespace Akalaat.Controllers
                     existingItem.IsOffer = itemViewModel.IsOffer;
                     existingItem.CategoryID = itemViewModel.CategoryID;
 
+                    existingItem.Price = itemViewModel.Price;
                     if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
                     {
                         existingItem.Image_URL = await SaveImageAsync(itemViewModel);
@@ -185,6 +214,20 @@ namespace Akalaat.Controllers
         {
             var item = await _itemRepository.GetByIdAsync(id);
             var ItemViewModel = MapToViewModel(item);
+
+            //
+            // var ItemViewModel = new ItemViewModel()
+            // {
+            //     Description = item.Description,
+            //     ImageUrl = item.Image_URL,
+            //     IsOffer = item.IsOffer,
+            //     Discount = item.Discount,
+            //     Likes = item.Likes,
+            //     Name = item.Name,
+            //     Price = item.Price
+            //     
+            // };
+
             return View(ItemViewModel);
         }
 
@@ -209,7 +252,8 @@ namespace Akalaat.Controllers
                 ImageUrl = item.Image_URL,
                 Discount = item.Discount,
                 IsOffer = item.IsOffer,
-                CategoryID = item.CategoryID ?? 0
+                CategoryID = item.CategoryID ?? 0,
+                Price =item.Price
             };
         }
 

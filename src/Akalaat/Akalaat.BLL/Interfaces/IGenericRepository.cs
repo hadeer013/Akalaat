@@ -16,7 +16,7 @@ namespace Akalaat.BLL.Interfaces
         Task<int> Delete<Y>(Y Id);
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<T?> GetByIdAsync<Y>(Y Id);
-
+        Task<IReadOnlyList<T>> GetAllAsync(List<Expression<Func<T, bool>>> filters = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
         /// Spec Pattern \\\
 
         Task<IReadOnlyList<T>> GetAllWithSpec(ISpecification<T> spec);
@@ -31,8 +31,6 @@ namespace Akalaat.BLL.Interfaces
         Task<IEnumerable<T>> GetAllIncludingAsync(params Expression<Func<T, object>>[] includeProperties);
         Task<T?> GetByIdIncludingAsync(int id, params Expression<Func<T, object>>[] includeProperties);
 
-        Task<IReadOnlyList<T>> GetAllAsync(List<Expression<Func<T, bool>>> filters = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "");
 
         Task<object[]> GetPrimaryKeyValues<T>(T entity);
 

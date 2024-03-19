@@ -27,14 +27,12 @@
                 <td>@order.TotalDiscount</td>
                 <td>@order.Customer.UserName</td>
                <td>
-                    @if (order.Items != null && order.Items.Any())
+                    @if (order.Items != null)
                     {
                         <ul class="list-group">
                             @foreach (var item in order.Items)
                             {
-                                <li class="list-group-item">
-                                    Order ID: @item.Id, Name: @item.Name
-                                </li>
+                                <li>@item.Text</li>
                             }
                         </ul>
                     }

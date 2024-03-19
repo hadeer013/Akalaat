@@ -1,0 +1,84 @@
+﻿@model ShoppingCartItemVM
+
+<h2>Shopping Cart</h2>
+
+<div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="~/Images/@Model.Item.Image_URL" class="card-img-top" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Item.Name</h5>
+                    <p class="card-text">@Model.Item.Description</p>
+                    <p class="card-text">Price: @Model.Item.Price</p>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" min="1" id="quantity" name="quantity[@Model.Item.Id]" value="@Model.Quantity" class="form-control quantity-input" data-Model.Item-id="@Model.Item.Id" />
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <strong class="total-price" data-Model.Item-id="@Model.Item.Id" id="Price">Total: @(Model.Item.Price * Model.Quantity)</strong>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Item" asp-action="IndexToCustomer" class="btn btn-warning">Back To List Of Items</a>
+                </div>
+            </div>
+        </div>
+    <button class="btn btn-success add-to-cart">Add to Cart</button>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.quantity-input').on('change', function () {
+                // Store the quantity value in the data attribute of the input element
+                $(this).data('quantity', $(this).val());
+
+                var itemId = $(this).data('item-id');
+                var quantity = $(this).val();
+                var itemPrice = $(this).closest('.card').find('.card-text').last().text().split(':')[1].trim();
+                var total = quantity * itemPrice;
+                $(this).closest('.card').find('.total-price').text('Total: ' + total);
+                recalculateTotalPrice();
+            });
+
+            $('.add-to-cart').on('click', function () {
+                var itemId = $(this).data('item-id');
+                var quantity = $(this).closest('.card').find('.quantity-input').data('quantity'); // Retrieve the stored quantity value
+                var totalPrice = parseFloat($('#totalPrice').text().trim());
+                var Qu = $("#quantity").val();
+                var T = parseFloat($("#Price").text().split(':')[1].trim());
+                console.log(Qu);
+                console.log(T);
+
+                var shoppingCartData = {
+                    Id: itemId,
+                    Customer_ID: '@Model.Customer_ID', // You may need to adjust this to get the actual customer ID
+                    Item_ID: '@Model.Item.Id',
+                    Quantity: Qu,
+                    TotalPrice: T
+                };
+
+                $.ajax({
+                    url: '@Url.Action("AddToCart", "ShoppingCart")',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(shoppingCartData),
+                    success: function (response) {
+                        // Handle success
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle error
+                    }
+                });
+            });
+        });
+
+        function recalculateTotalPrice() {
+            var total = 0;
+            $('.total-price').each(function () {
+                total += parseFloat($(this).text().split(':')[1].trim());
+            });
+            $('#totalPrice').text(total);
+        }
+    </script>
+}

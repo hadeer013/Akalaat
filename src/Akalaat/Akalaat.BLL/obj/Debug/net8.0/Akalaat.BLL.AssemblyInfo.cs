@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eca56161e71f64ef2a8789691a1a5dd0b8028bcc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef2ae6e6200b1b3e3a1a989a7da8366591023c05")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

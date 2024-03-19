@@ -1,4 +1,6 @@
 ﻿using Akalaat.DAL.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -29,8 +31,10 @@ namespace Akalaat.ViewModels
 
         public string Customer_ID { get; set; }
         public virtual Customer? Customer { get; set; }
-        public ICollection<Item> Items { get; set; } = new HashSet<Item>();
+        //  public ICollection<Item> Items { get; set; } = new HashSet<Item>();
+        [Display(Name ="Items")]
+        public List<int> SelectedItemS { get; set; } = new List<int>();
 
-
+        public IEnumerable<SelectListItem> Items { get; set; } = Enumerable.Empty<SelectListItem>();
     }
 }
