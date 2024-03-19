@@ -29,7 +29,15 @@
       "PackagePath": "staticwebassets\\Images\\34859dd1-6b16-415c-ae72-c079ee032035.png"
     },
     {
+<<<<<<< Updated upstream
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png",
+      "PackagePath": "staticwebassets\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg"
     },
     {
@@ -69,6 +77,7 @@
       "PackagePath": "staticwebassets\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg",
       "PackagePath": "staticwebassets\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg"
     },
@@ -78,6 +87,13 @@
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif",
+=======
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg",
+      "PackagePath": "staticwebassets\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif",
+>>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif"
     },
     {
