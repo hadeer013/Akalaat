@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "qP6WPVPLyzJBjq7kvpgT2E0boTtVRDAB4PdgZE5AiYI=",
+=======
+  "Hash": "AjcVOOlZiGRUWabCKlA0qF2yevphtEY9OPLcnxmpvBo=",
+>>>>>>> Stashed changes
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -1081,11 +1085,37 @@
       "OriginalItemSpec": "wwwroot\\Images\\34859dd1-6b16-415c-ae72-c079ee032035.png"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
+=======
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "ContentRoot": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\",
       "BasePath": "_content/Akalaat",
+<<<<<<< Updated upstream
+=======
+      "RelativePath": "Images/3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png"
+    },
+    {
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+>>>>>>> Stashed changes
       "RelativePath": "Images/42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1271,7 +1301,11 @@
       "OriginalItemSpec": "wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg",
+=======
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
@@ -1290,6 +1324,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\79f5fc6b-291d-4cf9-8e53-88fb41c22068.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\7dad9038-88d5-4d34-a999-7cdbe9fd07cd.jpg",
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
@@ -1310,6 +1345,9 @@
     },
     {
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif",
+=======
+      "Identity": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif",
+>>>>>>> Stashed changes
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
