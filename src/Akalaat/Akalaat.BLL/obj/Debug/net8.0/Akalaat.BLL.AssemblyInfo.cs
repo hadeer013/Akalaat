@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0f172e5c80efeea8448fb6c717d6c08117f2697")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4214081de09831fe1642d566b251675f63df0f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akalaat.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

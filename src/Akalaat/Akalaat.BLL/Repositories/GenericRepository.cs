@@ -29,11 +29,12 @@ namespace Akalaat.BLL.Repositories
 
 		}
 
-        public async Task<int> Delete<Y>(Y Id)
-        {
-            context.Set<T>().Remove(context.Set<T>().Find(Id));
-            return await context.SaveChangesAsync();
-        }
+         public async Task<int> Delete<Y>(Y Id)
+         {
+             context.Set<T>().Remove(context.Set<T>().Find(Id));
+             return await context.SaveChangesAsync();
+         }
+    
 
         public async Task<IReadOnlyList<T>> GetAllAsync()
         {
@@ -207,7 +208,17 @@ namespace Akalaat.BLL.Repositories
                     throw new InvalidOperationException("Entity does not have a primary key.");
                 }
             }
-        
+            public async Task<int> Delete(int? ItemID,int? ShoppingID)
+            {
+                var entity =  context.Set<ShoppingCartItem>().FirstOrDefault(e => e.ItemId == ItemID && e.ShoppingCartId == ShoppingID);;
+                if (entity != null)
+                {
+                    context.Set<ShoppingCartItem>().Remove(entity);
+                    return await context.SaveChangesAsync();
+                }
+                return 0; 
+            }    
     
     }
+    
 }

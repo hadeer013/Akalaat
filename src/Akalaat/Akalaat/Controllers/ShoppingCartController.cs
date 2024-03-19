@@ -143,12 +143,10 @@ namespace Akalaat.Controllers
             var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item=> item.ShoppingCartId == Shopping_ID], includeProperties: "Item");
             if(shoppingCartItem.Count!=0)
             {
-                foreach (var item in shoppingCartItem)
+                for (var i=0; i< shoppingCartItem.Count;i++)
                 {
-                    item.Item = null;
-                    item.ShoppingCart=null;
-                    item.Quantity = null;
-                    await ShoppingCartItemRepository.Update(item);
+                    var item = shoppingCartItem[i];
+                    await ShoppingCartItemRepository.Delete(item.ItemId,item.ShoppingCartId);
                 }
             }
             if (shoppingCart != null)

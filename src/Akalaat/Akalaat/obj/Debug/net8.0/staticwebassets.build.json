@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YkRPQqWelUhUzMc6kcD3M4tsbFoanm25bEgL0cqhzWQ=",
+  "Hash": "WrvT4RjlMEloTmwT96gCqpuaxLM84SMLuy+jErxnkiM=",
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -1081,6 +1081,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\34859dd1-6b16-415c-ae72-c079ee032035.png"
     },
     {
+      "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Images/3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\3a00eb5c-fbb4-40fd-9f28-44dc3f89a598.png"
+    },
+    {
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\42305fbe-4a50-43d6-9c72-78379860a3a5.jpg",
       "SourceId": "Akalaat",
       "SourceType": "Discovered",
@@ -1212,25 +1231,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\75acd103-84a4-4468-aaa1-3f4acd5ceec7.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\7d9985fb-91c2-4b3a-bad6-c4f0449a85c5.jpg",
-      "SourceId": "Akalaat",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
-      "BasePath": "_content/Akalaat",
-      "RelativePath": "Images/7d9985fb-91c2-4b3a-bad6-c4f0449a85c5.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\7d9985fb-91c2-4b3a-bad6-c4f0449a85c5.jpg"
     },
     {
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\803a4a55-8e6c-4560-bf9a-dc63164c4bb1.jfif",

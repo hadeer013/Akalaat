@@ -33,6 +33,8 @@ namespace Akalaat.BLL.Interfaces
 
 
         Task<object[]> GetPrimaryKeyValues<T>(T entity);
+        Task<int> Delete(int? ItemID, int? ShoppingID);
+
 
     }
 }
