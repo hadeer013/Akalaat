@@ -618,13 +618,13 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCartItem", b =>
                 {
-                    b.Property<int>("ShoppingCartId")
+                    b.Property<int?>("ShoppingCartId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ItemId")
+                    b.Property<int?>("ItemId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.HasKey("ShoppingCartId", "ItemId");
