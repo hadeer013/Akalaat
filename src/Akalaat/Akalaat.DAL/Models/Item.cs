@@ -27,13 +27,13 @@ namespace Akalaat.DAL.Models
 
         public OfferStatus IsOffer { get; set; }
         [ForeignKey("Menu")]
-        public int MenuID { get; set; }
-        public virtual Menu menu { get; set; }
+        public int? MenuID { get; set; }
+        public virtual Menu? menu { get; set; }
         
         [ForeignKey("Category")]
 
         public int? CategoryID { get; set; }
-        public virtual Category Category { get; set; }
+        public virtual Category? Category { get; set; }
 
         public ICollection<Menu_Item_Size> menu_Item_Sizes { get; set; } = new HashSet<Menu_Item_Size>();
         public ICollection<Extra> extras { get; set; } = new HashSet<Extra>();
