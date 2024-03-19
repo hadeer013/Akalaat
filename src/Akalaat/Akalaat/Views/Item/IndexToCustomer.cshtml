@@ -6,7 +6,50 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <link href="~/css/item.index.css" rel="stylesheet"> 
 
-
+<style>
+    /* Style for the overlay */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    /* Style for the iframe dialog */
+    .dialog {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 100%;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1001;
+    }
+    /* Style for the close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+      .dialog {
+        width: 40%;
+        height: 80vh;
+      }
+    
+      .dialog iframe {
+        width: 100%;
+        height: 100%; /* Fill the entire container */
+        border: none; /* Remove iframe border */
+      }
+  </style>
 @* <div class="container mt-4"> *@
 @*     <div class="row"> *@
 @*         @foreach (var item in Model) *@
@@ -129,7 +172,7 @@
         @* </div> *@
         <div class="row col-md-9 ">
             <div class="search-container mt-5 ">
-                <form id="searchForm" asp-action="index" method="get">
+                <form id="searchForm" asp-action="IndexToCustomer" method="get">
                     <!-- Hidden input for MenuID -->
                     <input type="hidden" name="menuId" value="@ViewBag.MenuID" />
               
@@ -163,7 +206,7 @@
                                     <!----></p>
                                 <div class="item-footer">
                                    
-                                    <a asp-controller="ShoppingCart" asp-action="Index"  asp-route-id="@item.Id" class="delete-btn">
+                                    <a   onclick="openDialog(@item.Id)" class="delete-btn">
                                         <i class="fa fa-plus"></i>
                                                                                                                      
                                     </a>
@@ -226,4 +269,24 @@
     </div>
       
 </div>
+<div class="overlay" id="overlay"></div>
+<div class="dialog" id="dialog">
+    <span class="close-btn" onclick="closeDialog()">X</span>
+    <iframe  id="dialog-iframe"  width="100%" height="100%"></iframe>
+</div>
+@* src="@Url.Action("Index", "ShoppingCart", new { id = 1004 })" *@
+<script>
+  function openDialog(itemId) {
+   
+  var dialogIframe = $('#dialog-iframe');
+  var dialogUrl = '@Url.Action("Index", "ShoppingCart")?id=' + itemId;
+ dialogIframe.attr('src', dialogUrl);
+ document.getElementById('overlay').style.display = 'block';
+ document.getElementById('dialog').style.display = 'block';       
+  }
 
+  function closeDialog() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('dialog').style.display = 'none';
+  }
+</script>

@@ -1,8 +1,16 @@
 ﻿@model ShoppingCartItemVM
+@{
+    Layout = null;
+}
 
-<h2>Shopping Cart</h2>
+ <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Akalaat.styles.css" asp-append-version="true" />
+    <link href="~/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    
 
-<div class="row">
+<div class="row m-3">
         <div class="col-md-6 mb-4">
             <div class="card">
                 <img src="~/Images/@Model.Item.Image_URL" class="card-img-top" alt="Image">
@@ -18,15 +26,15 @@
                 <div class="card-footer">
                     <strong class="total-price" data-Model.Item-id="@Model.Item.Id" id="Price">Total: @(Model.Item.Price * Model.Quantity)</strong>
                 </div>
-                <div class="card-footer">
-                    <a asp-controller="Item" asp-action="IndexToCustomer" class="btn btn-warning">Back To List Of Items</a>
-                </div>
+             
             </div>
         </div>
-    <button class="btn btn-success add-to-cart">Add to Cart</button>
+    <button class="btn btn-danger w-75 m-auto add-to-cart">Add to Cart</button>
 </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
-@section Scripts {
     <script>
         $(document).ready(function () {
             $('.quantity-input').on('change', function () {
@@ -70,6 +78,7 @@
                         // Handle error
                     }
                 });
+                 window.parent.closeDialog();
             });
         });
 
@@ -81,4 +90,4 @@
             $('#totalPrice').text(total);
         }
     </script>
-}
+

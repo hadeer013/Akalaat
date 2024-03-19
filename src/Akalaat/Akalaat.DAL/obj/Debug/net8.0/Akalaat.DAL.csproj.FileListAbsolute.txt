@@ -11,19 +11,6 @@ F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\A
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 F:\Computer Science\iti_intake_44\20-MVC\MVC final project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.sourcelink.json
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
-C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
@@ -63,3 +50,16 @@ H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.sourcelink.json
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
