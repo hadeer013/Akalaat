@@ -320,7 +320,7 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("Likes")
                         .HasColumnType("int");
 
-                    b.Property<int>("MenuID")
+                    b.Property<int?>("MenuID")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -946,9 +946,7 @@ namespace Akalaat.DAL.Data.Migrations
 
                     b.HasOne("Akalaat.DAL.Models.Menu", "menu")
                         .WithMany("items")
-                        .HasForeignKey("MenuID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MenuID");
 
                     b.HasOne("Akalaat.DAL.Models.Offer", null)
                         .WithMany("Items")
