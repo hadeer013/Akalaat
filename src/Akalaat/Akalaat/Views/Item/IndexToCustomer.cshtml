@@ -1,38 +1,229 @@
 ﻿@model List<Akalaat.ViewModels.ItemViewModel>
 <link href="~/font-awesome/css/fontawesome.css" rel="stylesheet" />
 <link href="~/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
-<h2>Item Index</h2>
-<p>
-    <a asp-action="Create" class="btn btn-outline-info">Create New</a>
-</p>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="~/css/item.index.css" rel="stylesheet"> 
+
+
+@* <div class="container mt-4"> *@
+@*     <div class="row"> *@
+@*         @foreach (var item in Model) *@
+@*         { *@
+@*             <div class="col-md-4 mb-4"> *@
+@*                 <div class="card"> *@
+@*                     <img src="~/Images/@item.ImageUrl" class="card-img-top" alt="Image"> *@
+@*                     <div class="card-body"> *@
+@*                         <h5 class="card-title">@item.Name</h5> *@
+@*                         <p class="card-text">@item.Description</p> *@
+@*                         <ul class="list-group list-group-flush"> *@
+@*                             <li class="list-group-item">Likes: @item.Likes</li> *@
+@*                             <li class="list-group-item">Discount: @item.Discount</li> *@
+@*                             <li class="list-group-item">IsOffer: @item.IsOffer</li> *@
+@*                             <li class="list-group-item">Price: @item.Price</li> *@
+@*                         </ul> *@
+@*                         <div class="card-footer"> *@
+@*                             <form asp-controller="ShoppingCart" asp-action="Index" method="post" asp-route-id="@item.Id"> *@
+@*                                 <input type="hidden" asp-for="@item.Id" value="@item.Id" /> *@
+@*                                 <button type="submit" class="btn btn-success btn-icon"> *@
+@*                                     <i class="fa fa-plus fa-2x" aria-hidden="true"></i> *@
+@*                                 </button> *@
+@*                             </form> *@
+@*                             <br /> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         } *@
+@*     </div> *@
+@* </div> *@
 <div class="container mt-4">
-    <div class="row">
-        @foreach (var item in Model)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="~/Images/@item.ImageUrl" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">@item.Name</h5>
-                        <p class="card-text">@item.Description</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Likes: @item.Likes</li>
-                            <li class="list-group-item">Discount: @item.Discount</li>
-                            <li class="list-group-item">IsOffer: @item.IsOffer</li>
-                            <li class="list-group-item">Price: @item.Price</li>
-                        </ul>
-                        <div class="card-footer">
-                            <form asp-controller="ShoppingCart" asp-action="Index" method="post" asp-route-id="@item.Id">
-                                <input type="hidden" asp-for="@item.Id" value="@item.Id" />
-                                <button type="submit" class="btn btn-success btn-icon">
-                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-                                </button>
-                            </form>
-                            <br />
-                        </div>
+    <div class="row position-relative">
+          
+        <ul id="" class="menu-cats  col-md-3 position-sticky">
+            @if (ViewBag.SelectedCategory == -1)
+            {
+                <li class="cat active">
+                    <div>
+                        <i class="far fa-thumbs-up"></i>
+                        Top Dishes
                     </div>
-                </div>
+                    <i class="fas fa-arrow-right"></i>
+                </li>
+            }
+            else
+            {
+                <a asp-action="IndexToCustomer"
+                   asp-route-menuId="@ViewBag.MenuID"
+                   asp-route-categoryId="-1"
+                   asp-route-searchItem=""
+                   class="text-decoration-none">
+                    <li class="cat ">
+                        <div>
+                            <i class="far fa-thumbs-up"></i>
+                            Top Dishes
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                   
+                    </li>
+                </a>
+                
+
+            }
+            @foreach (var category in ViewBag.Categories)
+            {
+                if (ViewBag.SelectedCategory == Int32.Parse(@category.Value))
+                {
+                    <li class="cat mt-2 active">
+                        @category.Text
+                        <i class="fas fa-arrow-right"></i>
+                    </li>
+                }
+                else
+                {
+                    <a asp-action="IndexToCustomer" 
+                       asp-route-menuId="@ViewBag.MenuID"
+                       asp-route-categoryId="@category.Value"
+                       asp-route-searchItem=""
+                       class="text-decoration-none">
+                        <li class="cat mt-2">
+                        
+                     
+                            @category.Text
+                            <i class="fas fa-arrow-right"></i>
+                        
+                        </li>
+                    </a>
+                    
+
+                }
+            }
+
+        </ul>
+
+
+        @* <div class="row col-md-9"> *@
+        @*     @foreach (var item in Model) *@
+        @*     { *@
+        @*         <div class="col-md-4 mb-4"> *@
+        @*             <div class="card"> *@
+        @*                 <img src="~/Images/@item.ImageUrl" class="card-img-top" alt="Image"> *@
+        @*                 <div class="card-body"> *@
+        @*                     <h5 class="card-title">@item.Name</h5> *@
+        @*                     <p class="card-text">@item.Description</p> *@
+        @*                     <ul class="list-group list-group-flush"> *@
+        @*                         <li class="list-group-item">Likes: @item.Likes</li> *@
+        @*                         <li class="list-group-item">Discount: @item.Discount</li> *@
+        @*                         <li class="list-group-item">IsOffer: @item.IsOffer</li> *@
+        @*                     </ul> *@
+        @*                     <div class="card-footer"> *@
+        @*                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a> *@
+        @*                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> *@
+        @*                         <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> *@
+        @*                     </div> *@
+        @*                 </div> *@
+        @*             </div> *@
+        @*         </div> *@
+        @*     } *@
+        @* </div> *@
+        <div class="row col-md-9 ">
+            <div class="search-container mt-5 ">
+                <form id="searchForm" asp-action="index" method="get">
+                    <!-- Hidden input for MenuID -->
+                    <input type="hidden" name="menuId" value="@ViewBag.MenuID" />
+              
+                    <!-- Hidden input for SelectedCategory -->
+                    <input type="hidden" name="categoryId" value="@ViewBag.SelectedCategory" />
+          
+                    <!-- Search input -->
+                    <label class="search-menu search-label">
+                        <i class="fas fa-search search-icon"></i> 
+                        <input id="searchInput" name="searchItem" class="search-input" placeholder="Search for a dish">
+                    </label>
+                </form>
+
             </div>
-        }
+            <div id="topDishes-0" class="cat-section">
+                <h2 class="section-title">
+                    
+                </h2>
+                @foreach (var item in Model)
+                {
+                    <div class="section-body">
+
+                        <div class="menu-item clickable-item  ">
+                            <div class="content">
+                                <div class="item-header"><a class="clickable-anchor"></a>
+                                    <h5 class="title">
+                                        @item.Name
+                                    </h5></div>
+                                <p class="description">
+                                    @item.Description
+                                    <!----></p>
+                                <div class="item-footer">
+                                   
+                                    <a asp-controller="ShoppingCart" asp-action="Index"  asp-route-id="@item.Id" class="delete-btn">
+                                        <i class="fa fa-plus"></i>
+                                                                                                                     
+                                    </a>
+                                    <p class="price"><!---->
+                                      
+                                        
+                                        <span class="bold d-inline-block mr-2">
+                                            @item.Price
+                                            <span class="currency">EGP</span></span></p>
+                                </div></div>
+                            <div class="image-holder">
+                                <div class=" d-flex justify-content-around mb-2">
+
+                                    @* <a asp-action="Edit" asp-route-id="@item.Id" class="edit-btn mr-4"> *@
+                                    @*     <i class="fa fa-pencil-alt"></i> *@
+                                    @* </a> *@
+                                    @* <a asp-action="Delete" asp-route-id="@item.Id" class="delete-btn"> *@
+                                    @*     <i class="fa fa-trash-alt"></i> *@
+                                    @* </a> *@
+                                    
+                                    @* <form asp-controller="ShoppingCart" asp-action="Index" method="post" asp-route-id="@item.Id"> *@
+                                    @*     <input type="hidden" asp-for="@item.Id" value="@item.Id" /> *@
+                                    @*     <button type="submit" class="edit-btn"> *@
+                                    @*         <i class="fa fa-plus fa-xs" aria-hidden="true"></i> *@
+                                    @*     </button> *@
+                                    @* </form> *@
+                                 
+                                    
+                                    
+                                </div>
+
+                                <div class="image image-ratio ratio-square radius">
+                                    <a href="~/Images/@item.ImageUrl" data-lightbox="item-0-undefined" class="ratio-content b-lazy-container image-loading image-loaded">
+                                        <img alt="@item.Name" title="@item.Name" class="b-lazy v-center v-center dish-img" 
+                                             src="~/Images/@item.ImageUrl" lazy="loaded">
+                                    </a>
+                                </div>
+                                <div class="actions pull-right">
+                                    <span class="count">
+                                        @item.Likes
+                                    </span>
+                                    <span class="icon">
+                                        <i class="far fa-thumbs-up"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
+                }
+
+
+
+            </div>
+              
+        </div>
+      
     </div>
+      
 </div>
+

@@ -32,7 +32,7 @@ namespace Akalaat.Controllers
         }
 
 
-
+        //vendor view
         public async Task<IActionResult> Index(int menuId, int categoryId = -1, string searchItem = "")
         {
             // Retrieve restaurant name from the menu ID using the existing repositories or context
@@ -80,10 +80,53 @@ namespace Akalaat.Controllers
         }
 
 
-        public async Task<IActionResult> IndexToCustomer()
+        public async Task<IActionResult> IndexToCustomer(int menuId, int categoryId = -1, string searchItem = "")
         {
-            var items = await _itemRepository.GetAllAsync();
+            
+            // var items = await _itemRepository.GetAllAsync();
+            // var itemViewModels = items.Select(MapToViewModel).ToList();
+            // return View(itemViewModels);
+            // Retrieve restaurant name from the menu ID using the existing repositories or context
+            var menu = await _menuRepository.GetByIdIncludingAsync(menuId, m => m.Resturant);
+            var restaurantName = menu?.Resturant?.Name;
+            var orderBy = (Func<IQueryable<Item>, IOrderedQueryable<Item>>)null;
+            orderBy = items => items.OrderByDescending(item => item.Likes);
+
+            // Initialize filters list
+            var filters = new List<Expression<Func<Item, bool>>>();
+
+            // Add filter for MenuID
+            filters.Add(item => item.MenuID == menuId);
+
+            // Add filter for CategoryID if provided
+            if (categoryId != -1)
+            {
+                filters.Add(item => item.CategoryID == categoryId);
+            }
+
+
+            // Add filter for SearchItem if provided
+            if (!string.IsNullOrEmpty(searchItem))
+            {
+                filters.Add(item => item.Name.Contains(searchItem) || item.Description.Contains(searchItem));
+            }
+
+            // Retrieve items based on filters
+            var items = await _itemRepository.GetAllAsync(filters, orderBy);
+
+            // Map items to view models
             var itemViewModels = items.Select(MapToViewModel).ToList();
+
+            // Populate ViewBag properties
+            ViewBag.MenuID = menuId;
+            ViewBag.Categories = new SelectList(
+                await _categoryRepository.GetAllAsync([category => category.Menu_ID == menuId]),
+                "Id", "Name");
+            ViewBag.RestaurantName = restaurantName;
+            ViewBag.SelectedCategory = categoryId;
+            ViewBag.SearchValue = searchItem;
+
+            // Return view with view models
             return View(itemViewModels);
         }
         [HttpGet]

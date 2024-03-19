@@ -171,6 +171,7 @@ ul {
 .menu-item .delete-btn:hover{
     color: red;
 }
+
 .menu-item .image-holder {
     width: 108px;
     display: -webkit-box;
