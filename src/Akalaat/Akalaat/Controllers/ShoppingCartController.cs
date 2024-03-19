@@ -5,18 +5,18 @@ using Akalaat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Security.Claims;
-
+ 
 namespace Akalaat.Controllers
 {
     public class ShoppingCartController : Controller
     {
         private readonly IGenericRepository<ShoppingCart> ShoppingCartRepository;
         private readonly IGenericRepository<ShoppingCartItem> ShoppingCartItemRepository;
-
+ 
         private readonly IGenericRepository<Item> itemRepository;
         private readonly IGenericRepository<Customer> CustomerRepository;
         private readonly IGenericRepository<Item> _itemRepository;
-
+ 
         public ShoppingCartController(IGenericRepository<ShoppingCart> ShoppingCartRepository, IGenericRepository<Item> itemRepository, IGenericRepository<Customer> CustomerRepository, IGenericRepository<ShoppingCartItem> shoppingCartItemRepository, IGenericRepository<Item> _itemRepository)
         {
             this.ShoppingCartRepository = ShoppingCartRepository;
@@ -32,11 +32,11 @@ namespace Akalaat.Controllers
             CustomerWithShoppingCartSpecification spec = new CustomerWithShoppingCartSpecification(customerId);
             var CurrentCustomer = await CustomerRepository.GetByIdWithSpec(spec);
             var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
-
+ 
             var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item => item.ItemId == Id && item.ShoppingCartId == Shopping_ID],includeProperties: "Item");
-
+ 
             ShoppingCartItemVM shoppingCartItemVM = new ShoppingCartItemVM();
-
+ 
             if(shoppingCartItem.Count!=0)
             {
                 shoppingCartItemVM.Customer_ID = customerId;
@@ -44,29 +44,29 @@ namespace Akalaat.Controllers
                 shoppingCartItemVM.Quantity = shoppingCartItem[0].Quantity;
                 shoppingCartItemVM.TotalPrice = shoppingCartItem[0].Quantity *Item.Price;
                 return View(shoppingCartItemVM);
-
+ 
             }
-
+ 
             shoppingCartItemVM.Customer_ID = customerId;
             shoppingCartItemVM.Item = Item;
-
+ 
             return View(shoppingCartItemVM);
         }
         [HttpPost]
         public async Task<IActionResult> AddToCart([FromBody] ShoppingCartItemVM shoppingCartItemVM )
         {
             var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
+ 
             var Item = await itemRepository.GetByIdAsync(shoppingCartItemVM.Item_ID);
-
+ 
             CustomerWithShoppingCartSpecification spec = new CustomerWithShoppingCartSpecification(customerId);
-
+ 
             var CurrentCustomer = await CustomerRepository.GetByIdWithSpec(spec);
-
+ 
             var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
-
+ 
             var shpooingCart = await ShoppingCartRepository.GetByIdAsync(Shopping_ID);
-
+ 
             if (ModelState.IsValid)
             {
                 if (shpooingCart != null)
@@ -77,24 +77,24 @@ namespace Akalaat.Controllers
                         shpooingCart.TotalPrice -= CurrentshoppingCartItem[0].Quantity * Item.Price;
                         shpooingCart.TotalPrice += shoppingCartItemVM.TotalPrice;
                         CurrentshoppingCartItem[0].Quantity = shoppingCartItemVM.Quantity;
-
+ 
                         await ShoppingCartRepository.Update(shpooingCart);
                         await ShoppingCartItemRepository.Update(CurrentshoppingCartItem[0]);
                     }
                     else 
                     {
-
+ 
                         if (shpooingCart.TotalPrice == null)
                         {
                             shpooingCart.TotalPrice = shoppingCartItemVM.TotalPrice;
-
+ 
                         }
                         else
                         {
                             shpooingCart.TotalPrice += shoppingCartItemVM.TotalPrice;
-
+ 
                         }
-
+ 
                         await ShoppingCartRepository.Update(shpooingCart);
                         ShoppingCartItem shoppingCartItem = new ShoppingCartItem
                         {
@@ -104,10 +104,9 @@ namespace Akalaat.Controllers
                         };
                         await ShoppingCartItemRepository.Add(shoppingCartItem);
                     }
-                    
                 }
-                
 
+ 
             }
             return View();
         }
@@ -122,7 +121,7 @@ namespace Akalaat.Controllers
             ICollection<Item> _Items = new HashSet<Item>();
             List<int?> QuantityList = new List<int?>();
            List<int?> _SelectedItemS = new List<int?>();
-
+ 
             for (int i = 0; i < shoppingCartItem.Count; i++)
             {
                 var item = await _itemRepository.GetByIdAsync(shoppingCartItem[i].ItemId);
@@ -141,7 +140,6 @@ namespace Akalaat.Controllers
             var CurrentCustomer = await CustomerRepository.GetByIdWithSpec(spec);
             var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
             ShoppingCart shoppingCart =await ShoppingCartRepository.GetByIdAsync(Shopping_ID);
-           
             var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item=> item.ShoppingCartId == Shopping_ID], includeProperties: "Item");
             if(shoppingCartItem.Count!=0)
             {
