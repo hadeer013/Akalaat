@@ -214,5 +214,77 @@ namespace Akalaat.Controllers
         //    }
         //}
         #endregion
+
+        [AllowAnonymous]
+        [HttpGet]
+        public ChallengeResult ExternalLogin(string provider, string? returnURL = null)
+        {
+            var redirectURL = Url.Action("RegisterExternalUser", values: new { returnURL });
+            var properties = SignInManager.ConfigureExternalAuthenticationProperties(provider, redirectURL);
+            return new ChallengeResult(provider, properties);
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> RegisterExternalUser(string? returnURL = null,
+        string? remoteError = null)
+        {
+            returnURL = returnURL ?? Url.Content("~/");
+            var message = "";
+
+            if (remoteError != null)
+            {
+                message = $"Error from external provider: {remoteError}";
+                return RedirectToAction("login", routeValues: new { message });
+            }
+
+            var info = await SignInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+            {
+                message = "Error loading external login information.";
+                return RedirectToAction("login", routeValues: new { message });
+            }
+
+            var externalLoginResult = await SignInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+
+            // The account already exists
+            if (externalLoginResult.Succeeded)
+            {
+                return LocalRedirect(returnURL);
+            }
+
+            string email = "";
+
+            if (info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
+            {
+                email = info.Principal.FindFirstValue(ClaimTypes.Email)!;
+            }
+            else
+            {
+                message = "Error while reading the email from the provider.";
+                return RedirectToAction("login", routeValues: new { message });
+            }
+
+            var usuario = new Customer() { Email = email, UserName = email ,ShoppingCart = new ShoppingCart()};
+
+            var createUserResult = await UserManager.CreateAsync(usuario);
+            if (!createUserResult.Succeeded)
+            {
+                message = createUserResult.Errors.First().Description;
+                return RedirectToAction("login", routeValues: new { message });
+            }
+
+            var addLoginResult = await UserManager.AddLoginAsync(usuario, info);
+
+            if (addLoginResult.Succeeded)
+            {
+                await SignInManager.SignInAsync(usuario, isPersistent: false, info.LoginProvider);
+                return LocalRedirect(returnURL);
+            }
+
+            message = "There was an error while logging you in.";
+            return RedirectToAction("login", routeValues: new { message });
+        }
+
     }
 }
+
