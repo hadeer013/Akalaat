@@ -4,5 +4,6 @@
 	{
 		public int BranchId {  get; set; }
 		public int RegionId { get; set; }
+		
 	}
 }

@@ -1,4 +1,4 @@
-﻿@model AddBranchVM
+﻿@* @model AddBranchVM
 @{
     ViewData["Title"] = "AddBranch";
     var Allcities = ViewBag.Cities;
@@ -9,27 +9,27 @@
 
 
 <form asp-action="AddBranch" asp-controller="Branch" class="mt-4">
-    <input asp-for="ResturantId" value="@ViewBag.ResId" hidden/>
+    <input id="ResId" asp-for="ResturantId" value="@ViewBag.ResId" hidden/>
 
     <div class="form-group">
         <label asp-for="AddressDetails" class="control-label">Address Details</label>
-        <input asp-for="AddressDetails" class="form-control" />
+        <input id="addressDetails" asp-for="AddressDetails" class="form-control" />
     </div>
     <div class="form-group">
         <label asp-for="OpenHour" class="control-label">Open Hour</label>
-        <input asp-for="OpenHour" class="form-control" />
+        <input id="openHour" asp-for="OpenHour" class="form-control" />
     </div>
     <div class="form-group">
         <label asp-for="CloseHour" class="control-label">Close Hour</label>
-        <input asp-for="CloseHour" class="form-control" />
+        <input id="closeHour" asp-for="CloseHour" class="form-control" />
     </div>
     <div class="form-group">
-        <input type="checkbox" asp-for="IsDelivery" />
-        <label asp-for="IsDelivery" class="control-label">Is Delivery</label>
+        <input id="IsDelivery" type="checkbox" asp-for="IsDelivery" />
+        <label  asp-for="IsDelivery" class="control-label">Is Delivery</label>
     </div>
 
     <div class="form-group">
-        <input type="checkbox" asp-for="IsDineIn" />
+        <input id="IsDineIn" type="checkbox" asp-for="IsDineIn" />
         <label asp-for="IsDineIn" class="control-label">Is DineIn</label>
     </div>
 
@@ -58,12 +58,155 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary">Add</button>
+    <div id="map" style="height: 400px;"></div>
+
+    <button id="submitbtn" type="submit" class="btn btn-primary">Add</button>
+</form> *@
+
+@model AddBranchVM
+@{
+    ViewData["Title"] = "AddBranch";
+    var Allcities = ViewBag.Cities;
+}
+
+<h1>AddBranch</h1>
+
+<form asp-action="AddBranch" asp-controller="Branch" class="mt-4">
+    <input id="ResId" asp-for="ResturantId" value="@ViewBag.ResId" hidden />
+
+    <div class="form-group">
+        <label asp-for="AddressDetails" class="control-label">Address Details</label>
+        <input id="addressDetails" asp-for="AddressDetails" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="OpenHour" class="control-label">Open Hour</label>
+        <input id="openHour" asp-for="OpenHour" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CloseHour" class="control-label">Close Hour</label>
+        <input id="closeHour" asp-for="CloseHour" class="form-control" />
+    </div>
+   
+    <div class="form-group">
+        <label for="cities">City</label>
+        <select id="cities" class="form-control">
+            <option value="">Select City</option>
+            @foreach (var city in Allcities)
+            {
+                <option value="@city.Id">@city.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="districts">District</label>
+        <select id="districts" class="form-control" disabled>
+            <option value="">Select District</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="regions">Region</label>
+        <select id="regions" asp-for="RegionId" class="form-control" disabled>
+            <option value="">Select Region</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <input id="IsDelivery" type="checkbox" asp-for="IsDelivery" />
+        <label asp-for="IsDelivery" class="control-label">Is Delivery</label>
+    </div>
+    <div class="form-group">
+        <input id="IsDineIn" type="checkbox" asp-for="IsDineIn" />
+        <label asp-for="IsDineIn" class="control-label">Is DineIn</label>
+    </div>
+
+   
+    <div id="map" style="height: 400px;"></div>
+    
+
+    <button id="submitbtn" type="submit" class="btn btn-primary">Add</button>
 </form>
-
-
 @section scripts {
     <script>
+
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var lat, lng,chooseLocation=false;
+
+        map.on('click', function (e) {
+             lat = e.latlng.lat;
+             lng = e.latlng.lng;
+            chooseLocation = true;
+
+            map.eachLayer(function (layer) {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
+            });
+
+            // Add a marker at the clicked position
+            L.marker([lat, lng]).addTo(map);
+
+            console.log("You clicked the map at latitude " + lat + " and longitude " + lng);
+        });
+
+        $('#submitbtn').on('click',function(e){
+            e.preventDefault();
+            if (chooseLocation == false)
+                alert("You have to choose a loctation for the branch");
+            else 
+            {
+                var addDetails = document.getElementById('addressDetails').value;
+                var openHour = document.getElementById('openHour').value;
+                var closeHour = document.getElementById('closeHour').value;
+                var isDelivery = document.getElementById('IsDelivery').checked;
+                var isDineIn = document.getElementById('IsDineIn').checked;
+                var regionId = document.getElementById('regions').value;
+                var ResId = document.getElementById('ResId').value;
+
+
+                var branchObj = {
+                    AddressDetails: addDetails,
+                    openHour: openHour,
+                    closeHour: closeHour,
+                    IsDelivery: isDelivery,
+                    IsDineIn: isDineIn,
+                    RegionId: regionId,
+                    Latitude: lat.toString(),
+                    Longitude: lng.toString(),
+                    ResturantId: ResId
+                }
+                   
+
+                console.log(JSON.stringify(branchObj));
+
+                $.ajax({
+                    url: '@Url.Action("AddBranch", "Branch")',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(branchObj),
+                    success: function (response) {
+                        var branchIndexUrl = '@Url.Action("Index", "Branch", new { Id = ViewBag.ResId })';
+                        
+                        window.location.href = branchIndexUrl;
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error saving coordinates:', error);
+                    }
+                });
+
+            }
+        })
+
+
+
+      
+
+
+
         $(function () {
             $('#cities').change(function () {
                 var cityId = $(this).val();
