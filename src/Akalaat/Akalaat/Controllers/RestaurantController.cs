@@ -1,7 +1,9 @@
 using System.Security.AccessControl;
 using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
+using Akalaat.BLL.Specifications.EntitySpecs.ResturantSpec;
 using Akalaat.DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Akalaat.Controllers;
@@ -12,22 +14,51 @@ public class RestaurantController:Controller
     private readonly IGenericRepository<Resturant> _restaurantRepository;
 
     private readonly IWebHostEnvironment _webHostEnvironment;
-
-
+    private readonly IGenericRepository<City> cityRepo;
 
     public RestaurantController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
-        IWebHostEnvironment webHostEnvironment)
+        IWebHostEnvironment webHostEnvironment,IGenericRepository<City> cityRepo)
     {
         _vendorRepository = vendorRepository;
         _restaurantRepository = restaurantRepository;
         _webHostEnvironment = webHostEnvironment;
+        this.cityRepo = cityRepo;
     }
-    public async Task<IActionResult> Index()
+
+
+    [AllowAnonymous]
+    public async Task<IActionResult> Home()
     {
-        var allRestaurants = await _restaurantRepository.GetAllAsync();
-        var firstRestaurant = allRestaurants.FirstOrDefault();
-        return View(firstRestaurant);
+        ViewBag.Cities= await cityRepo.GetAllAsync();
+        return View();
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Index(ResturantParams resturantPrams)
+    {
+        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
+        var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
+
+        return View(AllResturantWithSpec);
+
+	}
+
+    public async Task<IActionResult> ResturantDetails(/*int Id*/)
+    {
+        //var restaurant = await _restaurantRepository.GetByIdAsync(Id);
+        //return View(restaurant);
+        var allrestaurants = await _restaurantRepository.GetAllAsync();
+        var firstrestaurant = allrestaurants.FirstOrDefault();
+        return View(firstrestaurant);
+    }
+
+    //public async task<iactionresult> index()
+    //{
+    //    var allrestaurants = await _restaurantrepository.getallasync();
+    //    var firstrestaurant = allrestaurants.firstordefault();
+    //    return view(firstrestaurant);
+    //}
+
     [HttpPost]
     // [Route("/Edit/CoverImage/{coverImage}")]
     public async Task<IActionResult> EditCoverImage(int id,IFormFile Cover_URL)
