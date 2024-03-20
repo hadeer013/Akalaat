@@ -36,7 +36,11 @@ namespace Akalaat
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<AkalaatDbContext>();
 
-
+            builder.Services.AddAuthentication().AddMicrosoftAccount(Microsoftoptions =>
+            {
+                Microsoftoptions.ClientId = "7d62dffc-d5d4-45f1-a86e-1c551962e315";
+                Microsoftoptions.ClientSecret = "d4s8Q~B4EYzXixasvzxkPARSSB4dUOBpuXEG_b~A";
+            });
 
 
 
@@ -73,6 +77,7 @@ namespace Akalaat
 
             app.UseRouting();
             StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSession();

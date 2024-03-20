@@ -273,3 +273,4 @@ H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\refint\Akal
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.pdb
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.genruntimeconfig.cache
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\ref\Akalaat.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
