@@ -1,9 +1,9 @@
 ﻿@model EditBranchVM
 @{
-    ViewData["Title"] = "EditBranch";
-    var AllCities = (List<City>)ViewBag.Cities;
-    var AllDistricts = (List<District>)ViewBag.Districts;
-    var AllRegions = (List<Region>)ViewBag.Regions;
+	ViewData["Title"] = "EditBranch";
+	var AllCities = (List<City>)ViewBag.Cities;
+	var AllDistricts = (List<District>)ViewBag.Districts;
+	var AllRegions = (List<Region>)ViewBag.Regions;
 }
 
 <h1>EditBranch</h1>
@@ -12,122 +12,223 @@
 
 
 <form asp-action="EditBranch" asp-route-Id="@Model.BranchId" asp-controller="Branch" class="mt-4">
-    <input asp-for="BranchId" hidden/>
+	<input id="BranId" asp-for="BranchId" hidden />
 
-    <div class="form-group">
-        <label asp-for="AddressDetails" class="control-label">Address Details</label>
-        <input asp-for="AddressDetails" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="OpenHour" class="control-label">Open Hour</label>
-        <input asp-for="OpenHour" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="CloseHour" class="control-label">Close Hour</label>
-        <input asp-for="CloseHour" class="form-control" />
-    </div>
-    <div class="form-group">
-        <input type="checkbox" asp-for="IsDelivery" />
-        <label asp-for="IsDelivery" class="control-label">Is Delivery</label>
-    </div>
-
-    <div class="form-group">
-        <input type="checkbox" asp-for="IsDineIn" />
-        <label asp-for="IsDineIn" class="control-label">Is DineIn</label>
-    </div>
+	<div class="form-group">
+		<label asp-for="AddressDetails" class="control-label">Address Details</label>
+		<input id="addressDetails" asp-for="AddressDetails" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label asp-for="OpenHour" class="control-label">Open Hour</label>
+		<input id="openHour" asp-for="OpenHour" class="form-control" />
+	</div>
+	<div class="form-group">
+		<label asp-for="CloseHour" class="control-label">Close Hour</label>
+		<input id="closeHour" asp-for="CloseHour" class="form-control" />
+	</div>
 
 
-    <div class="form-group">
-        <label for="cities">City</label>
-        <select id="cities" class="form-control" asp-for="CityId">
-            <option value="">Select City</option>
-            @foreach (var city in AllCities)
-            {
-                if (city.Id == Model.CityId)
-                {
-                    <option value="@city.Id" selected>@city.Name</option>
-                }
-                else
-                {
-                    <option value="@city.Id">@city.Name</option>
-                }
-            }
-        </select>
-    </div>
 
-    <div class="form-group">
-        <label for="districts">District</label>
-        <select id="districts" class="form-control" asp-for="DistrictId">
-            @foreach (var district in AllDistricts)
-            {
-                if (district.Id == Model.DistrictId)
-                {
-                    <option value="@district.Id " selected>@district.Name</option>
-                }
-                else
-                {
-                    <option value="@district.Id">@district.Name</option>
-                }
-            }
-        </select>
-    </div>
+	<div class="form-group">
+		<label for="cities">City</label>
+		<select id="cities" class="form-control" asp-for="CityId">
+			<option value="">Select City</option>
+			@foreach (var city in AllCities)
+			{
+				if (city.Id == Model.CityId)
+				{
+					<option value="@city.Id" selected>@city.Name</option>
+				}
+				else
+				{
+					<option value="@city.Id">@city.Name</option>
+				}
+			}
+		</select>
+	</div>
 
-    <div class="form-group">
-        <label for="regions">Region</label>
-        <select id="regions" asp-for="RegionId" class="form-control">
-            @foreach (var region in AllRegions)
-            {
-                if (region.Id == Model.DistrictId)
-                {
-                    <option value="@region.Id " selected>@region.Name</option>
-                }
-                else
-                {
-                    <option value="@region.Id">@region.Name</option>
-                }
-            }
-        </select>
-        </select>
-    </div>
+	<div class="form-group">
+		<label for="districts">District</label>
+		<select id="districts" class="form-control" asp-for="DistrictId">
+			@foreach (var district in AllDistricts)
+			{
+				if (district.Id == Model.DistrictId)
+				{
+					<option value="@district.Id " selected>@district.Name</option>
+				}
+				else
+				{
+					<option value="@district.Id">@district.Name</option>
+				}
+			}
+		</select>
+	</div>
 
-    <button type="submit" class="btn btn-primary">Save Changes</button>
+	<div class="form-group">
+		<label for="regions">Region</label>
+		<select id="regions" asp-for="RegionId" class="form-control">
+			@foreach (var region in AllRegions)
+			{
+				if (region.Id == Model.DistrictId)
+				{
+					<option value="@region.Id " selected>@region.Name</option>
+				}
+				else
+				{
+					<option value="@region.Id">@region.Name</option>
+				}
+			}
+		</select>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<input id="IsDelivery" type="checkbox" asp-for="IsDelivery" />
+		<label asp-for="IsDelivery" class="control-label">Is Delivery</label>
+	</div>
+
+	<div class="form-group">
+		<input id="IsDineIn" type="checkbox" asp-for="IsDineIn" />
+		<label asp-for="IsDineIn" class="control-label">Is DineIn</label>
+	</div>
+
+	<div id="map" style="height: 400px;"></div>
+
+
+	<button id="submitbtn" type="submit" class="btn btn-primary">Save Changes</button>
 </form>
 
 
 @section scripts {
-    <script>
-        $(function () {
-            $('#cities').change(function () {
-                var cityId = $(this).val();
-                if (cityId) {
-                    $('#districts').prop('disabled', false);
-                    $.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
-                        console.log("Districts data:", data);
-                        $('#districts').empty().append($('<option>').val('').text('Select District'));
-                        $.each(data, function (index, district) {
-                            $('#districts').append($('<option>').val(district.id).text(district.name));
-                        });
-                    });
-                } else {
-                    $('#districts').prop('disabled', true).empty();
-                    $('#regions').prop('disabled', true).empty();
-                }
-            });
+	<script>
 
-            $('#districts').change(function () {
-                var districtId = $(this).val();
-                if (districtId) {
-                    $('#regions').prop('disabled', false);
-                    $.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
-                        $('#regions').empty().append($('<option>').val('').text('Select Region'));
-                        $.each(data, function (index, region) {
-                            $('#regions').append($('<option>').val(region.id).text(region.name));
-                        });
-                    });
-                } else {
-                    $('#regions').prop('disabled', true).empty();
-                }
-            });
-        });
-    </script>
+
+		var branch = @Html.Raw(Json.Serialize(Model));
+		console.log(branch.latitude, branch.longitude);
+
+		var map = L.map('map').setView([branch.latitude, branch.longitude], 13);
+
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+
+		L.marker([branch.latitude, branch.longitude]).addTo(map);
+
+		map.on('click', function (e) {
+			branch.latitude = e.latlng.lat;
+			branch.longitude = e.latlng.lng;
+
+			map.eachLayer(function (layer) {
+				if (layer instanceof L.Marker) {
+					map.removeLayer(layer);
+				}
+			});
+
+			// Add a marker at the clicked position
+			L.marker([branch.latitude, branch.longitude]).addTo(map);
+
+			console.log("You clicked the map at latitude " + branch.latitude + " and longitude " + branch.longitude);
+		});
+
+		$('#submitbtn').on('click', function (e) {
+			e.preventDefault();
+
+			var addDetails = document.getElementById('addressDetails').value;
+			var openHour = document.getElementById('openHour').value;
+			var closeHour = document.getElementById('closeHour').value;
+			var isDelivery = document.getElementById('IsDelivery').checked;
+			var isDineIn = document.getElementById('IsDineIn').checked;
+			var regionId = document.getElementById('regions').value;
+			var BranchId = document.getElementById('BranId').value;
+			var DistId = document.getElementById('districts').value;
+			var CitId = document.getElementById('cities').value;
+
+
+			// var branchObj = {
+			// 	AddressDetails: addDetails,//
+			// 	OpenHour: openHour,//
+			// 	CloseHour: closeHour,//
+			// 	IsDelivery: isDelivery,//
+			// 	IsDineIn: isDineIn,//
+			// 	RegionId: regionId,//
+			// 	BranchId: BranchId, //
+			// 	Latitude: branch.latitude.toString(),//
+			// 	Longitude: branch.longitude.toString(),//
+			// 	CityId: CitId,//
+			// 	DistrictId: DistId//
+			// }
+			var branchObj = {
+				AddressDetails: addDetails,
+				OpenHour: parseInt(openHour),
+				CloseHour: parseInt(closeHour),
+				IsDelivery: isDelivery,
+				IsDineIn: isDineIn,
+				RegionId: parseInt(regionId),
+				BranchId: parseInt(BranchId),
+				Latitude: parseFloat(branch.latitude), // Convert to float if necessary
+				Longitude: parseFloat(branch.longitude), // Convert to float if necessary
+				CityId: parseInt(CitId),
+				DistrictId: parseInt(DistId)
+			};
+
+			console.log(branchObj);
+			console.log(JSON.stringify(branchObj));
+
+			$.ajax({
+				url: '@Url.Action("EditBranch", "Branch")',
+				method: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify(branchObj),
+				success: function (response) {
+				    var branchIndexUrl = '@Url.Action("Index", "Branch", new { Id = 1 })';
+
+				    window.location.href = branchIndexUrl;
+				},
+				error: function (xhr, status, error) {
+				    console.error('Error saving coordinates:', error);
+				}
+			});
+
+
+		})
+
+
+
+		$(function () {
+
+
+			$('#cities').change(function () {
+				var cityId = $(this).val();
+				if (cityId) {
+					$('#districts').prop('disabled', false);
+					$.getJSON('@Url.Action("GetDistrictsByCityId", "District")', { CityId: cityId }, function (data) {
+						console.log("Districts data:", data);
+						$('#districts').empty().append($('<option>').val('').text('Select District'));
+						$.each(data, function (index, district) {
+							$('#districts').append($('<option>').val(district.id).text(district.name));
+						});
+					});
+				} else {
+					$('#districts').prop('disabled', true).empty();
+					$('#regions').prop('disabled', true).empty();
+				}
+			});
+
+			$('#districts').change(function () {
+				var districtId = $(this).val();
+				if (districtId) {
+					$('#regions').prop('disabled', false);
+					$.getJSON('@Url.Action("GetRegionsByDestrictId", "Region")', { DistrictId: districtId }, function (data) {
+						$('#regions').empty().append($('<option>').val('').text('Select Region'));
+						$.each(data, function (index, region) {
+							$('#regions').append($('<option>').val(region.id).text(region.name));
+						});
+					});
+				} else {
+					$('#regions').prop('disabled', true).empty();
+				}
+			});
+		});
+	</script>
 }
