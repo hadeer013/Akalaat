@@ -1,275 +1,275 @@
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\appsettings.Development.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\appsettings.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\libman.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.staticwebassets.runtime.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.exe
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.deps.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.runtimeconfig.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Azure.Core.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Azure.Identity.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Humanizer.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Build.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.JSInterop.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Mono.TextTemplating.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Newtonsoft.Json.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Common.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Configuration.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Frameworks.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.LibraryModel.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Packaging.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.ProjectModel.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Protocol.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Versioning.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Stripe.net.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.CodeDom.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Convention.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Hosting.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Runtime.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.TypedParts.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Drawing.Common.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Memory.Data.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Runtime.Caching.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Security.Permissions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Windows.Extensions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\af\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ar\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\az\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\bg\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\da\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\el\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fa\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\he\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\hr\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\hu\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\hy\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\id\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\is\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ku\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\lv\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\mt\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\nb\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\nl\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ro\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\sk\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\sl\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\sr\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\sv\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\uk\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\vi\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.BLL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.BLL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.DAL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.AssemblyReference.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.GeneratedMSBuildEditorConfig.editorconfig
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.AssemblyInfoInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.AssemblyInfo.cs
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.CoreCompileInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.MvcApplicationPartsAssemblyInfo.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.RazorAssemblyInfo.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.RazorAssemblyInfo.cs
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.sourcelink.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.build.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.development.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.Akalaat.Microsoft.AspNetCore.StaticWebAssets.props
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.build.Akalaat.props
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Akalaat.props
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Akalaat.props
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.pack.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\bundle\Akalaat.styles.css
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\projectbundle\Akalaat.bundle.scp.css
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.Up2Date
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\refint\Akalaat.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.genruntimeconfig.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat\obj\Debug\net8.0\ref\Akalaat.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\appsettings.Development.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\appsettings.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\libman.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.staticwebassets.runtime.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.exe
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.deps.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.runtimeconfig.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Azure.Core.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Azure.Identity.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Humanizer.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Build.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.JSInterop.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Mono.TextTemplating.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Newtonsoft.Json.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Common.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Configuration.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Frameworks.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.LibraryModel.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Packaging.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.ProjectModel.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Protocol.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\NuGet.Versioning.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Stripe.net.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.CodeDom.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Convention.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Hosting.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.Runtime.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Composition.TypedParts.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Drawing.Common.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Memory.Data.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Runtime.Caching.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Security.Permissions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\System.Windows.Extensions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\af\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ar\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\az\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\bg\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\da\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\el\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fa\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\he\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\hr\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\hu\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\hy\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\id\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\is\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ku\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\lv\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\mt\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\nb\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\nl\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ro\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\sk\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\sl\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\sr\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\sv\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\uk\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\vi\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.BLL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.DAL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.BLL.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\bin\Debug\net8.0\Akalaat.DAL.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.AssemblyReference.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.AssemblyInfoInputs.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.AssemblyInfo.cs
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.CoreCompileInputs.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.MvcApplicationPartsAssemblyInfo.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.RazorAssemblyInfo.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.RazorAssemblyInfo.cs
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.sourcelink.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.build.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.development.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.Akalaat.Microsoft.AspNetCore.StaticWebAssets.props
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.build.Akalaat.props
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Akalaat.props
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Akalaat.props
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\staticwebassets.pack.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\bundle\Akalaat.styles.css
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\scopedcss\projectbundle\Akalaat.bundle.scp.css
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.csproj.CopyComplete
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\refint\Akalaat.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.pdb
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\Akalaat.genruntimeconfig.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat\obj\Debug\net8.0\ref\Akalaat.dll
