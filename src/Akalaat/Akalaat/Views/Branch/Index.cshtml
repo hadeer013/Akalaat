@@ -1,11 +1,11 @@
 ﻿@model List<viewBranchVM>
 @{
-	ViewData["Title"] = "Index";
-	var RestId = ViewBag.ResturantId;
+    ViewData["Title"] = "Index";
+    var RestId = ViewBag.ResturantId;
 }
 
 <div class="text-center">
-	<h1>All Branches</h1>
+    <h1>All Branches</h1>
 </div>
 
 <br />
@@ -13,59 +13,32 @@
 
 @foreach (var item in Model)
 {
-	<div class="container mt-4">
-		<h2>@item.RegionName</h2>
-		<h5 style="display:inline-block">@item.AddressDetails</h5>
-		@if (@item.DeliveryState == Akalaat.Helper.DeliverToYou.Deliver)
-		{
-			<p style="color:green">Deliver to you</p>
-		}
-		else
-		{
-			<p style="color:red">Doesn't Deliver to you</p>
-		}
+    <div class="container mt-4">
+        <h2>@item.RegionName</h2>
+        <h5 style="display:inline-block">@item.AddressDetails</h5>
+        @if (@item.DeliveryState == Akalaat.Helper.DeliverToYou.Deliver)
+        {
+            <p style="color:green">Deliver to you</p>
+        }
+        else
+        {
+            <p style="color:red">Doesn't Deliver to you</p>
+        }
 
-		<h6>Working hours @item.OpenHour - @item.CloseHour</h6>
+        <h6>Working hours @item.OpenHour - @item.CloseHour</h6>
 
-		
-		<div id="map-@item.Id" class="map" style="height: 300px;"></div>
+        <ul class="list-group">
+            <h5>Delivery Areas</h5>
+            @foreach (var area in item.DeliveringAreas)
+            {
+                <li class="list-group-item">@area</li>
+            }
+        </ul>
+    </div>
+    <a asp-action="GetBranchDeliveringArea" asp-route-Id="@item.Id" class="btn btn-primary">Branch Delivery Areas</a>
+    <a asp-action="EditBranch" asp-route-Id="@item.Id" class="btn btn-warning">Edit Branch</a>
+    <a asp-action="DeleteBranch" asp-route-Id="@item.Id" class="btn btn-danger">Delete Branch</a>
 
-		<ul class="list-group">
-			<h5>Delivery Areas</h5>
-			@foreach (var area in item.DeliveringAreas)
-			{
-				<li class="list-group-item">@area</li>
-			}
-		</ul>
-	</div>
-	<a asp-action="GetBranchDeliveringArea" asp-route-Id="@item.Id" class="btn btn-primary">Branch Delivery Areas</a>
-	<a asp-action="EditBranch" asp-route-Id="@item.Id" class="btn btn-warning">Edit Branch</a>
-	<a asp-action="DeleteBranch" asp-route-Id="@item.Id" class="btn btn-danger">Delete Branch</a>
-
-	<br />
-	<br />
-}
-
-@section scripts {
-	<script>
-
-
-		function drawMap(latitude, longitude, mapId) {
-			var map = L.map(mapId).setView([latitude, longitude], 15);
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-			}).addTo(map);
-			L.marker([latitude, longitude]).addTo(map);
-		}
-
-		
-		var branches = @Html.Raw(Json.Serialize(Model));
-		console.log(branches);
-		branches.forEach(function (branch) {
-			console.log(branch.id);
-			drawMap(branch.latitude, branch.longitude, 'map-' + branch.id);
-		});
-
-
-	</script>
+    <br />
+    <br />
 }

@@ -70,9 +70,7 @@ namespace Akalaat.Controllers
                     RegionName = item.Region.Name,
                     DeliveryState = locationProvided ? await CheckDeliverToLocation(regionId, item.Id) : DeliverToYou.NoDeliver,
                     LocationProvided = locationProvided,
-                    DeliveringAreas = item?.DeliveryAreas?.Select(d => d.Name).ToList(),
-                    Latitude = decimal.Parse(item.Latitude),
-                    Longitude = decimal.Parse(item.Longitude)
+                    DeliveringAreas = item?.DeliveryAreas?.Select(d => d.Name).ToList()
                 };
                 ListVM.Add(branchVM);
 
@@ -103,7 +101,7 @@ namespace Akalaat.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBranch([FromBody] AddBranchVM addBranchVM)
+        public async Task<IActionResult> AddBranch(AddBranchVM addBranchVM)
         {
             if (ModelState.IsValid)
             {
@@ -119,9 +117,7 @@ namespace Akalaat.Controllers
                     Resturant_ID = addBranchVM.ResturantId,
                     Estimated_Delivery_Time = 15,
                     IsDelivery = addBranchVM.IsDelivery,
-                    IsDineIn = addBranchVM.IsDineIn,
-                     Latitude = addBranchVM.Latitude,
-                    Longitude = addBranchVM.Longitude
+                    IsDineIn = addBranchVM.IsDineIn
                 };
                 await branchRepo.Add(branch);
                 return RedirectToAction("Index", "Branch", new { Id = Resurant.Id });
@@ -136,7 +132,7 @@ namespace Akalaat.Controllers
         }
         public async Task<IActionResult> EditBranch(int Id)
         {
-            var spec = new BranchWithitsLocationSpecification(Id);
+            var spec = new BranchwithResturantSpecification(Id);
             var branch = await branchRepo.GetByIdWithSpec(spec);
             if (branch == null) return NotFound();
 
@@ -154,11 +150,7 @@ namespace Akalaat.Controllers
                 BranchId = Id,
                 RegionId = branch.Region_ID,
                 CityId = branch.Region.District.City_ID,
-                DistrictId = branch.Region.District_ID,
-                Latitude = decimal.Parse(branch.Latitude),
-                Longitude = decimal.Parse(branch.Longitude)
-
-
+                DistrictId = branch.Region.District_ID
             };
 
             return View(EditVM);
@@ -166,7 +158,7 @@ namespace Akalaat.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> EditBranch([FromBody] EditBranchVM editBranchVM)
+        public async Task<IActionResult> EditBranch(EditBranchVM editBranchVM)
         {
             if (ModelState.IsValid)
             {
@@ -179,11 +171,9 @@ namespace Akalaat.Controllers
                 branch.IsDelivery = editBranchVM.IsDelivery;
                 branch.IsDineIn = editBranchVM.IsDineIn;
                 branch.Region_ID = editBranchVM.RegionId;
-                branch.Longitude = editBranchVM.Longitude.ToString();
-                branch.Latitude = editBranchVM.Latitude.ToString();
 
                 await branchRepo.Update(branch);
-                return RedirectToAction("Index", "Branch", new { Id = branch.Resturant_ID });
+                return RedirectToAction("Index");
 
             }
             ViewBag.Cities = await cityRepo.GetAllAsync();
@@ -196,7 +186,7 @@ namespace Akalaat.Controllers
 
 
 
-        public async Task<IActionResult> DeleteBranch(int Id) 
+        public async Task<IActionResult> DeleteBranch(int Id) // NOT TESTED YET
         {
             var branch = await branchRepo.GetByIdAsync(Id);
             if (branch == null) return NotFound();
@@ -205,7 +195,7 @@ namespace Akalaat.Controllers
             {
                 await branchDeliveryRepo.DeleteAllDeliveryAreas(Id);
                 await branchRepo.Delete<int>(branch.Id);
-                return RedirectToAction("Index", "Branch",new {Id=branch.Resturant_ID});
+                return RedirectToAction("Index", "Home");
             }
             catch (Exception ex)
             {

@@ -1,26 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\",
+  "WorkspaceRootPath": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\review\\addreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\review\\addreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\deliveryareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\deliveryareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.dal\\data\\migrations\\20240319000159_update-shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\data\\migrations\\20240319000159_update-shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\views\\branch\\editbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\branch\\editbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\editbranchvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\editbranchvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.bll\\repositories\\branchdeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\repositories\\branchdeliveryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\branch\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\views\\branch\\addbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\branch\\addbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\branch\\addbranchdeliveryareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\branch\\addbranchdeliveryareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +73,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -45,69 +88,203 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EditBranchVM.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\EditBranchVM.cs",
-              "RelativeDocumentMoniker": "Akalaat\\ViewModels\\EditBranchVM.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\EditBranchVM.cs",
-              "RelativeToolTip": "Akalaat\\ViewModels\\EditBranchVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Item.cs",
+              "RelativeToolTip": "Akalaat.DAL\\Models\\Item.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T23:36:39.159Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T13:18:04.181Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditBranch.cshtml",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\EditBranch.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Branch\\EditBranch.cshtml",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\EditBranch.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Branch\\EditBranch.cshtml",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAmwKQAAAAQAAAA",
+              "Title": "AddReview.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Review\\AddReview.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Review\\AddReview.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Review\\AddReview.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Review\\AddReview.cshtml",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T21:54:27.365Z",
+              "WhenOpened": "2024-03-19T13:18:04.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAACEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240319000159_update-shoppingcartitem.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\Migrations\\20240319000159_update-shoppingcartitem.cs",
+              "RelativeDocumentMoniker": "Akalaat.DAL\\Data\\Migrations\\20240319000159_update-shoppingcartitem.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Data\\Migrations\\20240319000159_update-shoppingcartitem.cs",
+              "RelativeToolTip": "Akalaat.DAL\\Data\\Migrations\\20240319000159_update-shoppingcartitem.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.267Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\Index.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Branch\\Index.cshtml",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\Index.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Branch\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAewDUAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T20:17:53.624Z",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAANIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AddBranch.cshtml",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranch.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Branch\\AddBranch.cshtml",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranch.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Branch\\AddBranch.cshtml",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAmwL0AAAA0AAAA",
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\ItemController.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAAACYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeliveryAreaController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\DeliveryAreaController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAewBcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\libman.json",
+              "RelativeDocumentMoniker": "Akalaat\\libman.json",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\libman.json",
+              "RelativeToolTip": "Akalaat\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T13:18:04.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AQIAANIBAAAAAAAAAAArwNoBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-03-18T22:10:28.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T20:06:14.71Z",
+              "WhenOpened": "2024-03-19T13:18:04.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\appsettings.json",
+              "RelativeDocumentMoniker": "Akalaat\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\appsettings.json",
+              "RelativeToolTip": "Akalaat\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T13:18:04.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Program.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
+              "RelativeToolTip": "Akalaat\\Program.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DistrictController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DistrictController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\DistrictController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DistrictController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\DistrictController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAqwHcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddBranchDeliveryAreas.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Branch\\AddBranchDeliveryAreas.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowDEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-19T13:18:04.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BranchController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\BranchController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\BranchController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:18:04.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BranchController.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\BranchController.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\BranchController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\BranchController.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAowKkAAAAIAAAA",
+              "DocumentIndex": 13,
+              "Title": "BranchDeliveryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "RelativeDocumentMoniker": "Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "RelativeToolTip": "Akalaat.BLL\\Repositories\\BranchDeliveryRepository.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAqwEkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T19:08:40.922Z",
+              "WhenOpened": "2024-03-19T13:18:04.309Z",
               "EditorCaption": ""
             }
           ]

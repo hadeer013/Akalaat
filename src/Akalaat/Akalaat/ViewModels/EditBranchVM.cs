@@ -8,8 +8,6 @@
         public int OpenHour { get; set; }
         public int CloseHour { get; set; }
         public string AddressDetails { get; set; }
-        public decimal Latitude { get; set; }
-        public decimal Longitude { get; set; }
         public int RegionId { get; set; }
         public bool IsDelivery { get; set; }
         public bool IsDineIn { get; set; }

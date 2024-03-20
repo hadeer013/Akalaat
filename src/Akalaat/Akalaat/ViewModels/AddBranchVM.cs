@@ -9,7 +9,7 @@
         public int RegionId { get; set; }
         public bool IsDelivery {  get; set; }
         public bool IsDineIn {  get; set; }
-        public string Latitude {  get; set; }
-        public string Longitude {  get; set; }
+        //public int CityId { get; set; }
+        //public int DistrictId { get; set; }
     }
 }
