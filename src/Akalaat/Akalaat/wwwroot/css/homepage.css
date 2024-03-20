@@ -1,9 +1,8 @@
 #Main-section {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-        url("/imageStyle/spencer-davis-5UeN8VrCxvs-unsplash.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/HomePageImages/spencer-davis-5UeN8VrCxvs-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover; 
+    -webkit-background-size: cover;
     position: relative; /* Needed for overlay positioning */
     margin: 0%;
     height: 130vh;

@@ -3007,24 +3007,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\smc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
       "projectName": "Akalaat.BLL",
-      "projectPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
-      "packagesPath": "C:\\Users\\smc\\.nuget\\packages\\",
-      "outputPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\obj\\",
+      "projectPath": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Akalaat.BLL.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\smc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3038,8 +3033,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
-              "projectPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj"
+            "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj"
             }
           }
         }
@@ -3080,7 +3075,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

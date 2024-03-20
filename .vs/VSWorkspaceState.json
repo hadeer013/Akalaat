@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Akalaat",
+    "\\src\\Akalaat\\Akalaat"
   ],
-  "SelectedNode": "\\Akalaat.sln",
   "PreviewInSolutionExplorer": false
 }

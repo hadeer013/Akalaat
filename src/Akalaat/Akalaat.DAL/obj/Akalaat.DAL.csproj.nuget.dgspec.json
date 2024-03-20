@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {}
+    "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {}
   },
   "projects": {
-    "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
+    "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
         "projectName": "Akalaat.DAL",
-        "projectPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
-        "packagesPath": "C:\\Users\\smc\\.nuget\\packages\\",
-        "outputPath": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Akalaat.DAL.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\Desktop\\ITI\\C# MVC\\Project - ElMenus.com\\project\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\smc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

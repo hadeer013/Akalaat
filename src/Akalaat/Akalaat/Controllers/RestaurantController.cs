@@ -33,7 +33,7 @@ public class RestaurantController:Controller
         return View();
     }
 
-    [HttpPost]
+    //[HttpPost]
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
     {
         var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
