@@ -4,6 +4,7 @@ using Akalaat.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Akalaat.DAL.Data.Migrations
 {
     [DbContext(typeof(AkalaatDbContext))]
-    partial class AkalaatDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240318195235_addLogituteAndLatitute")]
+    partial class addLogituteAndLatitute
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -306,9 +309,6 @@ namespace Akalaat.DAL.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CategoryID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -326,7 +326,7 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("Likes")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MenuID")
+                    b.Property<int?>("MenuId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -336,14 +336,9 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Property<int?>("OfferId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Price")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryID");
-
-                    b.HasIndex("MenuID");
+                    b.HasIndex("MenuId");
 
                     b.HasIndex("OfferId");
 
@@ -611,40 +606,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.ToTable("Reviews");
                 });
 
-            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCart", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<float?>("TotalPrice")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ShoppingCart");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCartItem", b =>
-                {
-                    b.Property<int?>("ShoppingCartId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ItemId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("ShoppingCartId", "ItemId");
-
-                    b.HasIndex("ItemId");
-
-                    b.ToTable("ShoppingCartItems");
-                });
-
             modelBuilder.Entity("DishResturant", b =>
                 {
                     b.Property<int>("DishesId")
@@ -834,11 +795,6 @@ namespace Akalaat.DAL.Data.Migrations
                 {
                     b.HasBaseType("Akalaat.DAL.Models.ApplicationUser");
 
-                    b.Property<int?>("ShoppingCart_ID")
-                        .HasColumnType("int");
-
-                    b.HasIndex("ShoppingCart_ID");
-
                     b.ToTable("Customer");
                 });
 
@@ -946,21 +902,13 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-                    b.HasOne("Akalaat.DAL.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryID");
-
-                    b.HasOne("Akalaat.DAL.Models.Menu", "menu")
+                    b.HasOne("Akalaat.DAL.Models.Menu", null)
                         .WithMany("items")
-                        .HasForeignKey("MenuID");
+                        .HasForeignKey("MenuId");
 
                     b.HasOne("Akalaat.DAL.Models.Offer", null)
                         .WithMany("Items")
                         .HasForeignKey("OfferId");
-
-                    b.Navigation("Category");
-
-                    b.Navigation("menu");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Menu_Item_Size", b =>
@@ -1058,25 +1006,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Customer");
 
                     b.Navigation("Resturant");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCartItem", b =>
-                {
-                    b.HasOne("Akalaat.DAL.Models.Item", "Item")
-                        .WithMany("ShoppingCartItems")
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.ShoppingCart", "ShoppingCart")
-                        .WithMany("ShoppingCartItems")
-                        .HasForeignKey("ShoppingCartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Item");
-
-                    b.Navigation("ShoppingCart");
                 });
 
             modelBuilder.Entity("DishResturant", b =>
@@ -1191,12 +1120,6 @@ namespace Akalaat.DAL.Data.Migrations
                         .HasForeignKey("Akalaat.DAL.Models.Customer", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Akalaat.DAL.Models.ShoppingCart", "ShoppingCart")
-                        .WithMany()
-                        .HasForeignKey("ShoppingCart_ID");
-
-                    b.Navigation("ShoppingCart");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Vendor", b =>
@@ -1226,8 +1149,6 @@ namespace Akalaat.DAL.Data.Migrations
 
             modelBuilder.Entity("Akalaat.DAL.Models.Item", b =>
                 {
-                    b.Navigation("ShoppingCartItems");
-
                     b.Navigation("extras");
 
                     b.Navigation("menu_Item_Sizes");
@@ -1272,11 +1193,6 @@ namespace Akalaat.DAL.Data.Migrations
                     b.Navigation("Branches");
 
                     b.Navigation("reviews");
-                });
-
-            modelBuilder.Entity("Akalaat.DAL.Models.ShoppingCart", b =>
-                {
-                    b.Navigation("ShoppingCartItems");
                 });
 
             modelBuilder.Entity("Akalaat.DAL.Models.Customer", b =>
