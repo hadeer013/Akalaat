@@ -234,7 +234,7 @@ namespace Akalaat.Controllers
                     existingItem.Description = itemViewModel.Description;
                     existingItem.Discount = itemViewModel.Discount ?? 0;
                     existingItem.IsOffer = itemViewModel.IsOffer;
-                    existingItem.CategoryID = itemViewModel.CategoryID;
+                   // existingItem.CategoryID = itemViewModel.CategoryID;
                     existingItem.Price = itemViewModel.Price;
                     if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
                     {
