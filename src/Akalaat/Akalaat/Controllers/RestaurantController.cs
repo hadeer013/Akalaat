@@ -35,10 +35,11 @@ public class RestaurantController:Controller
         return View();
     }
 
+
    
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
-  {
-        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
+    {
+        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dish, resturantPrams.RegionId, resturantPrams.RestaurantName);
         var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
 
         ViewBag.allDishes = await dishRepo.GetAllAsync();
