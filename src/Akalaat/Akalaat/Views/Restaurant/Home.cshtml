@@ -134,7 +134,11 @@
 
 @* /////////////////////////////////////////// *@
 
+@model ResturantParams
+
 @{
+    ViewData["Title"] = "Home";
+    var allCities = (List<City>)ViewBag.Cities;
     Layout = null;
 }
 
@@ -170,7 +174,9 @@
                     </div>
 
                     <!-- NOTE----- If a user is a GUEST (not logged in), use this div ONLY and comment the one below it in the NOTE -->
-                    @*                     <div class="pull-right right-side">
+
+                    @*                     
+                        <div class="pull-right right-side">
                     <div class="account">
                     <div class="not-loggedin">
                     <button type="button" class="btn btn-link text-light login-btn text-decoration-none">
@@ -191,10 +197,6 @@
 
                 <!-- NOTE----- If a user is logged in, use this div ONLY and comment the  one above it in the NOTE -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a href=" /ar " type="button"
-                       class="btn btn-link login-btn text-light lang-switcher text-decoration-none">
-                        العربية
-                    </a>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
@@ -211,10 +213,14 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item" href="#"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/admin-settings-male.png" alt="admin-settings-male" /> Admin Page</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i> Vendor Page</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                        <i class="fas fa-sign-out-alt fa-fw"></i> Log
-                                        Out
+                                        <i class="fas fa-sign-out-alt fa-fw"></i> Log Out
                                     </a>
                                 </li>
                             </ul>
@@ -326,7 +332,7 @@
                         <div class="card shadow-lg p-3 mb-5 bg-body p-2 border border-0"
                              style="height: 80%; border-radius: 20px;">
                             <div class="d-flex align-items-center">
-                                <img width="40" src="./HomePageImages/icons8-no-phones-50.png" alt="no calls" />
+                                <img width="40" src="/HomePageImages/icons8-no-phones-50.png" alt="no calls" />
                                 <h3 class="ps-2">
                                     No Phone calls! <span style="color: white; user-select:none; font-size:25px; display:block;">
                                         (Coming
@@ -356,7 +362,7 @@
                 Look for restaurants that have this sign
                 <span>
                     <span>
-                        <img width="20px" height="20px" src="./HomePageImages/icons8-guarantee-50.png" alt="Guarantee">
+                        <img width="20px" height="20px" src="/HomePageImages/icons8-guarantee-50.png" alt="Guarantee">
                     </span>
                     <span class="fs-6 fw-bold" style="color:#8e52ff; ">Order online</span>
                 </span>
