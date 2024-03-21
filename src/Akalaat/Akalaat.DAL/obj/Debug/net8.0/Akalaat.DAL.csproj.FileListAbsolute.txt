@@ -50,14 +50,8 @@ C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
-H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.sourcelink.json
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
 H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
@@ -76,3 +70,9 @@ C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Aka
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
+H:\ITI_Intake44\MVC\Project\App\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
