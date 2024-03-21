@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\images\demos\demo-14\products\deals\" />
-    <Folder Include="wwwroot\assets\images\demos\demo-14\products\small\" />
-    <Folder Include="wwwroot\assets\images\demos\demo-18\products\small\" />
-    <Folder Include="wwwroot\assets\images\demos\demo-24\best-sellers\" />
     <Folder Include="wwwroot\assets\vendor\line-awesome\line-awesome\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
