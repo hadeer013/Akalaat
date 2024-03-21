@@ -15,7 +15,7 @@ namespace Akalaat.ViewModels
         public string Description { get; set; }
 
         public string? ImageUrl { get; set; }
-        public IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
 
         public decimal? Discount { get; set; }
         [EnumDataType(typeof(OfferStatus), ErrorMessage = "Invalid value for IsOffer.")]
