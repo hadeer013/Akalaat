@@ -1,291 +1,334 @@
 ﻿@model List<Resturant>
 @{
 	ViewData["Title"] = "Home";
+    var Dishes = (List<Dish>)ViewBag.allDishes;
+    var RegionId = @ViewBag.RegionId;
 }
 
-<div>
-	@foreach(var item in Model)
-	{
-		<div>@item.Name</div>
-	}
-</div>
 
 <main class="main">
-    <div class="page-header text-center mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/wwwroot/HomePageImages/BranchesCoverPic.avif')">
-        <div class="container">
-            <h1 class="page-title">
-                (180) Restaurants Found <span style="color: #1CC0A0;">
-                    Area name / District
-                    name
-                </span>
-            </h1>
-        </div><!-- End .container -->
-    </div><!-- End .page-header -->
+
+	<div id="@ViewBag.RegionId"></div>
+	<div class="page-header text-center mb-3" style="background-image: url('/assets/images/page-header-bg.jpg')">
+		<div class="container">
+			<h1 class="page-title">
+				(@Model.Count) Restaurants Found <span style="color: #E22207;">
+					Area name / District
+					name
+				</span>
+			</h1>
+		</div><!-- End .container -->
+	</div><!-- End .page-header -->
 
 
-    <div class="page-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
+	<div class="page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
 
 
-                    <div class="toolbox">
+					<div class="toolbox">
 
-                        <div class="toolbox-left">
-                            <div class="toolbox-info" style="color: black;">
-                                Showing <span style="color: #1CC0A0; font-weight:bold;">9 of 56</span>
-                                Restaurants
-                            </div><!-- End .toolbox-info -->
-                        </div><!-- End .toolbox-left -->
+						<div class="toolbox-left">
+							<div class="toolbox-info" style="color: black;">
+								Showing <span style="color: #E22207; font-weight:bold;">9 of 56</span>
+								Restaurants
+							</div><!-- End .toolbox-info -->
+						</div><!-- End .toolbox-left -->
+						<input type="search" id="search" placeholder="Search...">
+					</div><!-- End .toolbox -->
+					@if (Model.Count > 0)
+					{
+						@foreach (var item in Model)
+						{
+							<div class="products mb-3">
+								<div class="row justify-content-center">
 
-                    </div><!-- End .toolbox -->
+									<div class="col-6 col-md-4 col-lg-4">
+										<div class="product product-7 text-center">
+											<figure class="product-media">
+												-->
 
+												<a asp-action="ResturantDetails" asp-controller="Restaurant" asp-route-Id="@item.Id">
+													<img src="@item.Cover_URL" alt="Product image"
+														 class="product-image">
+												</a>
 
+												<div class="product-action">
+													<span class="btn-product">
+														<span>
+															Deliver Time:15
+															mins
+														</span>
+													</span>
+												</div><!-- End .product-action -->
 
+											</figure><!-- End .product-media -->
 
+											<div class="product-body">
+												<div class="product-cat">
+													<a href="#">Deliver time: </a>
+												</div><!-- End .product-cat -->
+												<h3 class="product-title">
+													<a asp-action="ResturantDetails" asp-controller="Restaurant" asp-route-Id="@item.Id">@item.Name</a>
+												</h3><!-- End .product-title -->
+												<div class="product-price">
+													EGP
+												</div><!-- End .product-price -->
 
-                    <div class="products mb-3">
-                        <div class="row justify-content-center">
+												<div class="product-price">
+													@foreach (var i in @item.Dishes.Select(d => d.Name))
+													{
+														<span>i </span>
+													}
+												</div>
 
-                            <div class="col-6 col-md-4 col-lg-4">
-                                <div class="product product-7 text-center">
-                                    <figure class="product-media">
+												<div class="ratings-container">
+													<div class="ratings">
+														<div class="ratings-val" style="width: 50%;"></div>
+														<!-- End .ratings-val -->
+													</div><!-- End .ratings -->
+													<span class="ratings-text">( 2 Reviews )</span>
+												</div><!-- End .rating-container -->
+											</div><!-- End .product-body -->
 
-                                        <!-- <span class="product-label label-new">New</span> -->
-                                        <!-- <span class="product-label label-out">Out of Stock</span> -->
+										</div><!-- End .product -->
+									</div><!-- End .col-sm-6 col-lg-4 -->
 
-                                        <a href="product.html">
-                                            <img src="/assets/images/products/product-4.jpg" alt="Product image"
-                                                 class="product-image">
-                                        </a>
+								</div><!-- End .row -->
+							</div>
 
-                                        <div class="product-action">
-                                            <span class="btn-product">
-                                                <span>
-                                                    Deliver Time:
-                                                    mins
-                                                </span>
-                                            </span>
-                                        </div><!-- End .product-action -->
-
-                                    </figure><!-- End .product-media -->
-
-                                    <div class="product-body">
-                                        <div class="product-cat">
-                                            <a href="#">Deliver time: </a>
-                                        </div><!-- End .product-cat -->
-                                        <h3 class="product-title">
-                                            <a href="product.html">Restaurant Name</a>
-                                        </h3><!-- End .product-title -->
-                                        <div class="product-price">
-                                            EGP
-                                        </div><!-- End .product-price -->
-
-                                        <div class="ratings-container">
-                                            <div class="ratings">
-                                                <div class="ratings-val" style="width: 50%;"></div>
-                                                <!-- End .ratings-val -->
-                                            </div><!-- End .ratings -->
-                                            <span class="ratings-text">( 2 Reviews )</span>
-                                        </div><!-- End .rating-container -->
-                                    </div><!-- End .product-body -->
-
-                                </div><!-- End .product -->
-                            </div><!-- End .col-sm-6 col-lg-4 -->
-
-                        </div><!-- End .row -->
-                    </div><!-- End .products -->
-
-
-
-
-
-
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1"
-                                   aria-disabled="true">
-                                    <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
-                                </a>
-                            </li>
-                            <li class="page-item active" aria-current="page">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item-total">of 6</li>
-                            <li class="page-item">
-                                <a class="page-link page-link-next" href="#" aria-label="Next">
-                                    Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div><!-- End Navigation -->
+							<!-- End .products -->
+						}
+					}
+					else
+					{
+						<h1>No Results Found</h1>
+					}
 
 
 
-                <!----------------- Side bar starts here -------------------->
-                <aside class="col-lg-3 order-lg-first">
-                    <div class="sidebar sidebar-shop">
-
-                        <div class="widget widget-collapsible">
-
-                            <div class="collapse show" id="widget-2">
-                                <div class="widget-body">
-                                    <div class="filter-items">
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="size-1">
-                                                <label class="custom-control-label" for="size-1">
-                                                    Open
-                                                    Now
-                                                </label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="size-2">
-                                                <label class="custom-control-label" for="size-2">Promo</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                    </div><!-- End .filter-items -->
-                                </div><!-- End .widget-body -->
-                            </div><!-- End .collapse -->
-                        </div><!-- End .widget -->
-
-                        <div class="widget widget-collapsible">
-                            <h3 class="widget-title">
-                                <a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true"
-                                   aria-controls="widget-2">
-                                    Sort by:
-                                </a>
-                            </h3><!-- End .widget-title -->
-
-                            <div class="collapse show" id="widget-2">
-                                <div class="widget-body">
-                                    <div class="filter-items">
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="size-1">
-                                                <label class="custom-control-label" for="size-1">Popular</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="size-2">
-                                                <label class="custom-control-label" for="size-2">Rating</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" checked
-                                                       id="size-3">
-                                                <label class="custom-control-label" for="size-3">
-                                                    Delivery
-                                                    Time
-                                                </label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                    </div><!-- End .filter-items -->
-                                </div><!-- End .widget-body -->
-                            </div><!-- End .collapse -->
-
-                        </div><!-- End .widget -->
-
-                        <div class="widget widget-collapsible">
-                            <h3 class="widget-title">
-                                <a data-toggle="collapse" href="#widget-4" role="button" aria-expanded="true"
-                                   aria-controls="widget-4">
-                                    Dishes
-                                </a>
-                            </h3><!-- End .widget-title -->
-
-                            <div class="collapse show" id="widget-4">
-                                <div class="widget-body">
-                                    <div class="filter-items">
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-1">
-                                                <label class="custom-control-label" for="brand-1">Next</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-2">
-                                                <label class="custom-control-label" for="brand-2">
-                                                    River
-                                                    Island
-                                                </label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-3">
-                                                <label class="custom-control-label" for="brand-3">Geox</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-4">
-                                                <label class="custom-control-label" for="brand-4">
-                                                    New
-                                                    Balance
-                                                </label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-5">
-                                                <label class="custom-control-label" for="brand-5">UGG</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-6">
-                                                <label class="custom-control-label" for="brand-6">F&F</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input"
-                                                       id="brand-7">
-                                                <label class="custom-control-label" for="brand-7">Nike</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                    </div><!-- End .filter-items -->
-                                </div><!-- End .widget-body -->
-                            </div><!-- End .collapse -->
-                        </div><!-- End .widget -->
-
-                    </div><!-- End .sidebar sidebar-shop -->
-                </aside><!-- End .col-lg-3 -->
-                <!----------------- Side bar Ends here -------------------->
 
 
 
-            </div><!-- End .row -->
-        </div><!-- End .container -->
-    </div><!-- End .page-content -->
+
+
+					<nav aria-label="Page navigation">
+						<ul class="pagination justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1"
+								   aria-disabled="true">
+									<span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
+								</a>
+							</li>
+							<li class="page-item active" aria-current="page">
+								<a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item-total">of 6</li>
+							<li class="page-item">
+								<a class="page-link page-link-next" href="#" aria-label="Next">
+									Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- End Navigation -->
+				<!----------------- Side bar starts here -------------------->
+				<aside class="col-lg-3 order-lg-first">
+					<div class="sidebar sidebar-shop">
+
+						<div class="widget widget-clean">
+							<label>Filters:</label>
+							<a href="#" class="sidebar-filter-clear" style="color: #E22207;">Clean All</a>
+						</div><!-- End .widget widget-clean -->
+
+						<div class="widget widget-collapsible">
+
+							<div class="collapse show" id="widget-2">
+								<div class="widget-body">
+									<div class="filter-items">
+
+										<div class="filter-item">
+											<div class="custom-control custom-radio">
+												<input type="radio" class="sort custom-control-input" name="sort" id="rate">
+												<label class="custom-control-label" for="rate">
+													Rating
+												</label>
+											</div><!-- End .custom-radion -->
+										</div>
+
+
+										<div class="filter-item">
+											<div class="custom-control custom-radio">
+												<input type="radio" class="sort custom-control-input" name="sort" id="deliver">
+												<label class="custom-control-label" for="deliver">
+													Delivery Time
+												</label>
+											</div><!-- End .custom-radion -->
+										</div>
+
+										<!-- End .filter-item -->
+
+									</div><!-- End .filter-items -->
+								</div><!-- End .widget-body -->
+							</div><!-- End .collapse -->
+						</div><!-- End .widget -->
+
+						<div class="widget widget-collapsible">
+							<h3 class="widget-title">
+								<a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true"
+								   aria-controls="widget-2">
+									Sort by:
+								</a>
+							</h3><!-- End .widget-title -->
+
+							<div class="collapse show" id="widget-2">
+								<div class="widget-body">
+									<div class="filter-items">
+
+										<div class="filter-item">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="size-1">
+												<label class="custom-control-label" for="size-1">Popular</label>
+											</div><!-- End .custom-checkbox -->
+										</div><!-- End .filter-item -->
+
+										<div class="filter-item">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="size-2">
+												<label class="custom-control-label" for="size-2">Rating</label>
+											</div><!-- End .custom-checkbox -->
+										</div><!-- End .filter-item -->
+
+										<div class="filter-item">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" checked
+													   id="size-3">
+												<label class="custom-control-label" for="size-3">
+													Delivery
+													Time
+												</label>
+											</div><!-- End .custom-checkbox -->
+										</div><!-- End .filter-item -->
+
+									</div><!-- End .filter-items -->
+								</div><!-- End .widget-body -->
+							</div><!-- End .collapse -->
+
+						</div><!-- End .widget -->
+
+						<div class="widget widget-collapsible">
+							<h3 class="widget-title">
+								<a data-toggle="collapse" href="#widget-4" role="button" aria-expanded="true"
+								   aria-controls="widget-4">
+									Dishes
+								</a>
+							</h3><!-- End .widget-title -->
+
+							<div class="collapse show" id="widget-4">
+								<div class="widget-body">
+									<div class="filter-items">
+
+										<!-- End .filter-item -->
+										@foreach (var dish in Dishes)
+										{
+
+
+											<div class="filter-item">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="dish custom-control-input" id="@dish.Id">
+													<label class="custom-control-label" for="@dish.Id">@dish.Name</label>
+												</div><!-- End .custom-checkbox -->
+											</div>
+
+											<!-- End .filter-item -->
+											<!-- End .filter-item -->
+										}
+
+										@* id="brand-2" *@
+									</div><!-- End .filter-items -->
+								</div><!-- End .widget-body -->
+							</div><!-- End .collapse -->
+						</div><!-- End .widget -->
+
+					</div><!-- End .sidebar sidebar-shop -->
+				</aside><!-- End .col-lg-3 -->
+				<!----------------- Side bar Ends here -------------------->
+
+
+
+			</div><!-- End .row -->
+		</div><!-- End .container -->
+	</div><!-- End .page-content -->
 </main><!-- End .main -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		function makeAjaxRequest() {
+			var dishIds = [];  //Array to store the IDs of checked checkboxes
+			$('.dish').each(function () {
+				if ($(this).is(':checked')) {
+					dishIds.push($(this).attr('id'));
+				}
+			});
+			console.log(dishIds);
+			var sortValue = $('input[type="radio"]').attr('id');
+			console.log("Selected radio button ID: " + sortValue);
+
+			var searchString = $('#search').val();
+			console.log(searchString);
+			var regionId = @ViewBag.RegionId;
+			console.log("RegionId:", regionId);
+
+			$('.products').empty();
+
+			$.ajax({
+				url: '@Url.Action("Index", "Restaurant")',
+				method: 'GET',
+				data: {
+					dish: dishIds,
+					sort: sortValue,
+					RestaurantName: searchString,
+					RegionId: regionId
+				},
+				success: function (response) {
+
+					@* $('.products').empty();
+
+					// Append the new products received from the server
+					response.forEach(function (item) {
+						var productHtml = `<div class="products mb-3"></div>`;
+						$('.products').append(productHtml);
+					}); *@@* $('.products').empty();
+
+					// Append the new products received from the server
+					response.forEach(function (item) {
+						var productHtml = `<div class="products mb-3"></div>`;
+						$('.products').append(productHtml);
+					}); *@
+
+					console.log('Success');
+				},
+				error: function (xhr, status, error) {
+
+					console.error(error);
+				}
+			});
+		}
+		// Listen for "change" event on dish input field
+		$('.dish').on('change', function () {
+			makeAjaxRequest();
+		});
+		// Listen for "change" event on sort input field
+		$('input[type="radio"]').on('change', function () {
+			makeAjaxRequest();
+		});
+		// Listen for "change" event on restaurant input field
+		$('#search').on('input', function () {
+			makeAjaxRequest();
+		});
+	});
+</script>

@@ -37,7 +37,7 @@ public class RestaurantController:Controller
 
    
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
-    {
+  {
         var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
         var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
 
