@@ -15,15 +15,17 @@ public class RestaurantController:Controller
 
     private readonly IWebHostEnvironment _webHostEnvironment;
     private readonly IGenericRepository<City> cityRepo;
+	private readonly IGenericRepository<Dish> dishRepo;
 
-    public RestaurantController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
-        IWebHostEnvironment webHostEnvironment,IGenericRepository<City> cityRepo)
+	public RestaurantController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
+        IWebHostEnvironment webHostEnvironment,IGenericRepository<City> cityRepo,IGenericRepository<Dish> dishRepo)
     {
         _vendorRepository = vendorRepository;
         _restaurantRepository = restaurantRepository;
         _webHostEnvironment = webHostEnvironment;
         this.cityRepo = cityRepo;
-    }
+		this.dishRepo = dishRepo;
+	}
 
 
     [AllowAnonymous]
@@ -33,23 +35,26 @@ public class RestaurantController:Controller
         return View();
     }
 
-    //[HttpPost]
+   
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
     {
         var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
         var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
 
-        return View(AllResturantWithSpec);
+        ViewBag.allDishes = await dishRepo.GetAllAsync();
+        ViewBag.RegionId = resturantPrams.RegionId;
+
+		return View(AllResturantWithSpec);
 
 	}
 
-    public async Task<IActionResult> ResturantDetails(/*int Id*/)
+    public async Task<IActionResult> ResturantDetails(int Id)
     {
-        //var restaurant = await _restaurantRepository.GetByIdAsync(Id);
-        //return View(restaurant);
-        var allrestaurants = await _restaurantRepository.GetAllAsync();
-        var firstrestaurant = allrestaurants.FirstOrDefault();
-        return View(firstrestaurant);
+        var restaurant = await _restaurantRepository.GetByIdAsync(Id);
+        return View(restaurant);
+        //var allrestaurants = await _restaurantRepository.GetAllAsync();
+        //var firstrestaurant = allrestaurants.FirstOrDefault();
+        //return View(firstrestaurant);
     }
 
     //public async task<iactionresult> index()

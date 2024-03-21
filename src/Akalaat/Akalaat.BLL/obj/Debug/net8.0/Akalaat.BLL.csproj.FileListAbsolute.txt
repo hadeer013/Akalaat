@@ -30,22 +30,6 @@ D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat..BC753FFB.Up2Date
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
@@ -94,3 +78,19 @@ C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Aka
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat..BC753FFB.Up2Date
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll

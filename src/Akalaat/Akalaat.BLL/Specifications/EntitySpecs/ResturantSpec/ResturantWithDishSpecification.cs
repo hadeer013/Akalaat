@@ -11,9 +11,9 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.ResturantSpec
 {
 	public class ResturantWithDishSpecification : BaseSpecification<Resturant>
 	{
-		public ResturantWithDishSpecification(string sort,int? dish,int? regionId,string ResturantName):base(r=>
+		public ResturantWithDishSpecification(string sort,List<int>? dish,int? regionId,string ResturantName):base(r=>
 			( ResturantName.IsNullOrEmpty() || r.Name.Contains(ResturantName)) && 
-		(r.Branches.Any(b=>b.DeliveryAreas.Any(d=>d.Id== regionId))) && dish==null || r.Dishes.Any(d=>d.Id==dish))
+		(r.Branches.Any(b=>b.DeliveryAreas.Any(d=>d.Id== regionId))) && dish==null || r.Dishes.Any(d=> dish.Contains(d.Id)))
 		{
 			AddThenInclude(r => r.Include(Res => Res.Dishes));
 			AddThenInclude(r => r.Include(Res=>Res.Branches).ThenInclude(b=>b.DeliveryAreas));

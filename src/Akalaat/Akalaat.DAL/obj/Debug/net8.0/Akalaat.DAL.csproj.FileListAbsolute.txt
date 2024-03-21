@@ -24,19 +24,6 @@ D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 D:\New Clone\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.sourcelink.json
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
-F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
 C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
@@ -76,3 +63,16 @@ C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Aka
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
 C:\Users\lenovo\Desktop\ITI\C# MVC\Project - ElMenus.com\project\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.deps.json
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\bin\Debug\net8.0\Akalaat.DAL.pdb
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.AssemblyReference.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfoInputs.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.AssemblyInfo.cs
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.csproj.CoreCompileInputs.cache
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.sourcelink.json
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\refint\Akalaat.DAL.dll
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\Akalaat.DAL.pdb
+F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.DAL\obj\Debug\net8.0\ref\Akalaat.DAL.dll
