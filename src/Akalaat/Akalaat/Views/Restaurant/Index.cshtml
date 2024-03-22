@@ -2,7 +2,6 @@
 @{
 	ViewData["Title"] = "Home";
     var Dishes = (List<Dish>)ViewBag.allDishes;
-    var RegionId = @ViewBag.RegionId;
 }
 
 
@@ -152,7 +151,7 @@
 
 										<div class="filter-item">
 											<div class="custom-control custom-radio">
-												<input type="radio" class="sort custom-control-input" name="sort" id="rate">
+												<input  type="radio" class="sort custom-control-input" name="sort" id="rate">
 												<label class="custom-control-label" for="rate">
 													Rating
 												</label>
@@ -237,8 +236,8 @@
 
 
 											<div class="filter-item">
-												<div class="custom-control custom-checkbox">
-													<input type="checkbox" class="dish custom-control-input" id="@dish.Id">
+												<div class="custom-control custom-radio">
+													<input name="dish" type="radio" class="dish custom-control-input" id="@dish.Id">
 													<label class="custom-control-label" for="@dish.Id">@dish.Name</label>
 												</div><!-- End .custom-checkbox -->
 											</div>
@@ -268,14 +267,11 @@
 <script>
 	$(document).ready(function () {
 		function makeAjaxRequest() {
-			var dishIds = [];  //Array to store the IDs of checked checkboxes
-			$('.dish').each(function () {
-				if ($(this).is(':checked')) {
-					dishIds.push($(this).attr('id'));
-				}
-			});
-			console.log(dishIds);
-			var sortValue = $('input[type="radio"]').attr('id');
+			
+			
+			var dishId = $('input[name="dish"]:checked').attr('id');
+			var sortValue = $('input[name="sort"]:checked').attr('id');
+
 			console.log("Selected radio button ID: " + sortValue);
 
 			var searchString = $('#search').val();
@@ -285,31 +281,25 @@
 
 			$('.products').empty();
 
+			console.log({
+				dish: dishId,
+				sort: sortValue,
+				RestaurantName: searchString,
+				RegionId: regionId
+			});
+
 			$.ajax({
 				url: '@Url.Action("Index", "Restaurant")',
 				method: 'GET',
 				data: {
-					dish: dishIds,
+					dish: dishId,
 					sort: sortValue,
 					RestaurantName: searchString,
 					RegionId: regionId
 				},
 				success: function (response) {
-
-					@* $('.products').empty();
-
-					// Append the new products received from the server
-					response.forEach(function (item) {
-						var productHtml = `<div class="products mb-3"></div>`;
-						$('.products').append(productHtml);
-					}); *@@* $('.products').empty();
-
-					// Append the new products received from the server
-					response.forEach(function (item) {
-						var productHtml = `<div class="products mb-3"></div>`;
-						$('.products').append(productHtml);
-					}); *@
-
+ 
+				
 					console.log('Success');
 				},
 				error: function (xhr, status, error) {
@@ -319,11 +309,11 @@
 			});
 		}
 		// Listen for "change" event on dish input field
-		$('.dish').on('change', function () {
+		$('input[name="dish"]').on('change', function () {  //dish
 			makeAjaxRequest();
 		});
 		// Listen for "change" event on sort input field
-		$('input[type="radio"]').on('change', function () {
+		$('input[name="sort"]').on('change', function () {  //sort
 			makeAjaxRequest();
 		});
 		// Listen for "change" event on restaurant input field
