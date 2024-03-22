@@ -88,7 +88,7 @@ namespace Akalaat
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Restaurant}/{action=Home}/{id?}");
 
             app.Run();
         }

@@ -93,7 +93,7 @@ namespace Akalaat.Controllers
                         if (RoleAddRes.Succeeded)
                         {
                             await SignInManager.SignInAsync(user, isPersistent: false);
-                            return RedirectToAction("Login", "Account");
+                            return RedirectToAction("Home", "Restaurant");
                         }
 
                         await UserManager.DeleteAsync(user);

@@ -2,6 +2,7 @@ using System.Security.AccessControl;
 using System.Security.Claims;
 using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
+using Akalaat.BLL.Specifications.EntitySpecs.RegionSpec;
 using Akalaat.BLL.Specifications.EntitySpecs.ResturantSpec;
 using Akalaat.DAL.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -17,15 +18,18 @@ public class RestaurantController:Controller
     private readonly IWebHostEnvironment _webHostEnvironment;
     private readonly IGenericRepository<City> cityRepo;
 	private readonly IGenericRepository<Dish> dishRepo;
+	private readonly IRegionRepository regionRepo;
 
 	public RestaurantController(IGenericRepository<Vendor>  vendorRepository,IGenericRepository<Resturant>  restaurantRepository,
-        IWebHostEnvironment webHostEnvironment,IGenericRepository<City> cityRepo,IGenericRepository<Dish> dishRepo)
+        IWebHostEnvironment webHostEnvironment,IGenericRepository<City> cityRepo,IGenericRepository<Dish> dishRepo,
+        IRegionRepository regionRepo)
     {
         _vendorRepository = vendorRepository;
         _restaurantRepository = restaurantRepository;
         _webHostEnvironment = webHostEnvironment;
         this.cityRepo = cityRepo;
 		this.dishRepo = dishRepo;
+		this.regionRepo = regionRepo;
 	}
 
 
@@ -36,15 +40,20 @@ public class RestaurantController:Controller
         return View();
     }
 
+
    
     [AllowAnonymous]
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
     {
-        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
+        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dish, resturantPrams.RegionId, resturantPrams.RestaurantName);
         var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
 
         ViewBag.allDishes = await dishRepo.GetAllAsync();
         ViewBag.RegionId = resturantPrams.RegionId;
+
+        var RegionSpec = new DistrictWithRegionSpecification(resturantPrams.RegionId);
+        ViewBag.Region=await regionRepo.GetByIdWithSpec(RegionSpec);
+
 
 		return View(AllResturantWithSpec);
 

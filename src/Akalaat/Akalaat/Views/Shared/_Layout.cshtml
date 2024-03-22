@@ -23,15 +23,47 @@
     <link rel="stylesheet" href="~/assets/css/style.css">
     <link rel="stylesheet" href="~/assets/css/skins/skin-demo-9.css">
     <link rel="stylesheet" href="~/assets/css/demos/demo-9.css">
-
     <!--Main MVC and mapping css-->
-
     <link href="~/lib/leaflet/leaflet.min.css" rel="stylesheet" />
     <link href="~/lib/leaflet/leaflet.css" rel="stylesheet" />
+    <style>
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .dropdown-menu .dropdown-submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu > li:hover > .dropdown-submenu {
+            display: block;
+        }
+
+        .dropdown-hover:hover > .dropdown-menu {
+            display: inline-block;
+        }
+
+        .dropdown-hover > .dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="page-wrapper">
+   
+            <!-- //////////////////////////////// -->
+
+     <div class="header-middle">
+
         <header class="header header-6" style="padding:0 !important;">
             <div class="header-middle sticky-header">
                 <div class="container">
@@ -67,50 +99,63 @@
                                                          alt="Profile Picture">
                                                     <span class="text-dark">UserName</span>
                                                 </a>
-                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#"><i class="fas fa-sliders-h fa-fw"></i> Account</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i> Settings</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item d-flex" href="#"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/admin-settings-male.png" alt="admin-settings-male" /> Admin Page</a></li>
-                                        <li><a class="dropdown-item d-flex" href="#"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/48/briefcase-settings.png" alt="briefcase-settings" /> Vendor Page</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Logout">
-                                                            <i class="fas fa-sign-out-alt fa-fw"></i> Log Out
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                <li>
-                                    <a  class="sf-with-ul">Register</a>
-                                    <ul>
-                                        <li><a asp-area="" asp-controller="Account" asp-action="RegisterAsCustomer">As a Customer</a></li>
-                                        <li><a asp-area="" asp-controller="Account" asp-action="RegisterAsVendor">As a Vendor</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Settings &raquo;
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                    <a asp-controller="Account" asp-action="ChangePassword"><i class="fas fa-lock fa-fw"></i> Change Password</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" asp-controller="Account" asp-action="ChangeEmail"><i class="fas fa-at fa-fw"></i> Change Email</a></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="#">Admin Page</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Vendor Page</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                         @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li>
+
+                                        }
                                     </ul>
-                                </li>
+                                            </li>
                                 <li>
-                                    <a asp-area="" asp-controller="Account" asp-action="Login"><i class="icon-user"></i>Login</a>
+                                    @if (!User.Identity.IsAuthenticated)
+                                    {
+                                        <a  class="sf-with-ul">Register</a>
+                                        <ul>
+                                            <li><a asp-area="" asp-controller="Account" asp-action="RegisterAsCustomer">As a Customer</a></li>
+                                        <li><a asp-area="" asp-controller="Account" asp-action="RegisterAsVendor">As a Vendor</a></li>
+                                    </ul>}
                                 </li>
+                                 @if (!User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                        <a asp-area="" asp-controller="Account" asp-action="Login"><i class="icon-user"></i>Login</a>
+                                </li>}
                             </ul><!-- End Signup - register -->
                         </nav>
              
 
-                    @* @if (User.Identity.IsAuthenticated)
-                    { *@
-                        
+                   @if (User.Identity.IsAuthenticated)
+                        {
+
                             <div class="dropdown cart-dropdown">
                                 <a class="dropdown-toggle" role="button"
                                asp-area="" asp-controller="ShoppingCart" asp-action="CartCheckout">
                                     <i class="icon-shopping-cart"></i>
                                 </a>
-                            </div>
+                            </div>}
                     <!-- End .cart -->
 
                     </div><!-- End .header-right -->
@@ -324,11 +369,6 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
-
-
-
-
 @* 
 @if (User.Identity.IsAuthenticated)
 {
@@ -350,6 +390,6 @@ else
         <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RegisterAsVendor">Signup As Vendor</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login As A Customer</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="">Login As A Customer</a>
     </li>
 } *@

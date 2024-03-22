@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Login";
 }
-
+@* 
 <h1>Login</h1>
 
 <hr />
@@ -46,7 +46,7 @@
                 </p>
             }
 
-            <a class="btn btn-success" asp-action="ExternalLogin" asp-route-provider="Microsoft">Continue with Microsoft</a>
+           
         </div>
 
     </div>
@@ -55,7 +55,122 @@
 <div>
     <a asp-action="Index" asp-controller="Home">Back to List</a>
 </div>
+ *@
+ 
+<main class="main">
 
+    <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17"
+         style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('/images/chad-montano-MqT0asuoIcU-unsplash.jpg');">
+        <div class="container">
+            <div class="form-box">
+                <div class="form-tab">
+                    <ul class="nav nav-pills nav-fill" role="tablist">
+                        <li class="nav-item active">
+                            <p class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2">Sign In</p>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="signin-2" role="tabpanel" aria-labelledby="signin-tab-2">
+                            <form asp-action="Login">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="Email">
+                                        Email Address <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" asp-for="Email" class="form-control" id="singin-email-2">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group">
+                                    <label asp-for="Password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password-login" asp-for="Password">
+                                        <img width="26" height="26" id="dot-eye-icon-password-login"
+                                             class="input-group-text fa-solid fa-eye" onclick="show_hide_password_function_login();"
+                                             src="https://img.icons8.com/sf-black/64/visible.png" alt="visible" />
+                                    </div>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-footer">
+                                    <button type="submit" class="btn btn-outline-primary-2">
+                                        <span>LOG IN</span>
+                                        <i class="icon-long-arrow-right"></i>
+                                    </button>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" asp-for="RememberMe" class="custom-control-input" id="signin-remember-2">
+                                        <label class="custom-control-label" for="signin-remember-2">@Html.DisplayNameFor(model => model.RememberMe)</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form-choice">
+                                    <p class="text-center">or sign in with</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <a asp-action="ExternalLogin" asp-route-provider="Microsoft" class="btn btn-login  btn-f">
+                                                <i class="icon-microsoft-f"></i>
+                                                Login With Microsoft
+                                            </a>
+                                        </div><!-- End .col-6 -->
+                                    </div>
+                                    <!-- End .row -->                        
+                            </div><!-- End .form-choice -->
+
+                        </div><!-- .End .tab-pane -->
+                    </div><!-- End .tab-content -->
+                </div><!-- End .form-tab -->
+            </div><!-- End .form-box -->
+        </div><!-- End .container -->
+    </div><!-- End .login-page section-bg -->
+</main><!-- End .main -->
+
+
+<style>
+    /* START show/hide password (for Login & Register Forms) -- CSS */
+    #dot-eye-icon-password-login,
+    /* for login form */
+    #dot-eye-icon-password-register,
+    /* for register form */
+    #dot-eye-icon-confirm-password
+    /* for register form */ {
+        cursor: pointer;
+        font-size: 120%;
+        padding-top: 10px;
+        width: 8%;
+        z-index: 100;
+    }
+
+    /* END show/hide password (for Login & Register Forms) -- CSS */
+</style>
+
+<script>
+    /************** START show/hide password (for Login Form) -- JS **************/
+    function show_hide_password_function_login() {
+        const password_input = document.querySelector("#password-login");
+        const dot_eye = document.querySelector("#dot-eye-icon-password-login");
+
+        if (password_input.getAttribute('type') === "password") {
+            password_input.setAttribute('type', 'text'); //also => password_input.type = "text"; (but not preferred!)
+            if (dot_eye.classList.contains("fa-eye")) {
+                dot_eye.classList.remove("fa-eye");
+            }
+            dot_eye.classList.add("fa-eye-slash");
+            dot_eye.style.color = "grey";
+        }
+        else {
+            password_input.setAttribute('type', 'password'); //also => password_input.type = "password"; (but not preferred!)
+            if (dot_eye.classList.contains("fa-eye-slash")) {
+                dot_eye.classList.remove("fa-eye-slash");
+            }
+            dot_eye.classList.add("fa-eye");
+            dot_eye.style.color = "inherit";
+        }
+    }
+    /************** END show/hide password (for Login Form) -- JS **************/
+
+</script>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

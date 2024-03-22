@@ -1,0 +1,30 @@
+.delivery-locations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.delivery-locations li {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 2px; 
+    transition: background-color 0.2s ease-in-out;
+}
+
+.delivery-locations li:hover {
+    background-color: #e0e0e0;
+}
+
+.select-text {
+    font-weight: normal;
+    float: right;
+    color: transparent;
+    font-size: 1.25rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.delivery-locations li:hover .select-text {
+    color: #ca0404;
+}
