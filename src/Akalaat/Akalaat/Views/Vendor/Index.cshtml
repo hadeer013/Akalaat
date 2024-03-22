@@ -101,12 +101,29 @@
 <script>
     $(document).ready(function () {
         function generatePassword() {
-            var length = 20,
-                charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%^&*()_+{}|:<>?-=[];',./",
+            var length = 12, // Adjust the length as needed
+                charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%^&*()_+-=[]{}|;:,.<>?/",
                 password = "";
-            for (var i = 0, n = charset.length; i < length; ++i) {
-                password += charset.charAt(Math.floor(Math.random() * n));
+        
+            // Ensure at least one character from each category
+            var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var lowercase = "abcdefghijklmnopqrstuvwxyz";
+            var digits = "0123456789";
+            var specials = "!#$%^&*()_+-=[]{}|;:,.<>?/";
+        
+            password += uppercase.charAt(Math.floor(Math.random() * uppercase.length));
+            password += lowercase.charAt(Math.floor(Math.random() * lowercase.length));
+            password += digits.charAt(Math.floor(Math.random() * digits.length));
+            password += specials.charAt(Math.floor(Math.random() * specials.length));
+        
+            // Fill the rest of the password with random characters
+            for (var i = 4; i < length; ++i) {
+                password += charset.charAt(Math.floor(Math.random() * charset.length));
             }
+        
+            // Shuffle the password to ensure randomness
+            password = password.split('').sort(function(){return 0.5-Math.random()}).join('');
+        
             return password;
         }
 

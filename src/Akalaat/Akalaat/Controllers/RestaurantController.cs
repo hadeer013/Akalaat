@@ -1,4 +1,5 @@
 using System.Security.AccessControl;
+using System.Security.Claims;
 using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
 using Akalaat.BLL.Specifications.EntitySpecs.ResturantSpec;
@@ -36,6 +37,7 @@ public class RestaurantController:Controller
     }
 
    
+    [AllowAnonymous]
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
     {
         var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dishId, resturantPrams.RegionId, resturantPrams.RestaurantName);
@@ -48,9 +50,13 @@ public class RestaurantController:Controller
 
 	}
 
-    public async Task<IActionResult> ResturantDetails(int Id)
+    public async Task<IActionResult> ResturantDetails()
     {
-        var restaurant = await _restaurantRepository.GetByIdAsync(Id);
+        var VendorID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var CurrentVendor = await _vendorRepository.GetByIdAsync(VendorID);
+
+
+        var restaurant = await _restaurantRepository.GetByIdAsync(CurrentVendor.Resturant_ID);
         return View(restaurant);
         //var allrestaurants = await _restaurantRepository.GetAllAsync();
         //var firstrestaurant = allrestaurants.FirstOrDefault();

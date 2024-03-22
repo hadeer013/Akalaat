@@ -5,28 +5,34 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Akalaat.BLL.Models;
+using Akalaat.BLL.Repositories;
 
 namespace Akalaat.Controllers
 {
     public class AccountController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
+        private readonly AccountRepository _accountRepository;
         public UserManager<ApplicationUser> UserManager { get; }
         public SignInManager<ApplicationUser> SignInManager { get; }
 
+
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager
-            ,RoleManager<IdentityRole> roleManager)
+            , RoleManager<IdentityRole> roleManager, AccountRepository accountRepository)
         {
             UserManager = userManager;
             SignInManager = signInManager;
             this.roleManager = roleManager;
+            _accountRepository = accountRepository;
         }
 
 
         public IActionResult Register(string Role)
-        { 
-            if(string.IsNullOrEmpty(Role)) 
-                return View("Error", new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" });
+        {
+            if (string.IsNullOrEmpty(Role))
+                return View("Error",
+                    new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" });
 
             ViewBag.Role = Role;
             return View();
@@ -46,15 +52,17 @@ namespace Akalaat.Controllers
 
 
         [AllowAnonymous]
-        [HttpPost]  //this action for Vendor and customer registration only
-        public async Task<IActionResult> Register([FromQuery]string Role,RegisterViewModel newUserVM)
+        [HttpPost] //this action for Vendor and customer registration only
+        public async Task<IActionResult> Register([FromQuery] string Role, RegisterViewModel newUserVM)
         {
-            if (string.IsNullOrEmpty(Role)) return View("Error", new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" });
+            if (string.IsNullOrEmpty(Role))
+                return View("Error",
+                    new ErrorViewModel() { Message = "Error in Registration process", RequestId = "1001" });
             if (ModelState.IsValid)
             {
                 IdentityResult temp;
                 ApplicationUser user;
-                if(Role=="Customer")
+                if (Role == "Customer")
                 {
                     user = new Customer()
                     {
@@ -62,7 +70,7 @@ namespace Akalaat.Controllers
                         Email = newUserVM.Email,
                         ShoppingCart = new ShoppingCart()
                     };
-                    
+
                 }
                 else
                 {
@@ -77,7 +85,7 @@ namespace Akalaat.Controllers
 
                 if (temp.Succeeded)
                 {
-                    
+
                     var role = await roleManager.FindByNameAsync(Role);
                     if (role != null)
                     {
@@ -87,13 +95,22 @@ namespace Akalaat.Controllers
                             await SignInManager.SignInAsync(user, isPersistent: false);
                             return RedirectToAction("Login", "Account");
                         }
+
                         await UserManager.DeleteAsync(user);
-                        return View("Error", new ErrorViewModel() { Message = "Error in Registration process please register again", RequestId = "1001" });
+                        return View("Error",
+                            new ErrorViewModel()
+                            {
+                                Message = "Error in Registration process please register again", RequestId = "1001"
+                            });
                     }
                     else
                     {
                         await UserManager.DeleteAsync(user);
-                        return View("Error", new ErrorViewModel() { Message = "Error in Registration process please register again", RequestId = "1001" });
+                        return View("Error",
+                            new ErrorViewModel()
+                            {
+                                Message = "Error in Registration process please register again", RequestId = "1001"
+                            });
                     }
                 }
                 else
@@ -138,10 +155,11 @@ namespace Akalaat.Controllers
                     {
                         await SignInManager.SignInAsync(userModelFromDb, UserVM.RememberMe);
 
-                        return RedirectToAction("Index","Home");
+                        return RedirectToAction("Index", "Home");
                     }
                 }
             }
+
             ModelState.AddModelError("", "Wrong UserName Or Password!!");
             return View(UserVM);
         }
@@ -160,15 +178,19 @@ namespace Akalaat.Controllers
             var user = await UserManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
 
             var userWithTheSameEmail = await UserManager.FindByEmailAsync(emailViewModel.Email);
-            if(userWithTheSameEmail != null) 
-            { return View("Error", new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" }); }
+            if (userWithTheSameEmail != null)
+            {
+                return View("Error",
+                    new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" });
+            }
 
-            user.Email=emailViewModel.Email;
+            user.Email = emailViewModel.Email;
             var result = await UserManager.UpdateAsync(user);
-            if(!result.Succeeded)
-                return View("Error", new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" });
+            if (!result.Succeeded)
+                return View("Error",
+                    new ErrorViewModel() { Message = "This Email already exists.", RequestId = "1001" });
 
-            await SignInManager.SignInAsync(user,false);
+            await SignInManager.SignInAsync(user, false);
             return RedirectToAction("Index", "Home");
         }
 
@@ -184,22 +206,25 @@ namespace Akalaat.Controllers
         {
             var currentUser = await UserManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
 
-            var valid=await UserManager.CheckPasswordAsync(currentUser, changePasswordVM.CurrentPassword);
+            var valid = await UserManager.CheckPasswordAsync(currentUser, changePasswordVM.CurrentPassword);
             if (!valid)
             {
                 ModelState.AddModelError("", "Wrong password !");
             }
-            var result= await UserManager.ChangePasswordAsync(currentUser, changePasswordVM.CurrentPassword, changePasswordVM.NewPassword);
+
+            var result = await UserManager.ChangePasswordAsync(currentUser, changePasswordVM.CurrentPassword,
+                changePasswordVM.NewPassword);
             if (!result.Succeeded)
             {
                 ModelState.AddModelError("", "Wrong password !");
                 return View(changePasswordVM);
             }
-                
+
             return RedirectToAction("Index", "Home");
         }
 
         #region future consideration
+
         //private async Task UpdateEmailClaimInCookie(string newEmail) 
         //{
         //    var claimsPrincipal = User..Claims. as ClaimsIdentity;
@@ -213,6 +238,7 @@ namespace Akalaat.Controllers
         //        }
         //    }
         //}
+
         #endregion
 
         [AllowAnonymous]
@@ -226,7 +252,7 @@ namespace Akalaat.Controllers
 
         [AllowAnonymous]
         public async Task<IActionResult> RegisterExternalUser(string? returnURL = null,
-        string? remoteError = null)
+            string? remoteError = null)
         {
             returnURL = returnURL ?? Url.Content("~/");
             var message = "";
@@ -244,7 +270,8 @@ namespace Akalaat.Controllers
                 return RedirectToAction("login", routeValues: new { message });
             }
 
-            var externalLoginResult = await SignInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+            var externalLoginResult = await SignInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey,
+                isPersistent: false, bypassTwoFactor: true);
 
             // The account already exists
             if (externalLoginResult.Succeeded)
@@ -264,7 +291,7 @@ namespace Akalaat.Controllers
                 return RedirectToAction("login", routeValues: new { message });
             }
 
-            var usuario = new Customer() { Email = email, UserName = email ,ShoppingCart = new ShoppingCart()};
+            var usuario = new Customer() { Email = email, UserName = email, ShoppingCart = new ShoppingCart() };
 
             var createUserResult = await UserManager.CreateAsync(usuario);
             if (!createUserResult.Succeeded)
@@ -285,6 +312,69 @@ namespace Akalaat.Controllers
             return RedirectToAction("login", routeValues: new { message });
         }
 
+
+        [AllowAnonymous, HttpGet("forget-password")]
+        public IActionResult ForgetPassword()
+        {
+            return View(new ForgetPasswordVM() );
+        }
+
+        [AllowAnonymous, HttpPost("forget-password")]
+        public async Task<IActionResult> ForgetPassword(ForgetPasswordVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _accountRepository.GetUserByEmailAsync(model.Email);
+                if (user != null)
+                {
+                    await _accountRepository.GenerateForgotPasswordTokenAsync(user);
+                }
+
+                ModelState.Clear();
+                model.EmailSent = true;
+            }
+
+            return View(model);
+        }
+
+        [AllowAnonymous, HttpGet("reset-password")]
+        public IActionResult ResetPassword(string uid, string token)
+        {
+            ResetPasswordModel resetPasswordModel = new ResetPasswordModel
+            {
+                Token = token,
+                UserId = uid
+            };
+            return View(resetPasswordModel);
+        }
+
+        [AllowAnonymous, HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.Token = model.Token.Replace(' ', '+');
+                var result = await _accountRepository.ResetPasswordAsync(model);
+                if (result.Succeeded)
+                {
+                    ModelState.Clear();
+                    model.IsSuccess = true;
+                    return View(model);
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+
+            return View(model);
+        }
     }
 }
+    
+
+    
+
+
 

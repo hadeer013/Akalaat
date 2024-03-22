@@ -2,6 +2,7 @@ using Akalaat.BLL.Interfaces;
 using Akalaat.BLL.Repositories;
 using Akalaat.DAL.Data;
 using Akalaat.DAL.Models;
+using Akalaat.Models;
 using Akalaat.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,8 @@ namespace Akalaat
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             builder.Services.AddScoped<FileManagement>();
+            builder.Services.AddScoped<EmailManagement>();
+            builder.Services.AddScoped<AccountRepository>();
             builder.Services.AddScoped(typeof(IDistrictRepository),typeof(DistrictRepository));
             builder.Services.AddScoped(typeof(IRegionRepository),typeof(RegionRepository));
             builder.Services.AddScoped(typeof(IBranchDeliveryRepository),typeof(BranchDeliveryRepository));
@@ -34,13 +37,14 @@ namespace Akalaat
             });
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
-                AddEntityFrameworkStores<AkalaatDbContext>();
+                AddEntityFrameworkStores<AkalaatDbContext>().AddDefaultTokenProviders();
 
             builder.Services.AddAuthentication().AddMicrosoftAccount(Microsoftoptions =>
             {
                 Microsoftoptions.ClientId = builder.Configuration["MicrosoftClientId"]!;
                 Microsoftoptions.ClientSecret = builder.Configuration["MicrosoftSecretId"]!;
             });
+            builder.Services.Configure<SMTPConfigModel>(builder.Configuration.GetSection("SMTPConfig"));
 
 
 
