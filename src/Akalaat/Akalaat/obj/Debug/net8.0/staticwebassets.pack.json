@@ -21,12 +21,32 @@
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-guarantee-50.png"
     },
     {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-location-48.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\icons8-location-48.jpg"
+    },
+    {
       "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-no-phones-50.png",
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-no-phones-50.png"
     },
     {
       "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-track-order-64.png",
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-track-order-64.png"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-02-57.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-02-57.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-26.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-26.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-30.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-30.jpg"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-34.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-34.jpg"
     },
     {
       "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\spencer-davis-5UeN8VrCxvs-unsplash.jpg",
@@ -1407,6 +1427,10 @@
     {
       "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\assets\\main.js",
       "PackagePath": "staticwebassets\\assets\\main.js"
+    },
+    {
+      "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\css\\custom-style.css",
+      "PackagePath": "staticwebassets\\css\\custom-style.css"
     },
     {
       "Id": "H:\\ITI_Intake44\\MVC\\Project\\App\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
