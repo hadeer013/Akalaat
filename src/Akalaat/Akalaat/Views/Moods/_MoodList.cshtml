@@ -1,0 +1,15 @@
+﻿@* @model IEnumerable<Akalaat.DAL.Models.Mood>
+
+<ul>
+    @foreach (var mood in Model)
+    {
+        <li id="mood-@(mood.Id)">
+            <form asp-action="Edit" asp-route-id="@mood.Id">
+            </form>
+            <form asp-action="Delete" asp-route-id="@mood.Id" onsubmit="return deleteMood(event, @mood.Id)">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </li>
+    }
+</ul>
+ *@

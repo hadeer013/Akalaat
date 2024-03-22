@@ -1,0 +1,23 @@
+﻿@model Akalaat.ViewModels.MoodVM
+@{
+    ViewData["Title"] = "Assign Moods";
+}
+
+<h1>Assign Moods to Restaurants</h1>
+
+<form asp-action="Assign" method="post">
+    <div class="form-group">
+        <label  asp-for ="@Model.MoodId">Select Mood:</label>
+        
+        <select name="MoodId" id="MoodId" class="form-control" asp-items="@ViewBag.MoodList">
+            <option value="">Select Mood</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.RestaurantId">Select Restaurant:</label>
+        <select name="restaurantId" id="restaurantId" class="form-control" asp-items="@ViewBag.RestaurantList">
+            <option value="">Select Restaurant</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Assign Mood</button>
+</form>
