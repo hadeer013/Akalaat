@@ -18,7 +18,7 @@ namespace Akalaat.BLL.Specifications.EntitySpecs.RegionSpec
             AddThenInclude(dis => dis.Include(r => r.District));
         }
 
-        public DistrictWithRegionSpecification(int RegionId):base(r=>r.Id==RegionId)
+        public DistrictWithRegionSpecification(int? RegionId):base(r=>r.Id==RegionId)
         {
             AddThenInclude(reg => reg.Include(r => r.District).ThenInclude(r=>r.City));
         }
