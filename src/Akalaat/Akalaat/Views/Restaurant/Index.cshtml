@@ -2,6 +2,7 @@
 @{
 	ViewData["Title"] = "Home";
 	var Dishes = (List<Dish>)ViewBag.allDishes;
+	var Moods = (List<Mood>)ViewBag.allMoods;
 	var Region = (Region)ViewBag.Region;
 }
 
@@ -179,38 +180,25 @@
 							<h3 class="widget-title">
 								<a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true"
 								   aria-controls="widget-2">
-									Sort by:
+									Moods:
 								</a>
 							</h3><!-- End .widget-title -->
 
 							<div class="collapse show" id="widget-2">
 								<div class="widget-body">
 									<div class="filter-items">
+										@foreach(var mood in Moods)
+										{
+											<div class="filter-item">
+												<div class="custom-control custom-radio">
+													<input name="mood" type="radio" class="custom-control-input" id="@mood.Id">
+													<label class="custom-control-label" for="size-1">@mood.Name</label>
+												</div><!-- End .custom-checkbox -->
+											</div>
+											<!-- End .filter-item -->
+										}
+										
 
-										<div class="filter-item">
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="size-1">
-												<label class="custom-control-label" for="size-1">Popular</label>
-											</div><!-- End .custom-checkbox -->
-										</div><!-- End .filter-item -->
-
-										<div class="filter-item">
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" id="size-2">
-												<label class="custom-control-label" for="size-2">Rating</label>
-											</div><!-- End .custom-checkbox -->
-										</div><!-- End .filter-item -->
-
-										<div class="filter-item">
-											<div class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input" checked
-													   id="size-3">
-												<label class="custom-control-label" for="size-3">
-													Delivery
-													Time
-												</label>
-											</div><!-- End .custom-checkbox -->
-										</div><!-- End .filter-item -->
 
 									</div><!-- End .filter-items -->
 								</div><!-- End .widget-body -->
@@ -233,8 +221,6 @@
 										<!-- End .filter-item -->
 										@foreach (var dish in Dishes)
 										{
-
-
 											<div class="filter-item">
 												<div class="custom-control custom-radio">
 													<input name="dish" type="radio" class="dish custom-control-input" id="@dish.Id">
@@ -270,6 +256,7 @@
 			
 			
 			var dishId = $('input[name="dish"]:checked').attr('id');
+			var moodId = $('input[name="mood"]:checked').attr('id');
 			var sortValue = $('input[name="sort"]:checked').attr('id');
 
 			console.log("Selected radio button ID: " + sortValue);
@@ -283,6 +270,7 @@
 
 			console.log({
 				dish: dishId,
+				mood:moodId,
 				sort: sortValue,
 				RestaurantName: searchString,
 				RegionId: regionId
@@ -293,6 +281,7 @@
 				method: 'GET',
 				data: {
 					dish: dishId,
+					mood: moodId,
 					sort: sortValue,
 					RestaurantName: searchString,
 					RegionId: regionId
@@ -310,6 +299,9 @@
 		}
 		// Listen for "change" event on dish input field
 		$('input[name="dish"]').on('change', function () {  //dish
+			makeAjaxRequest();
+		});
+		$('input[name="mood"]').on('change', function () {  //dish
 			makeAjaxRequest();
 		});
 		// Listen for "change" event on sort input field
