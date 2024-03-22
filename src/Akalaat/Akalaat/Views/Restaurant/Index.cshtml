@@ -13,7 +13,7 @@
 		<div class="container">
 			<h1 class="page-title">
 				(@Model.Count) Restaurants Found <span style="color: #E22207;">
-					@Region.District.City.Name / @Region.District.Name /@Region.Name
+					 @Region.District.City.Name / @Region.District.Name /@Region.Name 
 				</span>
 			</h1>
 		</div><!-- End .container -->
@@ -48,7 +48,7 @@
 											<figure class="product-media">
 												-->
 
-												<a asp-action="ResturantDetails" asp-controller="Restaurant" asp-route-Id="@item.Id">
+												<a asp-action="IndexToCustomer" asp-controller="Item" asp-route-menuId="@item.Menu_ID">
 													<img src="@item.Cover_URL" alt="Product image"
 														 class="product-image">
 												</a>

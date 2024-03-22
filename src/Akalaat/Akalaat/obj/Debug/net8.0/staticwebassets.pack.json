@@ -21,12 +21,32 @@
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-guarantee-50.png"
     },
     {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-location-48.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\icons8-location-48.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-no-phones-50.png",
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-no-phones-50.png"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\icons8-track-order-64.png",
       "PackagePath": "staticwebassets\\HomePageImages\\icons8-track-order-64.png"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-02-57.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-02-57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-26.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-30.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\photo_2024-03-22_03-03-34.jpg",
+      "PackagePath": "staticwebassets\\HomePageImages\\photo_2024-03-22_03-03-34.jpg"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\HomePageImages\\spencer-davis-5UeN8VrCxvs-unsplash.jpg",
@@ -47,6 +67,10 @@
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1356f855-d43a-4112-a699-7c37b27a80a0.jpg",
       "PackagePath": "staticwebassets\\Images\\1356f855-d43a-4112-a699-7c37b27a80a0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\16f54b1d-08a4-4776-8fb8-7d4452866424.jpg",
+      "PackagePath": "staticwebassets\\Images\\16f54b1d-08a4-4776-8fb8-7d4452866424.jpg"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\1a668a40-94e6-4707-9375-1ad8088909c4.jpg",
@@ -205,6 +229,14 @@
       "PackagePath": "staticwebassets\\Images\\9b858553-88a7-436c-8b5f-ed231090bf6a.jpg"
     },
     {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\Menus\\1\\Categories\\BurgerRR.jpg",
+      "PackagePath": "staticwebassets\\Images\\Menus\\1\\Categories\\BurgerRR.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\Menus\\1\\Categories\\M.jpg",
+      "PackagePath": "staticwebassets\\Images\\Menus\\1\\Categories\\M.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\Menus\\1\\Categories\\Main Dish.jpg",
       "PackagePath": "staticwebassets\\Images\\Menus\\1\\Categories\\Main Dish.jpg"
     },
@@ -253,6 +285,10 @@
       "PackagePath": "staticwebassets\\Images\\a7d71427-f8ef-4d89-964f-dc0b94bbf660.jpg"
     },
     {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\a855cc4e-0c82-41f1-bb21-399e6a07792f.jpg",
+      "PackagePath": "staticwebassets\\Images\\a855cc4e-0c82-41f1-bb21-399e6a07792f.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b2fa1f0d-6661-44ed-b919-677d489eab9e.jpg",
       "PackagePath": "staticwebassets\\Images\\b2fa1f0d-6661-44ed-b919-677d489eab9e.jpg"
     },
@@ -267,6 +303,10 @@
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b4dccfb1-94df-4f78-8b9b-974e88e4c528.png",
       "PackagePath": "staticwebassets\\Images\\b4dccfb1-94df-4f78-8b9b-974e88e4c528.png"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\b8fc0379-71a0-41ad-b3d0-1af18df32acf.jpg",
+      "PackagePath": "staticwebassets\\Images\\b8fc0379-71a0-41ad-b3d0-1af18df32acf.jpg"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\c2513593-7a33-464a-bc7d-6916d4154103.jpg",
@@ -285,6 +325,10 @@
       "PackagePath": "staticwebassets\\Images\\db282446-f7d1-475b-841e-f581dd2b5f2d.jpg"
     },
     {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\df4abd69-f499-4ceb-97dc-663a98aa550f.jpg",
+      "PackagePath": "staticwebassets\\Images\\df4abd69-f499-4ceb-97dc-663a98aa550f.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg",
       "PackagePath": "staticwebassets\\Images\\e9515c5c-fbb2-458e-9cf8-92207bc4dbfd_download.jpeg"
     },
@@ -299,6 +343,10 @@
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg",
       "PackagePath": "staticwebassets\\Images\\f866f30d-6747-4577-a20c-ad9972c6f3aa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\fa8e6c97-bccf-4cc7-84f0-7f08fa27a9ea.jpg",
+      "PackagePath": "staticwebassets\\Images\\fa8e6c97-bccf-4cc7-84f0-7f08fa27a9ea.jpg"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Images\\ff31abd8-4f11-4ce3-9fea-4fcadecab504.jpg",
@@ -1455,6 +1503,10 @@
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\assets\\main.js",
       "PackagePath": "staticwebassets\\assets\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\custom-style.css",
+      "PackagePath": "staticwebassets\\css\\custom-style.css"
     },
     {
       "Id": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",

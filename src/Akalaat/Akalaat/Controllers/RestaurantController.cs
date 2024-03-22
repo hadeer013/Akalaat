@@ -45,8 +45,9 @@ public class RestaurantController:Controller
     [AllowAnonymous]
     public async Task<IActionResult> Index(ResturantParams resturantPrams)
     {
-        var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dish, resturantPrams.RegionId, resturantPrams.RestaurantName);
-        var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
+        //var spec = new ResturantWithDishSpecification(resturantPrams.sort, resturantPrams.dish, resturantPrams.RegionId, resturantPrams.RestaurantName);
+        // var AllResturantWithSpec = await _restaurantRepository.GetAllWithSpec(spec);
+        var AllResturantWithSpec = await _restaurantRepository.GetAllAsync();
 
         ViewBag.allDishes = await dishRepo.GetAllAsync();
         ViewBag.RegionId = resturantPrams.RegionId;
