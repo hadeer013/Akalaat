@@ -86,9 +86,15 @@
                       <div class="col-md-6">
                           <button  type="button" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Offer Management</button>
                       </div>
+                        <div class="col-md-6">
+                            <a asp-controller="Moods" asp-action="DisplayRestaurantWithMoods" asp-route-id="@Model.Id" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Moods Management</a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <button type="button" class="w-75 btn btn-warning"><i class="bi bi-pencil"></i> Dish Management</button>
+                        </div>
                   </div>
               </div>
-
             </article>
         </section>
     </main>

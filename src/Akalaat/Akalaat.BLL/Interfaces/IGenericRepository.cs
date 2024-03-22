@@ -11,6 +11,7 @@ namespace Akalaat.BLL.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
+        
         Task<T> Add(T type);
         Task<int> Update(T type);
         Task<int> Delete<Y>(Y Id);

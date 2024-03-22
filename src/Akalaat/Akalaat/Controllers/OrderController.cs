@@ -29,7 +29,7 @@ namespace Akalaat.Controllers
         public async Task<IActionResult> Index()
         {
             var spec = new OrderWithCustomerAndItemSpecification();
-           
+
             var orders = await _orderRepository.GetAllWithSpec(spec);
 
             var orderVMs = orders.Select(order => OrderViewModelMapper.MapToViewModel(order)).ToList();
@@ -41,7 +41,7 @@ namespace Akalaat.Controllers
         {
             var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var items =await _itemRepository.GetAllAsync();
+            var items = await _itemRepository.GetAllAsync();
 
             var itemSelectList = items.Select(item => new SelectListItem
             {
@@ -52,6 +52,8 @@ namespace Akalaat.Controllers
             var orderViewModel = new OrderVM
             {
                 Customer_ID = customerId,
+                DateTime = DateTime.Now,
+                ArrivalTime = DateTime.Now.AddHours(1),
                 Items = itemSelectList.ToList()
             };
 
@@ -69,7 +71,7 @@ namespace Akalaat.Controllers
             var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
             ShoppingCart shoppingCart = await ShoppingCartRepository.GetByIdAsync(Shopping_ID);
             var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item => item.ShoppingCartId == Shopping_ID], includeProperties: "Item");
-                List<Item> _items = new List<Item>();
+            List<Item> _items = new List<Item>();
 
             if (shoppingCartItem.Count != 0)
             {
@@ -83,9 +85,9 @@ namespace Akalaat.Controllers
 
                 var order = new Order
                 {
-                   
+
                     DateTime = DateTime.Now,
-                  Total_Price = (int) TotalPrice,
+                    Total_Price = (int)TotalPrice,
                     Items = _items,
                     Customer_ID = customerId,
 
@@ -94,10 +96,10 @@ namespace Akalaat.Controllers
                 await _orderRepository.Add(order);
                 if (shoppingCartItem.Count != 0)
                 {
-                    for (var i=0; i< shoppingCartItem.Count;i++)
+                    for (var i = 0; i < shoppingCartItem.Count; i++)
                     {
                         var item = shoppingCartItem[i];
-                        await ShoppingCartItemRepository.Delete(item.ItemId,item.ShoppingCartId);
+                        await ShoppingCartItemRepository.Delete(item.ItemId, item.ShoppingCartId);
                     }
                 }
                 if (shoppingCart != null)
@@ -114,17 +116,17 @@ namespace Akalaat.Controllers
                 Value = item.Id.ToString(),
                 Text = item.Name
             });
-           // orderViewModel.Items = itemSelectList.ToList();
+            // orderViewModel.Items = itemSelectList.ToList();
 
             ModelState.AddModelError("", "Invalid Item");
             return View();
         }
         public async Task<IActionResult> Details(int Id)
         {
-           // Expression<Func<Order, object>>[] includes = { o => o.Customer, o => o.Items };
+            // Expression<Func<Order, object>>[] includes = { o => o.Customer, o => o.Items };
             var spec = new OrderWithCustomerAndItemSpecification(Id);
 
-            var order = await _orderRepository.GetByIdWithSpec( spec);
+            var order = await _orderRepository.GetByIdWithSpec(spec);
 
             if (order == null)
             {
@@ -154,10 +156,10 @@ namespace Akalaat.Controllers
             {
                 return View();
             }
- 
+
             var orderViewModel = OrderViewModelMapper.MapToViewModel(order);
 
-            orderViewModel.SelectedItemS = items.Select(I=>I.Id).ToList();
+            orderViewModel.SelectedItemS = items.Select(I => I.Id).ToList();
 
             return View(orderViewModel);
         }
