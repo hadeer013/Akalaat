@@ -210,12 +210,12 @@
 						<div class="pull-right right-side">
 							<div class="account">
 								<div class="not-loggedin">
-									<button type="button" class="btn btn-link text-light login-btn text-decoration-none">
+									<a asp-controller="Account" asp-action="Login" class="btn btn-link text-light login-btn text-decoration-none">
 										login
-									</button> <button type="button" class="btn btn-primary signup-btn text-decoration-none"
+									</a> <a asp-controller="Account" asp-action="RegisterAsCustomer" class="btn btn-primary signup-btn text-decoration-none"
 											  style="background-color: #e22207; border:none;">
 										signup
-									</button>
+									</a>
 									<a href=" /ar " type="button" class="btn btn-link login-btn text-light lang-switcher text-decoration-none">
 										العربية
 									</a>
@@ -592,6 +592,7 @@
 						console.log(data);
 						$('#districtList').empty().show();
 						$.each(data, function (index, district) {
+
 							//var districtItem = $('<li><button class="districtbtn" data - cityId=' + cityId + ' data - districtId="' + district.id + '" > ' + district.name + '</button></li>');
 							var districtItem = $('<li><img src="/HomePageImages/icons8-location-48.png" width ="26" height = "26" class="districtbtn" data-cityId=' + cityId + ' data-districtId=' + district.id + '>' + district.name + '</li>');
 							$('#districtList').append(districtItem);

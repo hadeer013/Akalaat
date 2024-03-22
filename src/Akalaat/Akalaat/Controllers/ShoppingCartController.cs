@@ -27,12 +27,13 @@ namespace Akalaat.Controllers
         }
         public async Task<IActionResult> Index(int Id)
         {
+            
             var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var Item = await itemRepository.GetByIdAsync(Id);
             CustomerWithShoppingCartSpecification spec = new CustomerWithShoppingCartSpecification(customerId);
             var CurrentCustomer = await CustomerRepository.GetByIdWithSpec(spec);
             var Shopping_ID = CurrentCustomer.ShoppingCart_ID;
-
+            
             var shoppingCartItem = await ShoppingCartItemRepository.GetAllAsync([item => item.ItemId == Id && item.ShoppingCartId == Shopping_ID], includeProperties: "Item");
 
             ShoppingCartItemVM shoppingCartItemVM = new ShoppingCartItemVM();
@@ -49,6 +50,7 @@ namespace Akalaat.Controllers
 
             shoppingCartItemVM.Customer_ID = customerId;
             shoppingCartItemVM.Item = Item;
+            ViewBag.ShoppingID = Shopping_ID;
 
             return View(shoppingCartItemVM);
         }

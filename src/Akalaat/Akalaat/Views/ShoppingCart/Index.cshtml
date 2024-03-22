@@ -8,34 +8,34 @@
     <link rel="stylesheet" href="~/Akalaat.styles.css" asp-append-version="true" />
     <link href="~/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="~/font-awesome/css/fontawesome.css" rel="stylesheet" />
-    
-
-<div class="row m-3">
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <img src="~/Images/@Model.Item.Image_URL" class="card-img-top" alt="Image">
-                <div class="card-body">
-                    <h5 class="card-title">@Model.Item.Name</h5>
-                    <p class="card-text">@Model.Item.Description</p>
-                    <p class="card-text">Price: @Model.Item.Price</p>
-                    <div class="form-group">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" min="1" id="quantity" name="quantity[@Model.Item.Id]" value="@Model.Quantity" class="form-control quantity-input" data-Model.Item-id="@Model.Item.Id" />
+    @if (@ViewBag.ShoppingID != null)
+    {
+        <div class="row m-3">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="~/Images/@Model.Item.Image_URL" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Item.Name</h5>
+                        <p class="card-text">@Model.Item.Description</p>
+                        <p class="card-text">Price: @Model.Item.Price</p>
+                        <div class="form-group">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" min="1" id="quantity" name="quantity[@Model.Item.Id]" value="@Model.Quantity" class="form-control quantity-input" data-Model.Item-id="@Model.Item.Id"/>
+                        </div>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <strong class="total-price" data-Model.Item-id="@Model.Item.Id" id="Price">Total: @(Model.Item.Price * Model.Quantity)</strong>
-                </div>
-             
-            </div>
-        </div>
-    <button class="btn btn-danger w-75 m-auto add-to-cart">Add to Cart</button>
-</div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+                    <div class="card-footer">
+                        <strong class="total-price" data-Model.Item-id="@Model.Item.Id" id="Price">Total: @(Model.Item.Price * Model.Quantity)</strong>
+                    </div>
 
-    <script>
+                </div>
+            </div>
+            <button class="btn btn-danger w-75 m-auto add-to-cart">Add to Cart</button>
+        </div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <script>
         $(document).ready(function () {
             $('.quantity-input').on('change', function () {
                 // Store the quantity value in the data attribute of the input element
@@ -91,3 +91,8 @@
         }
     </script>
 
+    }
+    else
+    {
+        <P>You Must Login in Our System</P>
+    }

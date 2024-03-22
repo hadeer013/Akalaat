@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I2yl9sDHFemGgEM5+KZJQJAknn74W7cRGHmE7Xo/2hA=",
+  "Hash": "U4zfLHiYTacYWFZUBxLWQ2jrEcq4/0NcxksamDMsSuU=",
   "Source": "Akalaat",
   "BasePath": "_content/Akalaat",
   "Mode": "Default",
@@ -48598,6 +48598,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Vendor\\2\\LogoImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Vendor\\3\\CoverImage.webp",
+      "SourceId": "Akalaat",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\",
+      "BasePath": "_content/Akalaat",
+      "RelativePath": "Vendor/3/CoverImage.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Vendor\\3\\CoverImage.webp"
     },
     {
       "Identity": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\Vendor\\5\\CoverImage.jpg",

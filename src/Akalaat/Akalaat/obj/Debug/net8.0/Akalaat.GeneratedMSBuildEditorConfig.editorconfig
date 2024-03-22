@@ -94,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcRmFpbGVkUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/CheckOut/OrderSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcT3JkZXJTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/CheckOut/SuccessfulPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcU3VjY2Vzc2Z1bFBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -182,8 +186,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cU2V0TG9jYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/assign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcYXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/DisplayRestaurantWithMoods.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcRGlzcGxheVJlc3RhdXJhbnRXaXRoTW9vZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Moods/_MoodList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9vZHNcX01vb2RMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Order/CustomerIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3VzdG9tZXJJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Hassan/Documents/iti/New folder (2)/Akalaat/src/Akalaat/Akalaat/Views/Order/Delete.cshtml]

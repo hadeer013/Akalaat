@@ -29,8 +29,18 @@ namespace Akalaat.Controllers
         public async Task<IActionResult> Index()
         {
             var spec = new OrderWithCustomerAndItemSpecification();
-
+        
             var orders = await _orderRepository.GetAllWithSpec(spec);
+        
+            var orderVMs = orders.Select(order => OrderViewModelMapper.MapToViewModel(order)).ToList();
+        
+            return View(orderVMs);
+        }
+        public async Task<IActionResult> CustomerIndex()
+        {
+            var customerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var orders = await _orderRepository.GetAllAsync([(or =>or.Customer_ID==customerId)],includeProperties:"Customer");
 
             var orderVMs = orders.Select(order => OrderViewModelMapper.MapToViewModel(order)).ToList();
 
