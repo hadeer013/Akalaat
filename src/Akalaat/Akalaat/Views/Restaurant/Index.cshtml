@@ -1,7 +1,8 @@
 ﻿@model List<Resturant>
 @{
 	ViewData["Title"] = "Home";
-    var Dishes = (List<Dish>)ViewBag.allDishes;
+	var Dishes = (List<Dish>)ViewBag.allDishes;
+	var Region = (Region)ViewBag.Region;
 }
 
 
@@ -12,8 +13,7 @@
 		<div class="container">
 			<h1 class="page-title">
 				(@Model.Count) Restaurants Found <span style="color: #E22207;">
-					Area name / District
-					name
+					@Region.District.City.Name / @Region.District.Name /@Region.Name
 				</span>
 			</h1>
 		</div><!-- End .container -->
