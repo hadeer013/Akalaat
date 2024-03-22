@@ -3,6 +3,7 @@ using Akalaat.BLL.Repositories;
 using Akalaat.DAL.Models;
 using Akalaat.ViewModels;
 using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;

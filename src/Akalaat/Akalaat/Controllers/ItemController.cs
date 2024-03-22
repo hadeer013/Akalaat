@@ -33,6 +33,8 @@ namespace Akalaat.Controllers
 
 
         //vendor view
+        [AuthorizeMenuAccess]
+        [Route("Index/{menuId}")]
         public async Task<IActionResult> Index(int menuId, int categoryId = -1, string searchItem = "")
         {
             // Retrieve restaurant name from the menu ID using the existing repositories or context
@@ -168,7 +170,7 @@ namespace Akalaat.Controllers
             }
 
             ModelState.AddModelError("", "Invalid Item");
-            return View(itemViewModel);
+            return RedirectToAction("Create","Item",new { menuID = itemViewModel.MenuID });
         }
 
         public async Task<IActionResult> Details(int id)
@@ -234,7 +236,7 @@ namespace Akalaat.Controllers
                     existingItem.Description = itemViewModel.Description;
                     existingItem.Discount = itemViewModel.Discount ?? 0;
                     existingItem.IsOffer = itemViewModel.IsOffer;
-                   // existingItem.CategoryID = itemViewModel.CategoryID;
+                    //existingItem.CategoryID = itemViewModel.CategoryID;
                     existingItem.Price = itemViewModel.Price;
                     if (itemViewModel.Image != null && itemViewModel.Image.Length > 0)
                     {

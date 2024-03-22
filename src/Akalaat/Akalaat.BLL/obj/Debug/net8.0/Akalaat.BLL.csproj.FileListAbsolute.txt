@@ -94,19 +94,39 @@ F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Deb
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
 F:\Computer Science\iti_intake_44\20-MVC\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.deps.json
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.dll
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.BLL.pdb
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.dll
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Akalaat.DAL.pdb
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.AssemblyReference.cache
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.GeneratedMSBuildEditorConfig.editorconfig
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfoInputs.cache
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.AssemblyInfo.cs
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.csproj.CoreCompileInputs.cache
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.sourcelink.json
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat..BC753FFB.Up2Date
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.dll
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\refint\Akalaat.BLL.dll
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\Akalaat.BLL.pdb
-D:\LatestLayoutAkaalat\Akalaat\src\Akalaat\Akalaat.BLL\obj\Debug\net8.0\ref\Akalaat.BLL.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Routing.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Results.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.BearerToken.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Http.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Hassan\Documents\iti\New folder (2)\Akalaat\src\Akalaat\Akalaat.BLL\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
