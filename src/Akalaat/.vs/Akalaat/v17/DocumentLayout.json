@@ -1,176 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\",
+  "WorkspaceRootPath": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\views\\restaurant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\restaurant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\regionspec\\districtwithregionspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\regionspec\\districtwithregionspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|f:\\computer science\\iti_intake_44\\20-mvc\\akalaat\\src\\akalaat\\akalaat\\helper\\delivertoyou.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\helper\\delivertoyou.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat.dal\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\moodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\moodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.dal\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\mood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\assign.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\assign.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
->>>>>>> Stashed changes
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\moodvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\moodvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\akalaat.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\akalaat.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-=======
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\restaurant\\resturantdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\resturantdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\displayrestaurantwithmoods.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\displayrestaurantwithmoods.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\restaurantdetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\restaurantdetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\_moodlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\_moodlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.bll\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\viewmodels\\assignvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\viewmodels\\assignvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
->>>>>>> Stashed changes
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\restaurant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantwithdishspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantwithdishspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\moods\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\moods\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\checkout\\ordersummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\checkout\\ordersummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\wwwroot\\css\\homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\views\\location\\setlocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\restaurant\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\akalaat.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\akalaat.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantwithdishspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantwithdishspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat\\views\\location\\setlocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\views\\location\\setlocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|d:\\latestlayoutakaalat\\akalaat\\src\\akalaat\\akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
-      "RelativeMoniker": "D:0:0:{CBBB33AE-473C-4B8E-8816-9AECA1AEBEEB}|Akalaat\\Akalaat.csproj|solutionrelative:akalaat\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3390EC9A-0FCD-4C01-AC82-AF785D57F636}|Akalaat.DAL\\Akalaat.DAL.csproj|solutionrelative:akalaat.dal\\models\\resturant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|c:\\users\\hassan\\documents\\iti\\new folder (2)\\akalaat\\src\\akalaat\\akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93DF1BE9-CD2A-46A1-A08B-C7971F6D3EE1}|Akalaat.BLL\\Akalaat.BLL.csproj|solutionrelative:akalaat.bll\\specifications\\entityspecs\\resturantspec\\resturantparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -180,308 +54,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DisplayRestaurantWithMoods.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\DisplayRestaurantWithMoods.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\DisplayRestaurantWithMoods.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\DisplayRestaurantWithMoods.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\DisplayRestaurantWithMoods.cshtml",
-              "ViewState": "AQIAAAUAAACAZmZmZmYSwAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T17:41:09.148Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RestaurantDetailsVM.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\RestaurantDetailsVM.cs",
-              "RelativeDocumentMoniker": "Akalaat\\ViewModels\\RestaurantDetailsVM.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\RestaurantDetailsVM.cs",
-              "RelativeToolTip": "Akalaat\\ViewModels\\RestaurantDetailsVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T17:10:32.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "assign.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\assign.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\assign.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\assign.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\assign.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T00:46:56.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResturantDetails.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\ResturantDetails.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Restaurant\\ResturantDetails.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\ResturantDetails.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Restaurant\\ResturantDetails.cshtml",
-              "ViewState": "AQIAAEwAAACAMzMzMzMrwGUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T23:10:05.897Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "Akalaat.csproj",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Akalaat.csproj",
+              "RelativeDocumentMoniker": "Akalaat\\Akalaat.csproj",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Akalaat.csproj",
+              "RelativeToolTip": "Akalaat\\Akalaat.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-21T02:52:41.369Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MoodsController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\MoodsController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\MoodsController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\MoodsController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\MoodsController.cs",
-              "ViewState": "AQIAAPYAAAAA//////8rwAQBAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:16:28.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Create.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\Create.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Create.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\Create.cshtml",
-              "ViewState": "AQIAACsAAABAMzMzMzMLwEAAAAAAAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE0AAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T21:21:15.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MoodVM.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\MoodVM.cs",
-              "RelativeDocumentMoniker": "Akalaat\\ViewModels\\MoodVM.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\MoodVM.cs",
-              "RelativeToolTip": "Akalaat\\ViewModels\\MoodVM.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:16:58.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T18:45:38.867Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Mood.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Mood.cs",
-              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Mood.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Mood.cs",
-              "RelativeToolTip": "Akalaat.DAL\\Models\\Mood.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:15:13.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "ViewState": "AQIAAP0AAAAAAAAAAAAewA8AAABFAAAA",
-=======
-              "DocumentIndex": 8,
-              "Title": "_MoodList.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\_MoodList.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\_MoodList.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\_MoodList.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\_MoodList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T18:25:54.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AssignVM.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\AssignVM.cs",
-              "RelativeDocumentMoniker": "Akalaat\\ViewModels\\AssignVM.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\ViewModels\\AssignVM.cs",
-              "RelativeToolTip": "Akalaat\\ViewModels\\AssignVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T00:43:59.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:29:58.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Repositories\\GenericRepository.cs",
-              "ViewState": "AQIAADUAAAAANDMzMzMjwE4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:30:09.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index2.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Index2.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\Index2.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Index2.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\Index2.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T00:59:03.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Resturant.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
-              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Resturant.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
-              "RelativeToolTip": "Akalaat.DAL\\Models\\Resturant.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA7wCYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T01:05:12.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Moods\\Delete.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Moods\\Delete.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Moods\\Delete.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAADwvyAAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T21:21:34.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Order\\Create.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Order\\Create.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Order\\Create.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Order\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T21:23:11.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RestaurantController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\RestaurantController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\RestaurantController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\RestaurantController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\RestaurantController.cs",
-              "ViewState": "AQIAABcAAACQ//////8pwCcAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T00:47:04.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Restaurant\\Index.cshtml",
-              "ViewState": "AQIAAEIAAAAAAAAAAABQvRIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T23:22:57.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ResturantWithDishSpecification.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
-              "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
-              "RelativeToolTip": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T01:08:49.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OrderSummary.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\CheckOut\\OrderSummary.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\CheckOut\\OrderSummary.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\CheckOut\\OrderSummary.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\CheckOut\\OrderSummary.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T21:19:29.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:14:55.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DishController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DishController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\DishController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\DishController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\DishController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAuwKEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:14:08.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CheckOutController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CheckOutController.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Controllers\\CheckOutController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CheckOutController.cs",
-              "RelativeToolTip": "Akalaat\\Controllers\\CheckOutController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAYwEwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:12:08.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "homepage.css",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
               "RelativeDocumentMoniker": "Akalaat\\wwwroot\\css\\homepage.css",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
               "RelativeToolTip": "Akalaat\\wwwroot\\css\\homepage.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -489,31 +98,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 8,
               "Title": "SetLocation.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Location\\SetLocation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Location\\SetLocation.cshtml",
               "RelativeDocumentMoniker": "Akalaat\\Views\\Location\\SetLocation.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Location\\SetLocation.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Location\\SetLocation.cshtml",
               "RelativeToolTip": "Akalaat\\Views\\Location\\SetLocation.cshtml",
               "ViewState": "AQIAAHkAAAAAAAAAAAAmwIMAAAAKAAAA",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-21T19:26:14.441Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
-              "RelativeDocumentMoniker": "Akalaat\\Program.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Program.cs",
-              "RelativeToolTip": "Akalaat\\Program.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAewFYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T00:46:42.996Z"
+              "WhenOpened": "2024-03-20T03:51:40.498Z"
             },
             {
               "$type": "Document",
@@ -543,13 +136,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-=======
-              "DocumentIndex": 24,
->>>>>>> Stashed changes
               "Title": "Home.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Home.cshtml",
               "RelativeDocumentMoniker": "Akalaat\\Views\\Restaurant\\Home.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Home.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Home.cshtml",
               "RelativeToolTip": "Akalaat\\Views\\Restaurant\\Home.cshtml",
               "ViewState": "AQIAAEECAAAAAAAAAAAmwF0CAAAlAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -557,7 +147,19 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
+              "RelativeDocumentMoniker": "Akalaat\\Views\\Restaurant\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Restaurant\\Index.cshtml",
+              "RelativeToolTip": "Akalaat\\Views\\Restaurant\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T02:06:42.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "RegionController.cs",
               "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\RegionController.cs",
@@ -637,13 +239,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
-=======
-              "DocumentIndex": 28,
->>>>>>> Stashed changes
               "Title": "CityController.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
               "RelativeDocumentMoniker": "Akalaat\\Controllers\\CityController.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\CityController.cs",
               "RelativeToolTip": "Akalaat\\Controllers\\CityController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -651,15 +250,11 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 9,
-=======
-              "DocumentIndex": 23,
->>>>>>> Stashed changes
               "Title": "ResturantParams.cs",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
               "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
               "RelativeToolTip": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantParams.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAADwvwsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -667,12 +262,23 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Akalaat\\Controllers\\RestaurantController.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Akalaat\\Controllers\\RestaurantController.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAuwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T00:47:04.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ResturantWithDishSpecification.cs",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
               "RelativeDocumentMoniker": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
               "RelativeToolTip": "Akalaat.BLL\\Specifications\\EntitySpecs\\ResturantSpec\\ResturantWithDishSpecification.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAIwBcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -680,46 +286,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "homepage.css",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
-              "RelativeDocumentMoniker": "Akalaat\\wwwroot\\css\\homepage.css",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\wwwroot\\css\\homepage.css",
-              "RelativeToolTip": "Akalaat\\wwwroot\\css\\homepage.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAACHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-20T17:58:40.525Z"
+              "DocumentIndex": 9,
+              "Title": "Resturant.cs",
+              "DocumentMoniker": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
+              "RelativeDocumentMoniker": "Akalaat.DAL\\Models\\Resturant.cs",
+              "ToolTip": "C:\\Users\\Hassan\\Documents\\iti\\New folder (2)\\Akalaat\\src\\Akalaat\\Akalaat.DAL\\Models\\Resturant.cs",
+              "RelativeToolTip": "Akalaat.DAL\\Models\\Resturant.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T01:05:12.382Z"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-=======
-              "DocumentIndex": 25,
->>>>>>> Stashed changes
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Akalaat\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\LatestLayoutAkaalat\\Akalaat\\src\\Akalaat\\Akalaat\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Akalaat\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAE0AAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T18:45:38.867Z"
-<<<<<<< Updated upstream
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Akalaat.csproj",
-              "DocumentMoniker": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Akalaat.csproj",
-              "RelativeDocumentMoniker": "Akalaat\\Akalaat.csproj",
-              "ToolTip": "F:\\Computer Science\\iti_intake_44\\20-MVC\\Akalaat\\src\\Akalaat\\Akalaat\\Akalaat.csproj",
-              "RelativeToolTip": "Akalaat\\Akalaat.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-21T02:52:41.369Z",
-              "EditorCaption": ""
-=======
->>>>>>> Stashed changes
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
