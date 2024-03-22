@@ -1,0 +1,17 @@
+﻿@model Akalaat.DAL.Models.Resturant
+
+@{
+    ViewData["Title"] = "Restaurant Details";
+}
+
+<h1>@Model.Name</h1>
+
+<h3>Moods:</h3>
+<ul>
+    @foreach (var mood in Model.Moods)
+    {
+        <li>@mood.Name</li>
+    }
+</ul>
+
+<a asp-action="Index">Back to List</a>

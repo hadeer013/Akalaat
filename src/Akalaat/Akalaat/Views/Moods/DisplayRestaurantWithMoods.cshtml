@@ -1,0 +1,122 @@
+﻿@model Akalaat.DAL.Models.Resturant
+
+@{
+    ViewData["Title"] = "Restaurant Details";
+}
+
+<div class="d-flex justify-content-between">
+    <h1>@Model.Name</h1>
+    <a asp-action="Assign" asp-controller="Moods" class="btn btn-primary">Assgin</a>
+</div>
+
+<h3>Moods:</h3>
+<ul>
+    @foreach (var mood in Model.Moods)
+    {
+        <li>
+            <form asp-action="Edit" asp-route-id="@mood.Id">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="Name" value="@mood.Name" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </form>
+            <form asp-action="Delete" asp-route-id="@mood.Id">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </li>
+    }
+</ul>
+
+<a asp-action="Index">Back to List</a>
+
+
+@* @model Akalaat.DAL.Models.Resturant
+
+@{
+    ViewData["Title"] = "Restaurant Details";
+}
+
+<h1>@Model.Name</h1>
+<h3>Moods:</h3>
+<ul>
+    @foreach (var mood in Model.Moods)
+    {
+        <li>
+            <form asp-action="Edit" asp-route-id="@mood.Id">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="Name" value="@mood.Name" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </form>
+            <form asp-action="Delete" asp-route-id="@mood.Id">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </li>
+    }
+</ul>
+
+<a asp-action="Index">Back to List</a>
+<a asp-action="AnotherPage">Another Page</a>
+
+ *@
+
+@* @model Akalaat.DAL.Models.Resturant
+
+@{
+    ViewData["Title"] = "Restaurant Details";
+}
+
+<h1>@Model.Name</h1>
+<h3>Moods:</h3>
+<div id="moodList">
+    @foreach (var mood in Model.Moods)
+    {
+        <li id="mood-@mood.Id">
+            @mood.Name  <form asp-action="Edit" asp-route-id="@mood.Id">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="Name" value="@mood.Name" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </form>
+            <form asp-action="Delete" asp-route-id="@mood.Id" onsubmit="return deleteMood(event, @mood.Id)">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </li>
+    }
+</div>
+
+<a asp-action="Index">Back to List</a>
+<a asp-action="AnotherPage">Another Page</a>
+
+<script>
+    function deleteMood(event, moodId) {
+        event.preventDefault(); // Prevent form submission
+
+        fetch(`/Restaurant/Delete/${moodId}`, {
+            method: 'POST', // Use POST for delete requests
+            headers: { 'Content-Type': 'application/json' } // Optional header for JSON data
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) { // Assuming the response indicates success
+                    var moodItem = document.getElementById("mood-" + moodId);
+                    moodItem.parentNode.removeChild(moodItem); // Remove the list item from the DOM
+                } else {
+                    // Handle any errors from the server
+                    alert("Error deleting mood. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("An error occurred. Please try again.");
+            });
+    }
+</script>
+ *@
+

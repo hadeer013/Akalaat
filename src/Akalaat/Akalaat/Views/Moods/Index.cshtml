@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Akalaat.DAL.Models.Mood>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mood Name</th>
+            <th>Mood ID</th>
+            <th>Associated Restaurants</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var mood in Model)
+        {
+            <tr>
+                <td>@mood.Name</td>
+                <td>@mood.Id</td>
+                <td>
+                    <ul>
+                        @foreach (var restaurant in mood.resturant_Moods)
+                        {
+                            <li>@restaurant.Name</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@mood.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@mood.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@mood.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

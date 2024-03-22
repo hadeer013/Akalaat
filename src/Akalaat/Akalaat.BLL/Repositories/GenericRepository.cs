@@ -21,6 +21,16 @@ namespace Akalaat.BLL.Repositories
             this.context = context;
         }
 
+        public async Task<T> GetByIdWithRelatedAsync(int id, params Expression<Func<T, object>>[] includeProperties)
+        {
+            var query = context.Set<T>().AsQueryable();
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return await query.FirstOrDefaultAsync(entity => (int)entity.GetType().GetProperty("Id").GetValue(entity) == id);
+        }
+
         public async Task<T> Add(T type)
         {
             var entity = await context.Set<T>().AddAsync(type);
@@ -217,8 +227,9 @@ namespace Akalaat.BLL.Repositories
                     return await context.SaveChangesAsync();
                 }
                 return 0; 
-            }    
-    
+            }
+
+        
     }
     
 }
